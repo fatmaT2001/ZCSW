@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 :root {
     --ornage: #003b46;
-    --layOutHover: rgb(6 27 49 / 80%);
+    --layOutHover: rgb(8 19 23 / 80%);
     --BackGroud: url('/img/MainPagePic/MainPageBackGroudHeader.jpeg');
 }
 body {
@@ -747,7 +747,7 @@ color:var(--ornage)
 .Speakers {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgb(6 27 49 / 80%), rgb(6 27 49 / 80%)),var(--BackGroud);
+    background: linear-gradient(var(--layOutHover), var(--layOutHover)),var(--BackGroud);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
