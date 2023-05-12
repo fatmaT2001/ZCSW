@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj": {}
+    "E:\\Zewail academic years\\Year 2 CIE\\Semester 2\\Database\\project githubbbb\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj": {
+    "E:\\Zewail academic years\\Year 2 CIE\\Semester 2\\Database\\project githubbbb\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
+        "projectUniqueName": "E:\\Zewail academic years\\Year 2 CIE\\Semester 2\\Database\\project githubbbb\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
         "projectName": "ZewailCiryScienceWeek",
-        "projectPath": "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\obj\\",
+        "projectPath": "E:\\Zewail academic years\\Year 2 CIE\\Semester 2\\Database\\project githubbbb\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "E:\\Zewail academic years\\Year 2 CIE\\Semester 2\\Database\\project githubbbb\\ZCSW\\ZewailCiryScienceWeek\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
