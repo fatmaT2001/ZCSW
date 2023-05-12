@@ -1,0 +1,119 @@
+﻿@page
+@model ZewailCiryScienceWeek.Pages.MainPages.AboutUsModel
+@{
+}
+<!--======================Header MAin Page=================================-->
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="mb-4 pb-0">The Annual<br><span>Zewail City</span> Science Festival</h1>
+        <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
+    </div>
+</section><!-- End Hero Section -->
+<!--======================Header MAin Page=================================-->
+<section class="p-5 m-4">
+    <!--=========================================Historical Information About THe Festival=================================-->
+    <!--===================================================================================================================-->
+    <section class="Festiavlinfo">
+        <div class="section-header">
+            <h2>About Zewail City Science Festival</h2>
+        </div>
+        <div class="card mb-5 ">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img class="card-img" src="/img/MainPagePic/AboutFeatival.jpeg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Historical Information About The festival</h3>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This content is a little bit longer. a wider card with supporting text below as a natural lead-in a wider card with
+                            supporting text below as a natural lead-in  a wider card with supporting text below as a natural lead-in
+                            a wider card with supporting text below as a natural lead-in  a wider card with supporting text below as a natural lead-in
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===================================================================================================================-->
+    <!--===================================================================================================================-->
+    <!--===================================================Past Festival information========================================-->
+    <!--===================================================================================================================-->
+    <section class="PastFestival">
+    </section>
+    <section class="mt-4 pt-5 pb-5" style="height:100vh">
+        <div class="section-title">
+            <h2 class="text-center "> Check out the picture of our Last festival</h2>
+
+        </div>
+        <section class=" d-flex justify-content-center align-items-center h-75 Speakers">
+            <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active " data-bs-interval="1000">
+                        <div>
+                            <img src="/img/MainPagePic/MainPageBackGroudHeader.jpeg" />
+                        </div>
+                    </div>
+                    @for (int i = 0; i < 10; i++)
+                    {
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div>
+                                <img src="/img/MainPagePic/MainPageBackGroudHeader.jpeg" />
+                            </div>
+                        </div>
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </section>
+        <div class="text-center m-3">
+        </div>
+    </section>
+</section>
+<section>
+</section>
+<!--===================================================================================================================-->
+<!--===================================================================================================================-->
+<!--===================================================Cuurent Festival information========================================-->
+<!--===================================================================================================================-->
+<section class="Currentfestival m-4 p-5">
+    <div class="section-header">
+        <h2>Our Upcpming Amazing Rooms</h2>
+    </div>
+    @for (int i = 0; i < 4; i++)
+    {
+        <div class="row">
+            @for (int j = 0; j < 2; j++)
+            {
+                <div class="card mb-5 col-lg ">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img class="card-img  h-100" src="/img/MainPagePic/AboutFeatival.jpeg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Historical Information About The festival</h3>
+                                <p class="card-text">
+                                    This is a wider card with supporting text below as a natural lead-in to additional content.
+                                    This content is a little bit longer. a wider card with supporting text below as a natural lead-in a wider card with
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</section>

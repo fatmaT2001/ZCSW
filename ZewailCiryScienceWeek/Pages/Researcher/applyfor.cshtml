@@ -1,0 +1,182 @@
+﻿@page
+@model ZewailCiryScienceWeek.Pages.Researcher.Pages_Researcher_applyfor
+@{
+	Layout = "_LayoutResearcher";
+}
+
+<header id="header" class="d-flex align-items-center p-4 ">
+	<div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
+
+		<div id="logo">
+			<!-- Uncomment below if you prefer to use a text logo -->
+			<!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+			<a href="index.html" class="scrollto"><img src="~/img/MainPagePic/Artboard 3 (1).png" alt="" title=""></a>
+		</div>
+		<ul>
+			<li><a class="nav-link scrollto" href="/Index">Home</a></li>
+			<li><a class="nav-link scrollto" href="/Mainpages/AboutUs">About ZCSF</a></li>
+			<li><a class="nav-link scrollto" href="/MainPages/Conference">Conference</a></li>
+			<li><a class="select-control buy-tickets scrollto nav-link" href="/Researcher/applyfor">Apply for a paper</a></li>
+			<li><a class="nav-link scrollto" href="/MainPages/ContactUs">Contact</a></li>
+			<li><a class="nav-link scrollto" href="/Researcher/researcherProfile">Researcher</a></li>
+
+
+		</ul>
+		<!--=====================================================-->
+
+
+		<i class="bi bi-list mobile-nav-toggle"></i>
+
+	</div>
+</header>
+<div class="container py-5 h-100">
+	<div class="wrapper">
+		<form action="" id="wizard">
+			<!-- SECTION 1 -->
+			<h2></h2>
+			<section>
+				<div class="inner">
+					<div class="image-holder">
+
+						<img src="~/imagesApply/photo4.jpg" alt="">
+					</div>
+					<div class="form-content">
+						<div class="form-header">
+							<h3>Apply for a paper</h3>
+						</div>
+						<p>Please fill with your details</p>
+						<div class="form-row">
+							<div class="form-holder ">
+								<input type="text" placeholder="Full Name" class="form-control">
+
+							</div>
+							<div class="form-holder">
+								<input type="text" placeholder="Your Email" class="form-control">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-holder">
+								<input type="text" placeholder="National Id" class="form-control">
+							</div>
+							<div class="form-holder">
+								<input type="text" placeholder="Phone Number" class="form-control">
+							</div>
+
+
+						</div>
+						<div class="form-row">
+							<div class="select">
+								<div class="form-holder">
+									<div class="select-control">Conference Day</div>
+									<i class="zmdi zmdi-caret-down"></i>
+								</div>
+								<ul class="dropdown">
+									<li rel="Day1">Day1</li>
+									<li rel="Day2">Day2</li>
+									<li rel="Day3">Day3</li>
+									<li rel="Day4">Day4</li>
+								</ul>
+							</div>
+							<div class="form-holder">
+								<input type="text" placeholder="Paper Name" class="form-control">
+							</div>
+						</div>
+						<div class="checkbox-circle">
+							<label>
+								<input type="checkbox" checked> Nor again is there anyone who loves or pursues or desires to obtaini.
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- SECTION 2 -->
+			<h2></h2>
+			<section>
+				<div class="inner">
+					<div class="image-holder">
+						<img src="~/imagesApply/image1.jpg" alt="">
+					</div>
+					<div class="form-content">
+						<div class="form-header">
+							<h3>Apply for a paper</h3>
+						</div>
+						<p>Please fill with paper info</p>
+
+						<div class="form-row">
+							<div class="select">
+								<div class="form-holder">
+									<div class="select-control">Paper Field</div>
+									<i class="zmdi zmdi-caret-down"></i>
+								</div>
+								<ul class="dropdown">
+									<li rel="Biology">Biology</li>
+									<li rel="Physics">Physics</li>
+									<li rel="Mathematics">Mathematics</li>
+									<li rel="Chemistry">Chemistry</li>
+								</ul>
+							</div>
+							<div class="form-holder">
+								<input type="text" placeholder="Number Of Pages" class="form-control">
+							</div>
+
+						</div>
+
+						<div class="form-row">
+
+							<div class="form-holder ">
+								<input type="file" accept=".pdf" name="pdf" id="pdf" class="form-control">
+								<label for="pdf" class="file-label">Attach Paper PDF</label>
+							</div>
+
+						</div>
+
+						<div class="form-row">
+							<div class="form-holder ">
+								<input type="text" placeholder="Supervisor Name" class="form-control">
+							</div>
+							<div class="form-holder">
+								<input type="text" placeholder="Supervisor ID" class="form-control">
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</section>
+
+			<!-- SECTION 3 -->
+			<h2></h2>
+			<section>
+				<div class="inner">
+					<div class="image-holder">
+						<img src="~/imagesApply/image3.jpg" alt="">
+					</div>
+					<div class="form-content">
+						<div class="form-header">
+							<h3>Apply for a paper</h3>
+						</div>
+						<p>Send an optional message</p>
+						<div class="form-row">
+							<div class="form-holder w-100">
+								<textarea name="" id="" placeholder="Your messagere here!" class="form-control" style="height: 99px;"></textarea>
+							</div>
+						</div>
+						<div class="checkbox-circle mt-24">
+							<label>
+								<input type="checkbox" checked>  Please accept <a href="#">terms and conditions ?</a>
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</form>
+	</div>
+
+</div>
+
+

@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@{
+    Layout = "_LayoutOFMainPageForDifferetUser";
+}
+
+<!--======================Header MAin Page=================================-->
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="mb-4 pb-0">The Annual<br><span>Zewail City</span> Science Week</h1>
+        <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
+        <a href="/Visitor/buyticket" class="about-btn scrollto" style="color:#fff">Get Your Ticket Now</a>
+    </div>
+</section><!-- End Hero Section -->
+<!--======================Header MAin Page=================================-->
+<!--======================The NavBar for the Main Page for UnSigned Visitor======================-->
+<!--=============================================================================================-->
+
+<header id="header" class="d-flex align-items-center p-4 ">
+    <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
+
+        <div id="logo">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+            <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/WeekLogo.png" alt="" title=""></a>
+        </div>
+        <ul>
+            <li><a class="nav-link scrollto" href="/Index">Home</a></li>
+            <li><a class="nav-link scrollto" href="/Mainpages/AboutUs">About ZCSF</a></li>
+            <li><a class="nav-link scrollto" href="/MainPages/Conference">Conference</a></li>
+            <li><a class="nav-link scrollto" href="/MainPages/Team">Team</a></li>
+            <li><a class="nav-link scrollto" href="/MainPages/Speakers">Speakers</a></li>
+            <li><a class="nav-link scrollto" href="/MainPages/ContactUs">Contact</a></li>
+            <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signup">Sign Up</a></li>
+            <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signin">Sign IN</a></li>
+
+
+
+        </ul>
+        <!--=====================================================-->
+
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </div>
+</header>
+<!--======================The NavBar for the Main Page for UnSigned Visitor======================-->
+<!--=============================================================================================-->

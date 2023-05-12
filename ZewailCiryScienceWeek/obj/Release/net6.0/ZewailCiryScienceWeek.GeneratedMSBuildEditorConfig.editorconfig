@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ZewailCiryScienceWeek
+build_property.RootNamespace = ZewailCiryScienceWeek
+build_property.ProjectDir = C:\Users\fatma taha\Desktop\ZC\ZewailCityScienceWeek\ZewailCiryScienceWeek\ZewailCiryScienceWeek\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\fatma taha\Desktop\ZC\ZewailCityScienceWeek\ZewailCiryScienceWeek\ZewailCiryScienceWeek
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/Analysts/Analysis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5hbHlzdHNcQW5hbHlzaXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/Analysts/AnayliticMainPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW5hbHlzdHNcQW5heWxpdGljTWFpblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/MainPages/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBhZ2VzXEFib3V0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/MainPages/conference.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBhZ2VzXGNvbmZlcmVuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/MainPages/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBhZ2VzXENvbnRhY3RVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/MainPages/Speakers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBhZ2VzXFNwZWFrZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/MainPages/Team.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBhZ2VzXFRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/Shared/_LayoutOFMainPageForDifferetUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRPRk1haW5QYWdlRm9yRGlmZmVyZXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fatma taha/Desktop/ZC/ZewailCityScienceWeek/ZewailCiryScienceWeek/ZewailCiryScienceWeek/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yyl51rht8i

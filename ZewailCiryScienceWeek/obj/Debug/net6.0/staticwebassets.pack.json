@@ -1,0 +1,1545 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ZewailCiryScienceWeek.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ZewailCiryScienceWeek.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\TicketDesigncss.css",
+      "PackagePath": "staticwebassets\\css\\TicketDesigncss.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\main1.css",
+      "PackagePath": "staticwebassets\\css\\main1.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\montserrat-font.css",
+      "PackagePath": "staticwebassets\\css\\montserrat-font.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\style1.css",
+      "PackagePath": "staticwebassets\\css\\style1.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\styleApply.css",
+      "PackagePath": "staticwebassets\\css\\styleApply.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\styleApply.css.map",
+      "PackagePath": "staticwebassets\\css\\styleApply.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\styleApply.scss",
+      "PackagePath": "staticwebassets\\css\\styleApply.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\stylePromo.css",
+      "PackagePath": "staticwebassets\\css\\stylePromo.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\styleee.css",
+      "PackagePath": "staticwebassets\\css\\styleee.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\styles_tickets_admin.css",
+      "PackagePath": "staticwebassets\\css\\styles_tickets_admin.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\templatemo-lava.css",
+      "PackagePath": "staticwebassets\\css\\templatemo-lava.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\test.css",
+      "PackagePath": "staticwebassets\\css\\test.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\util.css",
+      "PackagePath": "staticwebassets\\css\\util.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\css\\util1.css",
+      "PackagePath": "staticwebassets\\css\\util1.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\fonts1\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\Linearicons-Free-v1.0.0\\icon-font.min.css",
+      "PackagePath": "staticwebassets\\fonts1\\Linearicons-Free-v1.0.0\\icon-font.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts1\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\iconic\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts1\\iconic\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\iconic\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts1\\iconic\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\fonts1\\iconic\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\UFL.txt",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\UFL.txt"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-Bold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-BoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-Italic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-Light.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-LightItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-Medium.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-MediumItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts1\\ubuntu\\Ubuntu-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts1\\ubuntu\\Ubuntu-Regular.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\flexslider-icon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\flexslider-icon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\flexslider-icon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\flexslider-icon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Black.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-BlackItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-BoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-ExtraBold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-ExtraLight.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Italic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-LightItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-MediumItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-Thin.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\Montserrat-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\Montserrat-ThinItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\montserrat\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\montserrat\\OFL.txt"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\fonts\\slick.eot"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\fonts\\slick.svg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\fonts\\slick.woff"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\imagesApply\\image1.jpg",
+      "PackagePath": "staticwebassets\\imagesApply\\image1.jpg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\imagesApply\\image3.jpg",
+      "PackagePath": "staticwebassets\\imagesApply\\image3.jpg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\imagesApply\\photo4.jpg",
+      "PackagePath": "staticwebassets\\imagesApply\\photo4.jpg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\Artboard 6.png",
+      "PackagePath": "staticwebassets\\images\\Artboard 6.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\about-icon-01.png",
+      "PackagePath": "staticwebassets\\images\\about-icon-01.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\about-icon-02.png",
+      "PackagePath": "staticwebassets\\images\\about-icon-02.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\about-icon-03.png",
+      "PackagePath": "staticwebassets\\images\\about-icon-03.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\banner-bg.png",
+      "PackagePath": "staticwebassets\\images\\banner-bg.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\features-icon-1.png",
+      "PackagePath": "staticwebassets\\images\\features-icon-1.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\features-icon-2.png",
+      "PackagePath": "staticwebassets\\images\\features-icon-2.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\features-icon-3.png",
+      "PackagePath": "staticwebassets\\images\\features-icon-3.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\footer-bg.png",
+      "PackagePath": "staticwebassets\\images\\footer-bg.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\icons\\favicon.ico"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\image1.jpg",
+      "PackagePath": "staticwebassets\\images\\image1.jpg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\image3.jpg",
+      "PackagePath": "staticwebassets\\images\\image3.jpg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\img-01.png",
+      "PackagePath": "staticwebassets\\images\\img-01.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\left-bg-decor.png",
+      "PackagePath": "staticwebassets\\images\\left-bg-decor.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\left-image.png",
+      "PackagePath": "staticwebassets\\images\\left-image.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\photo4.jpg",
+      "PackagePath": "staticwebassets\\images\\photo4.jpg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\right-bg-decor.png",
+      "PackagePath": "staticwebassets\\images\\right-bg-decor.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\test.png",
+      "PackagePath": "staticwebassets\\images\\test.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\images\\testimonial-author-1.png",
+      "PackagePath": "staticwebassets\\images\\testimonial-author-1.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\AboutFeatival.jpeg",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\AboutFeatival.jpeg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\Artboard 3 (1).png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\Artboard 3 (1).png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\BackGroundHeader.jpeg",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\BackGroundHeader.jpeg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\Conference\\Conference.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\Conference\\Conference.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\Conference\\con2.jfif",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\Conference\\con2.jfif"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\Conference\\converence.jfif",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\Conference\\converence.jfif"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\MainPageBackGroudHeader.jpeg",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\MainPageBackGroudHeader.jpeg"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\Team.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\Team.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\WeekLogo.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\WeekLogo.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\1.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\1.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\2.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\2.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\3.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\3.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\4.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\4.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\5.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\5.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\6.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\6.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\7.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\7.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\img\\MainPagePic\\supporters\\8.png",
+      "PackagePath": "staticwebassets\\img\\MainPagePic\\supporters\\8.png"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\charts\\Chart.js",
+      "PackagePath": "staticwebassets\\js\\charts\\Chart.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\charts\\Chart.min.js",
+      "PackagePath": "staticwebassets\\js\\charts\\Chart.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\imgfix.min.js",
+      "PackagePath": "staticwebassets\\js\\imgfix.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\jquery-2.1.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-2.1.0.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\jquery-3.3.1.minApply.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.minApply.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\jquery.stepsApply.js",
+      "PackagePath": "staticwebassets\\js\\jquery.stepsApply.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\main1.js",
+      "PackagePath": "staticwebassets\\js\\main1.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\main2.js",
+      "PackagePath": "staticwebassets\\js\\main2.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\mainApply.js",
+      "PackagePath": "staticwebassets\\js\\mainApply.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\owl-carousel.js",
+      "PackagePath": "staticwebassets\\js\\owl-carousel.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\scripts_tickets_admin.js",
+      "PackagePath": "staticwebassets\\js\\scripts_tickets_admin.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\scrollreveal.min.js",
+      "PackagePath": "staticwebassets\\js\\scrollreveal.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\sitePromo.js",
+      "PackagePath": "staticwebassets\\js\\sitePromo.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\vendor1\\animate\\animate.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\vendor1\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\vendor1\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\vendor1\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\vendor1\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\vendor1\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\vendor1\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\vendor1\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\vendor1\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\vendor1\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\vendor1\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\vendor1\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\vendor1\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\vendor1\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor1\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\vendor1\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\vendor1\\select2\\select2.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\vendor1\\select2\\select2.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor1\\select2\\select2.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor1\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\vendor1\\select2\\select2.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.js"
+    },
+    {
+      "Id": "E:\\c\\DATABASE\\DATABASE\\ZewailCiryScienceWeek\\wwwroot\\vendor\\tilt\\tilt.jquery.min.js",
+      "PackagePath": "staticwebassets\\vendor\\tilt\\tilt.jquery.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ZewailCiryScienceWeek.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ZewailCiryScienceWeek.props",
+      "PackagePath": "build\\ZewailCiryScienceWeek.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ZewailCiryScienceWeek.props",
+      "PackagePath": "buildMultiTargeting\\ZewailCiryScienceWeek.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ZewailCiryScienceWeek.props",
+      "PackagePath": "buildTransitive\\ZewailCiryScienceWeek.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

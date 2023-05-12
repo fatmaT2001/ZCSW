@@ -1,0 +1,112 @@
+﻿@page
+@model ZewailCiryScienceWeek.Pages.Admin.Pages_Admin_promocode
+@{
+}
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<body>
+    <header id="header" class="d-flex align-items-center p-4 ">
+        <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
+
+            <div id="logo">
+                <!-- Uncomment below if you prefer to use a text logo -->
+                <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+                <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/Artboard 3 (1).png" alt="" title=""></a>
+            </div>
+            <ul>
+                <li><a class="nav-link scrollto" href="/Index">Home</a></li>
+                <li><a class="nav-link scrollto" href="/Admin/visitor">Visitors Info</a></li>
+                <li><a class="nav-link scrollto" href="/Admin/tickets">Tickets</a></li>
+                <li><a class="select-control buy-tickets scrollto nav-link" href="/Admin/Promotable">Add Promo Code</a></li>
+                <li><a class="nav-link scrollto" href="/Admin/AdminMain">Admin</a></li>
+            </ul>
+            <!--=====================================================-->
+
+
+            <i class="bi bi-list mobile-nav-toggle"></i>
+
+        </div>
+
+
+    </header>
+
+    <div class="form-body" style="background-color: #E5EBEB" ;>
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <div style="text-align:center;">
+                            <h3>Add a promo code</h3>
+                        </div>
+
+                        <form class="requires-validation" novalidate>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="name" placeholder="Promo Code" required>
+                                <div class="valid-feedback">Username field is valid!</div>
+                                <div class="invalid-feedback">Username field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="Discount Percentage" placeholder="Discount Percentage" required>
+
+                            </div>
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="Number Of Tickets Offered" placeholder="Number Of Tickets Offered" required>
+
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="Assigned To" placeholder="Assigned To" required>
+
+                            </div>
+
+
+
+
+
+
+                            <div class="col-md-12 mt-3">
+                                <label class="mb-3 mr-1" for="Promo Code Type">Promo Code Type: </label>
+
+                                <input type="radio" class="btn-check" name="Promo Code Type" id="Regular" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="Regular">Regular</label>
+
+                                <input type="radio" class="btn-check" name="Promo Code Type" id="Group" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-secondary" for="Group">Group</label>
+
+
+
+                                <div class="invalid-feedback mv-up">Please select a type!</div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label">I confirm that all data are correct</label>
+                                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                            </div>
+
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary-promo">Add The Promo Code</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+

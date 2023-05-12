@@ -1,0 +1,46 @@
+﻿@page
+@model ZewailCiryScienceWeek.Pages.MainPages.SpeakersModel
+@{
+}
+<!-- ======= Speakers Header Section ======= -->
+<section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="mb-4 pb-0">The Speakers For<br><span>Zewail City</span> Science Featival</h1>
+        <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
+    </div>
+</section>
+<!-- ======= Speakers Header Section ======= -->
+<section class="p-4 m-4">
+    <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" class="form-control" placeholder="Search For The Name Of The Speaker">
+        <button class="btn btn-primary">Search</button>
+    </div>
+
+    <section class="searching_content mt-3">
+        @for(int i = 0; i < 8; i++)
+        {
+            <div class="card mb-5 border " style="height:fit-content">
+                <div class="row no-gutters">
+                    <div class="col-md-3" >
+                        <img class="card-img" src="/img/MainPagePic/Team.png">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Speaker Full Name</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.
+                                This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer
+                                This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer
+                            </p>
+                            <p class="card-text">Speaker Time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </section>
+</section>

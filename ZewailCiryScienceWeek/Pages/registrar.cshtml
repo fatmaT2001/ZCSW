@@ -1,0 +1,310 @@
+﻿@page
+@model ZewailCiryScienceWeek.Pages.registrarModel
+@{
+    Layout = "_Layoutregister";
+}
+<section class="section" id="about" ; style="background-color:#E5EBEB">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                 data-scroll-reveal="enter left move 30px over 0.6s after 0.4s" >
+                <div class="features-item" style="background-color:#C9D5D6">
+                    <div class="text">
+                        <h2>01</h2>
+                        <br> <br> <br> <br> <br> 
+                        @*<img src="~/images/features-icon-1.png" alt="">*@
+                        <h4>Add New Ticket</h4>
+                        <br>
+                        <button href="#" onclick="openStform()"><span class="text">Add standard ticket</span></button>
+                        <br><br>
+                        <button onclick="openFrform()"><span class="text">Add free ticket</span></button>
+
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="stform" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closestform()">&times;</span>
+                    <h2 style="color:#2a2a2a">Add a standard ticket</h2>
+                    <br><br>
+
+                    <form method="post" action="index.html">
+                        <label for="ticket-quantity">Number of tickets:</label>
+                        <input type="number" id="ticket-quantity" name="ticket-quantity" min="1" value="1">
+
+
+
+                        <br><br>
+                        <label for="date-attending">Date of attending:</label>
+                        <input type="date" id="date-attending" name="date-attending">
+                        <button type="submit"><span class="text">Confirm</span></button>
+
+
+                    </form>
+                </div>
+            </div>
+
+            <div id="Frform" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeFrform()">&times;</span>
+                    <h2 style="color:#2a2a2a">Add a Free ticket</h2>
+                    <br><br>
+
+                    <form method="post" action="index.html">
+                        <label for="ticket-quantity">Number of tickets:</label>
+                        <input type="number" id="ticket-quantity" name="ticket-quantity" min="1" value="1">
+
+
+                        <br><br>
+                        <label for="date-attending">Date of attending:</label>
+                        <input type="date" id="date-attending" name="date-attending">
+                        <br><br>
+
+
+                        <label for="ticket-type">Type of ticket:</label>
+                        <input type="text" id="ticket-type" name="ticket-type">
+                        <br><br>
+
+                        <label for="promo-code">Promo code:</label>
+                        <input type="text" id="promo-code" name="promo-code">
+                        <br><br>
+
+
+
+
+                        <button type="submit"><span class="text">Confirm</span></button>
+
+                    </form>
+                </div>
+            </div>
+
+
+            <script>
+                function openStform() {
+                    document.getElementById("stform").style.display = "block";
+                }
+
+                // Close the login form popup
+                function closestform() {
+                    document.getElementById("stform").style.display = "none";
+                }
+                function openFrform() {
+                    document.getElementById("Frform").style.display = "block";
+                }
+
+                // Close the login form popup
+                function closeFrform() {
+                    document.getElementById("Frform").style.display = "none";
+                }
+            </script>
+
+
+
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                 data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s" >
+                <div class="features-item" style="background-color:#C9D5D6">
+                    <div class="text">
+                        <h2>02</h2>
+                        <br> <br> <br> <br> <br> 
+                        @* <img src="~/images/features-icon-2.png" alt="">*@
+                        <h4>View All Data About Visitors</h4>
+                        <br><br><br>
+                        <a href="#VIEW_AND_CHECK" class="main-button">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                 data-scroll-reveal="enter right move 30px over 0.6s after 0.4s" >
+                <div class="features-item" style="background-color:#C9D5D6">
+                    <div class="text">
+                        <h2>03</h2>
+                        <br> <br> <br> <br> <br> <br>
+                        @* <img src="~/images/features-icon-3.png" alt="">*@
+                        <h4>Check For Used Ticket</h4>
+                        <br><br><br>
+                        <a href="#VIEW_AND_CHECK" class="main-button">
+                            CHECK
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Features Big Item End ***** -->
+
+<div class="left-image-decor"></div>
+
+
+
+<div class="right-image-decor"></div>
+
+<!-- ***** VIEW_AND_CHECK Starts ***** -->
+<section class="section" id="VIEW_AND_CHECK" style="background-color:#E5EBEB" height: 500px;>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="center-heading">
+                    <h2 style="font-size:40px;">Check for used tickets </h2>
+
+                </div>
+                <div class="ticket-counts">
+                    <h4 class="booked-count">Booked tickets</h4>
+                    <h4 class="remaining-count">Remaining tickets</h4>
+                </div>
+
+                <div class="button-container">
+                    <div class="left-buttons">
+                        <button class="btn btn-primary" onclick="openPopup('VIPs')">VIPs</button>
+                        <button class="btn btn-secondary" onclick="openPopup('Regular')">Regular</button>
+                        <button class="btn btn-success" onclick="openPopup('free')">free</button>
+                    </div>
+                    <div class="right-buttons">
+                        <button class="btn btn-info" onclick="openPopup('day_1')">day_1</button>
+                        <button class="btn btn-warning" onclick="openPopup('day_2')">day_2</button>
+                        <button class="btn btn-danger" onclick="openPopup('day_3')">day_3</button>
+                        <button class="btn btn-dark" onclick="openPopup('day_4')">day_4</button>
+                    </div>
+                </div>
+
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <p id="popup-text"></p>
+                        <button onclick="closePopup()">Close</button>
+                    </div>
+                </div>
+
+                <script>
+                    function openPopup(buttonText) {
+                        var popup = document.getElementById("popup");
+                        var popupText = document.getElementById("popup-text");
+                        popup.style.display = "block";
+                        popupText.innerHTML = "10";
+                    }
+
+                    function closePopup() {
+                        document.getElementById("popup").style.display = "none";
+                    }
+                </script>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- ***** VIEW_AND_CHECK Ends ***** -->
+
+<section class="section" id="pop" style="background-color:#E5EBEB">
+    <div class="container">
+        <div class="footer-content">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="centered-text">
+                        <h2 style="margin-top: 30px; margin-left: 100px; font-weight:700" >View all data about visitors</h2>
+                        
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="sub-titles">
+                    <div class="sub-title-container">
+                        <h4 class="first_day">First Day</h4>
+                        <div class="buttons-container">
+                            <button class="pop-up-btn" onclick="openpopuptable()">regular</button>
+                            <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
+                        </div>
+                    </div>
+                    <div class="sub-title-container">
+                        <h4 class="second_day">Second Day</h4>
+                        <div class="buttons-container">
+                            <button class="pop-up-btn" onclick="openpopuptable()">regular</button>
+                            <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
+                        </div>
+                    </div>
+                    <div class="sub-title-container">
+                        <h4 class="third_day">Third Day</h4>
+                        <div class="buttons-container">
+                            <button class="pop-up-btn" onclick="openpopuptable()">regular</button>
+                            <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
+                        </div>
+                    </div>
+                    <div class="sub-title-container">
+                        <h4 class="fourth_day">Fourth Day</h4>
+                        <div class="buttons-container">
+                            <button class="pop-up-btn" onclick="openpopuptable()">regular</button>
+                            <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <!--<div id="popup-overlay">-->
+
+
+
+                <div id="popuptable" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closepopuptable()">&times;</span>
+                        <br><br>
+                        <h3 id="popup-title"></h3>
+                        <table id="popup-content">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Ticket Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <script>
+                    function openpopuptable() {
+                        document.getElementById("popuptable").style.display = "block";
+                    }
+
+                    // Close the login form popup
+                    function closepopuptable() {
+                        document.getElementById("popuptable").style.display = "none";
+                    }
+                </script>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</section>
