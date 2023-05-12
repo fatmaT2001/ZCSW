@@ -2,39 +2,40 @@
 @model ZewailCiryScienceWeek.Pages.Visitor.buyticketModel
 @{
 }
-<div style=" margin-top :80px">
-<div class="section-center">
-        <div class="container">
+<div style=" margin-top :80px; background-color:#E5EBEB">
+    <div class="section-center" style="height: 100vh">
+        <div class="container" style="padding-top:90px">
             <div class="row">
                 <div class="booking-form">
-                    <<form>
-                    <div>
-                        <p style="background: linear-gradient(to right, #023b3d, #ff0000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 50px; font-family: 'Comic Sans MS', cursive;">Get Your Ticket NOW!! </p>
-                    </div>
+
+                    <form>
+                        <div>
+                            <p style="background: linear-gradient(to right, #023b3d,  #E5EBEB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 50px; font-family: 'Comic Sans MS', cursive;">Buy Your Ticket Now !!</p>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <span class="form-label">Name</span>
-                                    <input class="form-control" type="text" placeholder="Enter your name">
+                                    <input class="form-control" type="text" placeholder="#">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <span class="form-label">Email</span>
-                                    <input class="form-control" type="email" placeholder="Enter your email">
+                                    <input class="form-control" type="email" placeholder="#">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <span class="form-label">Phone</span>
-                            <input class="form-control" type="tel" placeholder="Enter your phone number">
+                            <input class="form-control" type="tel" placeholder="# ">
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label">Ticket Type</label>
+                            <label class="form-label" style="height: 3.5vh ">Ticket Type</label>
                             <div class="select">
-                                <select class="form-control">
-                                    <option value="" selected disabled>Select ticket type</option>
+                                <select class="form-control" style="height: 3.5vh">
+                                    <option value="" selected disabled></option>
                                     <option value="vip">VIP</option>
                                     <option value="zewailian">Zewailian Ticket</option>
                                     <option value="regular">Regular Ticket</option>
@@ -46,44 +47,46 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="form-label"> Attended Day </label>
+                            <label class="form-label" style="height: 3vh"> Attended Day </label>
                             <div class="select">
-                                <select class="form-control">
-                                    <option value="" selected disabled>Select Your Prefered Day </option>
-                                    <option value="Day1">Day1</option>
+                                <select class="form-control" style="height: 3.5vh">
+                                    <option value="" selected disabled>  </option>
+                                    <option value="Day1" style="font-size: 10px">Day1</option>
                                     <option value="Day2">Day2</option>
                                     <option value="Day3">Day3</option>
-                                <option value="Day4">Day4</option>
-                                <option value="Day5">Day5</option>
-                                <option value="Day6">Day6</option>
-                                <option value="Day7">Day7</option>
+                                    <option value="Day4">Day4</option>
+                                    <option value="Day5">Day5</option>
+                                    <option value="Day6">Day6</option>
+                                    <option value="Day7">Day7</option>
                                 </select>
                                 <span class="select-btn">
                                     <i class="zmdi zmdi-chevron-down"></i>
                                 </span>
                             </div>
                         </div>
-                    <div class="form-group">
-                        <label class="form-label"> Payment Method </label>
-                        <div class="select">
-                            <select class="form-control">
-                                <option value="" selected disabled>Select Your Payment Method </option>
-                                <option value="Fawry">Fawry</option>
-                                <option value="Bank">Bank</option>
-                             
-                            </select>
-                            <span class="select-btn">
-                                <i class="zmdi zmdi-chevron-down"></i>
-                            </span>
+                        <div class="form-group">
+                            <label class="form-label" style="height: 3vh"> Payment Method </label>
+                            <div class="select">
+                                <select class="form-control" style="height: 3.5vh">
+                                    <option value="" selected disabled> </option>
+                                    <option value="Fawry">Fawry</option>
+                                    <option value="Bank">Bank</option>
+
+                                </select>
+                                <span class="select-btn">
+                                    <i class="zmdi zmdi-chevron-down"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-btn">
-                        <button class="submit-btn">Book Now</button>
-                    </div>
+                        <div class="mt-5 text-center">
+                            <a href="#">
+                                <button class="login100-form-btn" style="background: #4D7577" type="button">Save Changes</button>
+                            </a>
+
+
                     </form>>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
