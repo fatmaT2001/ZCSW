@@ -1,6 +1,7 @@
 ﻿@page
 @model ZewailCiryScienceWeek.Pages.Anaylitic.AnalysisModel
 @{
+    Layout = "_LayoutOFMainPageForDifferetUser";
 }
 <!--======================Header MAin Page=================================-->
 <!-- ======= Hero Section ======= -->
@@ -11,54 +12,261 @@
     </div>
 </section><!-- End Hero Section -->
 <!--======================Header MAin Page=================================-->
-<section class="Payment m-4 p-5 ">
-    <h2 class="section-title"> Payment analysis</h2>
+<section class="Payment m-4 p-5 section-title ">
+    <h2 > Payment analysis</h2>
     <section class="PaymentCalc">
-        <section class="row">
-            <section class="col-md-4">
-            <canvas id="chart1" width="500" height="400" style="background-color:#fff">
-                </canvas>
-            </section>
-            <section class="col-md-4">
-                <canvas id="chart2" width="500" height="400" style="background-color:#fff"></canvas>
+<!--==========The start of the first chart1============================-->
+<!--===================================================================-->
 
-            </section>
-            <section class="col-md-4">
-                <canvas id="chart3" width="500" height="400" style="background-color:#fff"></canvas>
-
-            </section>
-         
-
-        </section>
-    </section>
-</section>
-    <section class="Visitors m-4 p-5">
-
-         <h2 class="section-title"> Visitors analysis</h2>
-        <section class="PaymentCalc ">
-            <section class="row">
-                <section class="col-md-5">
-                <canvas id="chart4" width="500" height="400" style="background-color:#fff">
+        <section class="card mb-5 border">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <canvas id="chart1" width="500" height="400" style="background-color:#fff">
                     </canvas>
-                </section>
-            <section class="col-md-5">
-                    <canvas id="chart5" width="500" height="400" style="background-color:#fff"></canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Payment Method</h3>
+                        <p class="card-text">
+                            The pie chart can show payment method distribution for the entire science
+                            festival or a specific room on a given day. Each section represents the
+                            proportion of attendees who used a particular payment method.
+                        </p>
+                        <form class="card-body form-control" method="">
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Day Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Room Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+     </section>
+<!--==========The End of the first chart1============================-->
+<!--===================================================================-->
+<!--==========The start of the first chart2============================-->
+<!--===================================================================-->
 
-                </section>
-            <section class="col-md-5">
-                    <canvas id="chart6" width="500" height="400" style="background-color:#fff"></canvas>
+        <section class="card mb-5 border">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                    <canvas id="chart2" width="500" height="400" style="background-color:#fff">
+                    </canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Payment Money Per Method</h3>
+                        <p class="card-text">
+                            This bar chart can show the total amount of money spent for each payment 
+                            method, with each bar representing a specific payment method and its height
+                            indicating the total amount spent. This chart can be used to analyze
+                            spending patterns for the entire science festival or for a specific 
+                            room on a given day, providing insights into the most popular payment
+                            methods used by attendees.
+                        </p>
+                        <form class="card-body form-control" method="">
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Day Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Room Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--==========The End of the first chart2============================-->
+<!--===================================================================-->
+<!--==========The start of the first chart3============================-->
+<!--===================================================================-->
 
-                </section>
-            <section class="col-md-5">
-                    <canvas id="chart7" width="500" height="400" style="background-color:#fff"></canvas>
+        <section class="card mb-5 border">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                    <canvas id="chart3" width="500" height="400" style="background-color:#fff">
+                    </canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Festival Payment For Each Day Of The Week</h3>
+                        <p class="card-text">
+                            This horizontal bar chart represents the amount of money gathered for 
+                            each day of the science festival or for a specific room, with each section
+                            indicating the total amount of money collected and the bars arranged in 
+                            descending order. This chart can help identify the most profitable days 
+                            or rooms of the festival and guide resource allocation accordingly.
 
-                </section>
+
+                        </p>
+                        <form class="card-body form-control" method="">
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Room Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--==========The End of the first chart3============================-->
+<!--===================================================================-->
 
 
         </section>
     </section>
 
+
+<section class="visitors m-4 p-5 section-title ">
+    <h2> Visitors analysis</h2>
+    <section class="PaymentCalc">
+<!--==========The start of the first chart4============================-->
+<!--===================================================================-->
+
+        <section class="card mb-5 border">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <canvas id="chart4" width="500" height="400" style="background-color:#fff">
+                    </canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Festival Attendence</h3>
+                        <p class="card-text">
+                            The pie chart displays the proportion of female and male visitors
+                            during the science festival, with each section representing the number of
+                            visitors of a specific sex. This chart can be used to analyze attendance
+                            patterns for 
+                            the entire science festival or for a specific day or room
+                        </p>
+                        <form class="card-body form-control" method="">
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Day Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Room Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--==========The End of the first chart4============================-->
+<!--===================================================================-->
+<!--==========The start of the first chart5============================-->
+<!--===================================================================-->
+
+        <section class="card mb-5 border">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                    <canvas id="chart5" width="500" height="400" style="background-color:#fff">
+                    </canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">How Did You Know About Our Festival</h3>
+                        <p class="card-text">
+                            The pie chart displays the various sources through which attendees 
+                            learned about the science festival, with each section representing a 
+                            specific source and its corresponding proportion of visitors. This chart 
+                            can help event organizers evaluate the effectiveness of their marketing 
+                            and outreach strategies and make informed decisions for future events.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--==========The End of the first chart5============================-->
+<!--===================================================================-->
+<!--==========The start of the first chart6============================-->
+<!--===================================================================-->
+
+        <section class="card mb-5 border">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                    <canvas id="chart6" width="500" height="400" style="background-color:#fff">
+                    </canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Festival Attendance For Each Day Of The Week</h3>
+                        <p class="card-text">
+                            The horizontal bar chart represents the number of visitors 
+                            for each room during the science festival, with each section indicating 
+                            the total number of attendees and the bars arranged in descending order.
+                            This chart can be used to analyze attendance patterns for the entire 
+                            festival or for a specific day, providing insights into the popularity 
+                            of each room and informing resource allocation decisions.
+                        </p>
+                        <form class="card-body form-control" method="">
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Day Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Room Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--==========The End of the first chart6============================-->
+<!--===================================================================-->
+<!--==========The start of the first chart7============================-->
+<!--===================================================================-->
+
+        <section class="card mb-5 border">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex justify-content-center align-items-center ">
+                    <canvas id="chart7" width="500" height="400" style="background-color:#fff">
+                    </canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Festival Visitors Ages</h3>
+                        <p class="card-text">
+                            The scatter chart displays the distribution
+                            of visitor ages for each room during the science festival, 
+                            with each point representing an attendee's age and its position
+                            indicating the number of visitors with that age. This chart can be
+                            used to analyze age demographics and patterns of attendance for the
+                            entire festival or for a specific day or room.
+                        </p>
+                        <form class="card-body form-control" method="">
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Day Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Enter The Room Number</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-success">Enter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--==========The End of the first chart7============================-->
+<!--===================================================================-->
+
 </section>
-  
+ </section>
 
 
