@@ -10,8 +10,8 @@
 # General
 --------------------------------------------------------------*/
 :root {
-    --ornage: #5e7183;
-    --layOutHover: rgb(6 27 49 / 80%);
+    --ornage: #003b46;
+    --layOutHover: rgb(8 19 23 / 80%);
     --BackGroud: url('/img/MainPagePic/MainPageBackGroudHeader.jpeg');
 }
 body {
@@ -409,7 +409,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: black;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -428,7 +428,8 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #060c22;
+  color: white;
+  margin-bottom:15px;
 }
 
 .navbar-mobile a:hover,
@@ -747,7 +748,7 @@ color:var(--ornage)
 .Speakers {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgb(6 27 49 / 80%), rgb(6 27 49 / 80%)),var(--BackGroud);
+    background: linear-gradient(var(--layOutHover), var(--layOutHover)),var(--BackGroud);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
