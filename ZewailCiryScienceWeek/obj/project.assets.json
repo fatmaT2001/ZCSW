@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Sherin\\.nuget\\packages\\": {}
+    "C:\\Users\\fatma taha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\userDB\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
+      "projectUniqueName": "C:\\Users\\fatma taha\\Desktop\\ZC\\DataBase\\DB_project\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
       "projectName": "ZewailCiryScienceWeek",
-      "projectPath": "D:\\userDB\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
-      "packagesPath": "C:\\Users\\Sherin\\.nuget\\packages\\",
-      "outputPath": "D:\\userDB\\ZCSW\\ZewailCiryScienceWeek\\obj\\",
+      "projectPath": "C:\\Users\\fatma taha\\Desktop\\ZC\\DataBase\\DB_project\\ZCSW\\ZewailCiryScienceWeek\\ZewailCiryScienceWeek.csproj",
+      "packagesPath": "C:\\Users\\fatma taha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fatma taha\\Desktop\\ZC\\DataBase\\DB_project\\ZCSW\\ZewailCiryScienceWeek\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sherin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fatma taha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

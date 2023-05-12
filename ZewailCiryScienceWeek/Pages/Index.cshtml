@@ -20,33 +20,203 @@
 <!--======================The NavBar for the Main Page for UnSigned Visitor======================-->
 <!--=============================================================================================-->
 
-<header id="header" class="d-flex align-items-center p-4 ">
-    <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
 
-        <div id="logo">
-            <!-- Uncomment below if you prefer to use a text logo -->
-            <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-            <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/WeekLogo.png" alt="" title=""></a>
-        </div>
-        <ul>
-            <li><a class="nav-link scrollto" href="/Index">Home</a></li>
-            <li><a class="nav-link scrollto" href="/Mainpages/AboutUs">About ZCSF</a></li>
-            <li><a class="nav-link scrollto" href="/MainPages/Conference">Conference</a></li>
-            <li><a class="nav-link scrollto" href="/MainPages/Team">Team</a></li>
-            <li><a class="nav-link scrollto" href="/MainPages/Speakers">Speakers</a></li>
-            <li><a class="nav-link scrollto" href="/MainPages/ContactUs">Contact</a></li>
-            <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signup">Sign Up</a></li>
-            <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signin">Sign IN</a></li>
-
-
-
-        </ul>
-        <!--=====================================================-->
-
-
-        <i class="bi bi-list mobile-nav-toggle"></i>
-
-    </div>
-</header>
 <!--======================The NavBar for the Main Page for UnSigned Visitor======================-->
 <!--=============================================================================================-->
+<!--=======================================================================-->
+<!--About Us Start -->
+<!--=======================================================================-->
+<section class="p-4 m-4 ">
+    <div class="section-title">
+        <h2 class="text-center">About Aewail City Science Week</h2>
+
+    </div>
+    <div class="card mb-5 border">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img class="card-img" src="/img/MainPagePic/AboutFeatival.jpeg">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">Zewail City Science Featival</h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><a class="text-muted btn about-btn">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-5 border">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img class="card-img" src="/img/MainPagePic/Conference/Conference.png">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h3 class="card-title">Zewail City Science Conference</h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><a class="text-muted  btn about-btn" href="MainPages/Conference">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=======================================================================-->
+<!-- About End -->
+<!--=======================================================================-->
+<!-- Team End -->
+<!--=======================================================================-->
+<section id="team" class="team section-bg section_team">
+    <div class="m-2 p-4">
+        <div class="section-title">
+            <h2>Our Expert Team</h2>
+            <div class="underline"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
+        </div>
+
+        <div class="row">
+            @for (int i = 0; i < 4; i++)
+            {
+                <div class="col-lg-6">
+                    <div class="member d-flex align-items-start">
+                        <div class="teampic"><img src="/img/MainPagePic/Team.png" class="img-fluid" alt=""></div>
+                        <div class="member-info">
+                            <h4>James</h4>
+                            <span>Chief Executive Officer</span>
+
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
+                            <div class="social">
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                                <a href=""> <i class="bi bi-whatsapp"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+        <div class="text-center m-3">
+            <a class="about-btn btn text-black w-25">                  Read More                </a>
+
+        </div>
+    </div>
+</section>
+<!--=======================================================================-->
+<!-- Team End -->
+<!--=======================================================================-->
+<!--Speakers-->
+<!--=======================================================================-->
+<section class="mt-4 pt-5 pb-5" style="height:100vh">
+    <div class="section-title">
+        <h2 class="text-center "> Our Festival Speakers</h2>
+
+    </div>
+    <section class=" d-flex justify-content-center align-items-center h-75 Speakers">
+        <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active " data-bs-interval="1000">
+                    <div class="d-flex justify-content-center align-items-center speaker_member ">
+                        <div class="Speakercard mb-3 w-75">
+                            <div class="row no-gutters">
+                                <div class="col-md-3">
+                                    <img src="/img//MainPagePic/Team.png" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">David leo</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+
+                                            ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @for (int i = 0; i < 10; i++)
+                {
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="d-flex justify-content-center align-items-center ">
+                            <div class="Speakercard mb-3 w-75">
+                                <div class="row no-gutters">
+                                    <div class="col-md-3">
+                                        <img src="/img//MainPagePic/Team.png" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">David leo</h5>
+                                            <p class="card-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+
+                                                ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </section>
+    <div class="text-center m-3">
+        <a class="about-btn btn text-black w-25" href="/MainPages/Speakers">                  Read More                </a>
+
+    </div>
+</section>
+<!--=======================================================================-->
+<!-- EndSpeakers-->
+<!--=======================================================================-->
+<!--======================================================================-->
+<!-- ======= Sponsors Section ======= -->
+<!--======================================================================-->
+
+<section id="supporters" class="">
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+            @for (int i = 1; i <= 8; i++)
+            {
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+
+                        <img src="/img/MainPagePic/supporters/@(i.ToString()).png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            }
+
+
+
+        </div>
+
+    </div>
+
+</section>
+<!--======================================================================-->
+<!-- End Sponsors Section -->
+<!--======================================================================-->
+
