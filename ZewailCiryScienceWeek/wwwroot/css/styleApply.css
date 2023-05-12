@@ -182,12 +182,13 @@ h3 {
     display: inline-block;
     border: 1px solid #dad8e4;
     margin-bottom: 75px;
+    background-color: #E5EBEB;
 }
 
 p {
     font-family: "Muli-SemiBold";
     font-size: 20px;
-    color: #6d7f52;
+    color: #4D7577;
     text-align: center;
     margin-bottom: 26px;
 }
@@ -326,7 +327,7 @@ textarea.form-control {
         height: 41px;
         width: 135px;
         align-items: center;
-        background: #e9e0cf;
+        background: #B3C4C4;
         font-family: "Muli-SemiBold";
         color: #666;
         cursor: pointer;
@@ -343,7 +344,7 @@ textarea.form-control {
         }
 
         .actions li a:hover {
-            background: #cfc7b8;
+            background: #E5EBEB;
         }
 
     .actions li:first-child a {
@@ -387,12 +388,12 @@ textarea.form-control {
     }
 
     .actions li[aria-disabled="false"] ~ li a {
-        background: #6d7f52;
+        background: #4D7577;
         color: #fff;
     }
 
         .actions li[aria-disabled="false"] ~ li a:hover {
-            background: #849963;
+            background: #B7C7C8;
         }
 
 .checkbox-tick label {

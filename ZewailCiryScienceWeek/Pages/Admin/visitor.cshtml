@@ -3,10 +3,9 @@
 @{
 }
 @{
-    Layout = "_LayoutAdmin";
+    Layout = "_LayoutResearcher";
 }
 
-<body>
     <header id="header" class="d-flex align-items-center p-4 ">
         <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
 
@@ -33,8 +32,8 @@
     </header>
 
 
-
-    <div class="form-body" style="background-color: #E5EBEB;">
+<section class="h-100 gradient-custom-2" style=" background-color:#E5EBEB">
+    <div class="visitor-body" style="background-color: #E5EBEB;">
         <section class="m-4 p-5">
             <h1 class="h_visitor">Visitors Info</h1>
 
@@ -133,8 +132,7 @@
             </div>
         </section>
     </div>
-
-</body>
+    </section>
 <script>
     var currentEditRow = null;
 
@@ -200,7 +198,11 @@
 <style>
     body {
         text-align: center;
+        background-color:#E5EBEB;
     }
+    .visitor-body {
+            background-color: #E5EBEB;
+        }
 
     h1.h_visitor {
         margin: 30px auto; /* Add margin to create space between the title and the table */
