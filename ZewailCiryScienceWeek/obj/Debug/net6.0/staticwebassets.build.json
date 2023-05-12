@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y3cSRabmhVBuRHiRa/Ilpp3umfOnVfS1nwOocJFD1ho=",
+  "Hash": "MKU3KC4c/uFQ7PKb+1ZCzbfGQbwoVvwSqLEIeMUsE74=",
   "Source": "ZewailCiryScienceWeek",
   "BasePath": "_content/ZewailCiryScienceWeek",
   "Mode": "Default",
@@ -3704,6 +3704,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\photo4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\wwwroot\\images\\R.png",
+      "SourceId": "ZewailCiryScienceWeek",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\wwwroot\\",
+      "BasePath": "_content/ZewailCiryScienceWeek",
+      "RelativePath": "images/R.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\R.png"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\ZCSW\\ZewailCiryScienceWeek\\wwwroot\\images\\right-bg-decor.png",
