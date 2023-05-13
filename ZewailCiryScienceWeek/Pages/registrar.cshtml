@@ -155,15 +155,15 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="center-heading">
-                    <h2 style="font-size:40px;">Check for used tickets </h2>
+                    <h2>Check for used tickets </h2>
 
                 </div>
                 <div class="ticket-counts">
                     <h4 class="booked-count">Booked tickets</h4>
-                    <h4 class="remaining-count">Remaining tickets</h4>
+                    @*<h4 class="remaining-count">Remaining tickets</h4>*@
                 </div>
 
-                <div class="button-container">
+               @* <div class="button-container">
                     <div class="left-buttons">
                         <button class="btn btn-primary" onclick="openPopup('VIPs')">VIPs</button>
                         <button class="btn btn-secondary" onclick="openPopup('Regular')">Regular</button>
@@ -175,7 +175,6 @@
                         <button class="btn btn-danger" onclick="openPopup('day_3')">day_3</button>
                         <button class="btn btn-dark" onclick="openPopup('day_4')">day_4</button>
                     </div>
-                    <br><br><br><br><br>
                     <br><br><br><br><br>
                     <br><br><br><br><br>
 
@@ -201,19 +200,111 @@
                         document.getElementById("popup").style.display = "none";
                     }
                 </script>
+*@
 
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>First Day</th>
+                                <th>Second Day</th>
+                                <th>Third Day</th>
+                                <th>Fourth Day</th>
+                                <th>fifth Day</th>
+                                <th>sixth Day</th>
+                                <th>seventh Day</th>
 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>VIPs</th>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                            <tr>
+                                <th>Regular</th>
+                                <td>Cell 5</td>
+                                <td>Cell 6</td>
+                                <td>Cell 7</td>
+                                <td>Cell 8</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                            <tr>
+                                <th>Zewilans</th>
+                                <td>Cell 9</td>
+                                <td>Cell 10</td>
+                                <td>Cell 11</td>
+                                <td>Cell 12</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <div class="ticket-counts">
+                    @*<h4 class="booked-count">Booked tickets</h4>*@
+                    <h4 class="remaining-count">Remaining tickets</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>First Day</th>
+                            <th>Second Day</th>
+                            <th>Third Day</th>
+                            <th>Fourth Day</th>
+                            <th>fifth Day</th>
+                            <th>sixth Day</th>
+                            <th>seventh Day</th>
 
-
-
-
-
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>VIPs</th>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                        <tr>
+                            <th>Regular</th>
+                            <td>Cell 5</td>
+                            <td>Cell 6</td>
+                            <td>Cell 7</td>
+                            <td>Cell 8</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                        <tr>
+                            <th>Zewilans</th>
+                            <td>Cell 9</td>
+                            <td>Cell 10</td>
+                            <td>Cell 11</td>
+                            <td>Cell 12</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
     </div>
-    </div>
-    </div>
+    
 </section>
 <!-- ***** VIEW_AND_CHECK Ends ***** -->
 
@@ -224,12 +315,12 @@
 
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="centered-text">
-                        <h2 style="margin-top: 30px; margin-left: 100px; font-weight:700" >View all data about visitors</h2>
+                        <h2 @*style="margin-top: 30px; margin-left: 100px; font-weight:700"*@ >View all data about visitors</h2>
                         
                     </div>
                 </div>
                 <br>
-                <br>
+                <br><br>
                 <div class="sub-titles">
                     <div class="sub-title-container">
                         <h4 class="first_day">First Day</h4>
@@ -259,7 +350,7 @@
                             <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
 
                         </div>
-                        <br><br><br><br><br>
+                        <br><br><br>
 
                     </div>
 

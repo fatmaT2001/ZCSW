@@ -384,12 +384,14 @@ button.main-button {
 }
 
     .center-heading h2 {
-        margin-top: -50px;
+        margin-top: 0px;
         text-align: center;
-        font-size: 42px;
+        font-size: 50px;
         font-weight: 700;
         color: #1e1e1e;
         margin-bottom: 25px;
+        margin-left: 250px;
+        font-family: sans-serif;
     }
 
         .center-heading h2 em {
@@ -1410,25 +1412,29 @@ preloader
     justify-content: space-between;
     margin-top: 20px;
     margin-right: -100px;
-    font-size: 20px;
+    font-size: 1000px;
     text-decoration: underline;
-    font-family: Arial, sans-serif;
+    font-family: Serif, Georgia;
 }
 
 .booked-count {
     margin: 0;
-    margin-left: 200px;
+    margin-left: 20px;
+    font-size: 40px;
 }
 
 .remaining-count {
     margin: 0;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 
 
 
 
-.button-container {
+/*.button-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -1450,7 +1456,7 @@ preloader
     width: 150px;
     height: 50px;
 }
-
+*/
 
 
 
@@ -1495,8 +1501,14 @@ preloader
 .centered-text {
     margin: 0;
     text-align: center;
-    margin-top: 30px;
-    
+    margin-top: 50px;
+    /* text-align: center;*/
+        font-size: 42px;
+        font-weight: 700;
+        color: #1e1e1e;
+        /*margin-bottom: 25px;
+        margin-left: 100px;*/
+        font-family: sans-serif;
 }
 
 .sub-titles {
@@ -1621,3 +1633,31 @@ preloader
     text-align: center;
     margin-top: 0;
 }*/
+
+/*newwwww*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left:100px;
+    margin-top: 40px;
+    
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4d7577;
+}
+
+tbody th {
+    background-color: #4d7577;
+}
+
+tbody th, tbody td {
+    font-weight: normal;
+}
