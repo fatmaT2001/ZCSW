@@ -163,45 +163,6 @@
                     @*<h4 class="remaining-count">Remaining tickets</h4>*@
                 </div>
 
-               @* <div class="button-container">
-                    <div class="left-buttons">
-                        <button class="btn btn-primary" onclick="openPopup('VIPs')">VIPs</button>
-                        <button class="btn btn-secondary" onclick="openPopup('Regular')">Regular</button>
-                        <button class="btn btn-success" onclick="openPopup('free')">free</button>
-                    </div>
-                    <div class="right-buttons">
-                        <button class="btn btn-info" onclick="openPopup('day_1')">day_1</button>
-                        <button class="btn btn-warning" onclick="openPopup('day_2')">day_2</button>
-                        <button class="btn btn-danger" onclick="openPopup('day_3')">day_3</button>
-                        <button class="btn btn-dark" onclick="openPopup('day_4')">day_4</button>
-                    </div>
-                    <br><br><br><br><br>
-                    <br><br><br><br><br>
-
-                </div>
-
-                <div id="popup" class="popup">
-                    <div class="popup-content">
-                        <span class="close" onclick="closePopup()">&times;</span>
-                        <p id="popup-text"></p>
-                        <button onclick="closePopup()">Close</button>
-                    </div>
-                </div>
-
-                <script>
-                    function openPopup(buttonText) {
-                        var popup = document.getElementById("popup");
-                        var popupText = document.getElementById("popup-text");
-                        popup.style.display = "block";
-                        popupText.innerHTML = "10";
-                    }
-
-                    function closePopup() {
-                        document.getElementById("popup").style.display = "none";
-                    }
-                </script>
-*@
-
                     <table>
                         <thead>
                             <tr>
@@ -313,11 +274,12 @@
         <div class="footer-content">
             <div class="row">
 
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="centered-text">
-                        <h2 @*style="margin-top: 30px; margin-left: 100px; font-weight:700"*@ >View all data about visitors</h2>
-                        
-                    </div>
+            
+                </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="centered-text">
+                    <h2 Style ="font-weight:900";>View all data about visitors</h2>
+
                 </div>
                 <br>
                 <br><br>
