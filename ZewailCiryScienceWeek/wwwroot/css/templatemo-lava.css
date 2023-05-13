@@ -289,7 +289,7 @@ body {
 }
 
 ::selection {
-    background: #f1556a;
+    background: #94ACAD;
     color: #fff;
 }
 
@@ -411,7 +411,7 @@ header
 */
 
 .background-header {
-    background-color: #fff;
+    background-color: #E5EBEB;
     height: 80px !important;
     position: fixed !important;
     top: 0px;
@@ -449,7 +449,7 @@ header
 
     .header-area .main-nav {
         min-height: 80px;
-        background: transparent;
+        background-color:transparent;
     }
 
         .header-area .main-nav .logo {
@@ -472,7 +472,7 @@ header
             margin-top: 50px;
             margin-left: 15%;
             margin-right: 0px;
-            background-color: #fff;
+           /* background-color: #E5EBEB;*/
             padding: 0px 20px;
             -webkit-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
@@ -494,7 +494,7 @@ header
                 .header-area .main-nav .nav li a {
                     display: block;
                     font-weight: 500;
-                    font-size: 13px;
+                    font-size: 17px;
                     color: #4d7577;
                     text-transform: uppercase;
                     -webkit-transition: all 0.3s ease 0s;
@@ -503,7 +503,7 @@ header
                     transition: all 0.3s ease 0s;
                     height: 40px;
                     line-height: 40px;
-                    border: transparent;
+                    border: #FFFFFF;
                     letter-spacing: 1px;
                 }
 
@@ -962,7 +962,7 @@ about
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-    .features-item h2 {
+   /* .features-item h2 {
         z-index: 9;
         position: absolute;
         top: 15px;
@@ -977,13 +977,15 @@ about
         position: relative;
         max-width: 100%;
         margin-bottom: 40px;
-    }
+    }*/
 
     .features-item h4 {
         margin-top: 0px;
-        font-size: 22px;
+       
         color: #1e1e1e;
         margin-bottom: 25px;
+        font-size: 50px;
+        font-weight: 600;
     }
 
     .features-item .main-button {
@@ -1164,6 +1166,8 @@ footer
     padding: 0 0 25px 0;
     color: #eee;
     font-size: 14px;
+    margin-bottom: 0px;
+    height: 20px;
 }
 
     #footer .footer-top {
@@ -1172,7 +1176,7 @@ footer
     }
 
         #footer .footer-top .footer-info {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
 
             #footer .footer-top .footer-info h3 {
@@ -1229,8 +1233,9 @@ footer
             color: #fff;
             text-transform: uppercase;
             position: relative;
+            margin-top: 200px;
             padding-bottom: 12px;
-            border-bottom: 2px solid var(--ornage);
+            border-bottom: 0px solid var(--ornage);
         }
 
         #footer .footer-top .footer-links {
