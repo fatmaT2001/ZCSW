@@ -29,7 +29,7 @@
 </head>
 <body>
     <header id="header" class="d-flex align-items-center p-4 ">
-        <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
+        <nav class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
 
             <div id="logo">
                 <!-- Uncomment below if you prefer to use a text logo -->
@@ -43,9 +43,28 @@
                 <li><a class="nav-link scrollto" href="/MainPages/Team">Team</a></li>
                 <li><a class="nav-link scrollto" href="/MainPages/Speakers">Speakers</a></li>
                 <li><a class="nav-link scrollto" href="/MainPages/ContactUs">Contact</a></li>
-                <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signup">Sign Up</a></li>
-                <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signin">Sign IN</a></li>
+                <!--checking if the viewer is signed to the account or not -->
+                <!--Then switching on its type of users to add the right additional Opptions-->
+               @if (Flags.Signed==1){
+                    switch (Flags.Type)
+                    {
 
+                        case "Analysts":
+                            <li><a class="scrollto nav-link" href="/Analysts/Analysis">Analysis</a></li>
+                            <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signin">Acount</a></li>
+                            break;
+                        <!--Add The Other types here with the added linked -->
+
+                    }
+
+                }
+                else
+                {
+                    <!--The Case when the viewer dose not sign in or up -->
+                    <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signup">Sign Up</a></li>
+                    <li><a class="buy-tickets scrollto nav-link" href="/Visitor/signin">Sign IN</a></li>
+
+                }
 
 
             </ul>
@@ -54,7 +73,7 @@
 
             <i class="bi bi-list mobile-nav-toggle"></i>
 
-        </div>
+        </nav>
     </header>
     <!--You can use this layout for the different user add your header here-->
 

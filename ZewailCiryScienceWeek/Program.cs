@@ -23,3 +23,8 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+public static class GlobalVars
+{
+    public static int MyVariable = 0;
+}

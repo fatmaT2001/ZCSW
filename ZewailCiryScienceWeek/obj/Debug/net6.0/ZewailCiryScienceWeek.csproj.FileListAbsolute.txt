@@ -413,3 +413,35 @@ E:\Zewail academic years\Year 2 CIE\Semester 2\Database\project githubbbb\ZCSW\Z
 E:\Zewail academic years\Year 2 CIE\Semester 2\Database\project githubbbb\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.pdb
 E:\Zewail academic years\Year 2 CIE\Semester 2\Database\project githubbbb\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.genruntimeconfig.cache
 E:\Zewail academic years\Year 2 CIE\Semester 2\Database\project githubbbb\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ref\ZewailCiryScienceWeek.dll
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\appsettings.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\ZewailCiryScienceWeek.staticwebassets.runtime.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\ZewailCiryScienceWeek.exe
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\ZewailCiryScienceWeek.deps.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\ZewailCiryScienceWeek.runtimeconfig.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\ZewailCiryScienceWeek.dll
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\ZewailCiryScienceWeek.pdb
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.csproj.AssemblyReference.cache
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.AssemblyInfoInputs.cache
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.AssemblyInfo.cs
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.csproj.CoreCompileInputs.cache
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.RazorAssemblyInfo.cache
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.RazorAssemblyInfo.cs
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\staticwebassets\msbuild.ZewailCiryScienceWeek.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\staticwebassets\msbuild.build.ZewailCiryScienceWeek.props
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ZewailCiryScienceWeek.props
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ZewailCiryScienceWeek.props
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layoutregister.cshtml.rz.scp.css
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\scopedcss\bundle\ZewailCiryScienceWeek.styles.css
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\scopedcss\projectbundle\ZewailCiryScienceWeek.bundle.scp.css
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.dll
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\refint\ZewailCiryScienceWeek.dll
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.pdb
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.genruntimeconfig.cache
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ref\ZewailCiryScienceWeek.dll
