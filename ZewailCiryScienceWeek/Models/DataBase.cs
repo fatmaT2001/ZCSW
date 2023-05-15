@@ -94,11 +94,14 @@ namespace ZewailCiryScienceWeek.DataClasses
       
         public object CommitteesInformation()
         {
-            String Q = "select commiteeName,CommitteeDescription, TeamMember_National_id,CONCAT(lName, midName,fName) as [Full name] ,TeamMember.Position  from FestivalCommitees,TeamMember,PERSON\r\nwhere TeamMember.commiteeId=FestivalCommitees.CommiteeId and PERSON.National_id=TeamMember.TeamMember_National_id";
+            String Q = "select commiteeId,commiteeName,CommitteeDescription from FestivalCommitees";
             return ReadTable(Q);
         }
-
-
+        public object committeesMembers(int id)
+        {
+            string Q = "select TeamMember_National_id,lName,midName ,fName ,TeamMember.Position  from FestivalCommitees,TeamMember,PERSON where TeamMember.commiteeId=FestivalCommitees.CommiteeId and PERSON.National_id=TeamMember.TeamMember_National_id and TeamMember.commiteeId=1";
+            return ReadTable(Q);
+        }
         //========================================================================
 
     }
