@@ -128,4 +128,8 @@
     <None Include="wwwroot\vendor\tilt\tilt.jquery.min.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
 </Project>
