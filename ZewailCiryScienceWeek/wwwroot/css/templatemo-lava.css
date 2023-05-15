@@ -289,7 +289,7 @@ body {
 }
 
 ::selection {
-    background: #f1556a;
+    background: #94ACAD;
     color: #fff;
 }
 
@@ -384,12 +384,14 @@ button.main-button {
 }
 
     .center-heading h2 {
-        margin-top: -50px;
+        margin-top: 0px;
         text-align: center;
-        font-size: 42px;
+        font-size: 50px;
         font-weight: 700;
         color: #1e1e1e;
         margin-bottom: 25px;
+        margin-left: 250px;
+        font-family: sans-serif;
     }
 
         .center-heading h2 em {
@@ -411,7 +413,7 @@ header
 */
 
 .background-header {
-    background-color: #fff;
+    background-color: #E5EBEB;
     height: 80px !important;
     position: fixed !important;
     top: 0px;
@@ -449,7 +451,7 @@ header
 
     .header-area .main-nav {
         min-height: 80px;
-        background: transparent;
+        background-color:transparent;
     }
 
         .header-area .main-nav .logo {
@@ -472,7 +474,7 @@ header
             margin-top: 50px;
             margin-left: 15%;
             margin-right: 0px;
-            background-color: #fff;
+           /* background-color: #E5EBEB;*/
             padding: 0px 20px;
             -webkit-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
@@ -494,7 +496,7 @@ header
                 .header-area .main-nav .nav li a {
                     display: block;
                     font-weight: 500;
-                    font-size: 13px;
+                    font-size: 17px;
                     color: #4d7577;
                     text-transform: uppercase;
                     -webkit-transition: all 0.3s ease 0s;
@@ -503,7 +505,7 @@ header
                     transition: all 0.3s ease 0s;
                     height: 40px;
                     line-height: 40px;
-                    border: transparent;
+                    border: #FFFFFF;
                     letter-spacing: 1px;
                 }
 
@@ -962,7 +964,7 @@ about
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-    .features-item h2 {
+   /* .features-item h2 {
         z-index: 9;
         position: absolute;
         top: 15px;
@@ -977,13 +979,15 @@ about
         position: relative;
         max-width: 100%;
         margin-bottom: 40px;
-    }
+    }*/
 
     .features-item h4 {
         margin-top: 0px;
-        font-size: 22px;
+       
         color: #1e1e1e;
         margin-bottom: 25px;
+        font-size: 50px;
+        font-weight: 600;
     }
 
     .features-item .main-button {
@@ -1164,6 +1168,8 @@ footer
     padding: 0 0 25px 0;
     color: #eee;
     font-size: 14px;
+    margin-bottom: 0px;
+    height: 20px;
 }
 
     #footer .footer-top {
@@ -1172,7 +1178,7 @@ footer
     }
 
         #footer .footer-top .footer-info {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
 
             #footer .footer-top .footer-info h3 {
@@ -1229,8 +1235,9 @@ footer
             color: #fff;
             text-transform: uppercase;
             position: relative;
+            margin-top: 200px;
             padding-bottom: 12px;
-            border-bottom: 2px solid var(--ornage);
+            border-bottom: 0px solid var(--ornage);
         }
 
         #footer .footer-top .footer-links {
@@ -1405,25 +1412,29 @@ preloader
     justify-content: space-between;
     margin-top: 20px;
     margin-right: -100px;
-    font-size: 20px;
+    font-size: 1000px;
     text-decoration: underline;
-    font-family: Arial, sans-serif;
+    font-family: Serif, Georgia;
 }
 
 .booked-count {
     margin: 0;
-    margin-left: 200px;
+    margin-left: 20px;
+    font-size: 40px;
 }
 
 .remaining-count {
     margin: 0;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 
 
 
 
-.button-container {
+/*.button-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -1445,7 +1456,7 @@ preloader
     width: 150px;
     height: 50px;
 }
-
+*/
 
 
 
@@ -1490,9 +1501,16 @@ preloader
 .centered-text {
     margin: 0;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
+    font-size: 50px;
+    color: #1e1e1e;
+    font-family: sans-serif;
+    margin-bottom: -80px;
+    margin-left: 200px;
     
 }
+
+
 
 .sub-titles {
     display: flex;
@@ -1616,3 +1634,31 @@ preloader
     text-align: center;
     margin-top: 0;
 }*/
+
+/*newwwww*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left:100px;
+    margin-top: 40px;
+    
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4d7577;
+}
+
+tbody th {
+    background-color: #4d7577;
+}
+
+tbody th, tbody td {
+    font-weight: normal;
+}
