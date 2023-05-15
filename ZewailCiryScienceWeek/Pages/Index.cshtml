@@ -70,24 +70,25 @@
             <div class="underline"></div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
         </div>
-
         <div class="row">
             @for (int i = 0; i < Model.TeamClasses.Count(); i++)
             {
-                <div class="col-md-4">
-                    <div class="member card align-items-center">
+                <div class="col-lg-3 h-100">
+                    <div class="member card align-items-center mb-2">
                         <div class="teampic"><img src="/img/MainPagePic/Team.png" class="card-img-top" alt=""></div>
                         <div class="member-info card-body">
                             <h4 class="card-title">@Model.TeamClasses[i].FirstName @Model.TeamClasses[i].MiddleName @Model.TeamClasses[i].LastName</h4>
                             <p class="card-text">@Model.TeamClasses[i].Position @Model.TeamClasses[i].CommitteeName</p>
 
                             <div class="social">
-                                @for(int j=0; j<Model.TeamClasses[i].SocialMediaLinks.Count();j++){
+                                @for (int j = 0; j < Model.TeamClasses[i].SocialMediaLinks.Count(); j++)
+                                {
+
                                     if (Model.TeamClasses[i].SocialMediaLinks[j].Contains("facebook"))
                                     {
-                                        <a href=@Model.TeamClasses[i].SocialMediaLinks[i]>
+                                        <a href=@Model.TeamClasses[i].SocialMediaLinks[j]>
 
-                                        <i class="bi bi-facebook"></i>
+                                            <i class="bi bi-facebook"></i>
 
                                         </a>
                                     }
@@ -131,6 +132,7 @@
 
             }
         </div>
+
         <div class="text-center m-3">
             <a class="about-btn btn text-black w-25">                  Read More                </a>
 

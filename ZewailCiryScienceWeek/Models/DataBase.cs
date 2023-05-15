@@ -1,5 +1,7 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+
 namespace ZewailCiryScienceWeek.DataClasses
 
 {
@@ -67,7 +69,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         // =============== Start Team section =======
         public object TeamHeads()
         {
-            string Q = "select * from PERSON ,TeamMember ,FestivalCommitees where  PERSON.National_id=TeamMember.TeamMember_National_id and TeamMember.commiteeId=FestivalCommitees.CommiteeId and Position='Head'";
+            string Q = "select National_id,lName,midName,fName,Email,Position,commiteeName from PERSON ,TeamMember ,FestivalCommitees where  PERSON.National_id=TeamMember.TeamMember_National_id and TeamMember.commiteeId=FestivalCommitees.CommiteeId and Position='Head'";
             return ReadTable(Q);
         }
         public object TeamHeadsLinks(string id )
@@ -87,5 +89,17 @@ namespace ZewailCiryScienceWeek.DataClasses
             string Q = "select SocialMedia.SocialMediaLinke from SocialMedia , Speaker where Speaker.Speaker_National_id=SocialMedia.nationalId and Speaker.Speaker_National_id='"+ id + "'";
             return ReadTable(Q);
         }
+        //========================================================================
+        //==========================Team page Functions  =========================
+      
+        public object CommitteesInformation()
+        {
+            String Q = "select commiteeName,CommitteeDescription, TeamMember_National_id,CONCAT(lName, midName,fName) as [Full name] ,TeamMember.Position  from FestivalCommitees,TeamMember,PERSON\r\nwhere TeamMember.commiteeId=FestivalCommitees.CommiteeId and PERSON.National_id=TeamMember.TeamMember_National_id";
+            return ReadTable(Q);
+        }
+
+
+        //========================================================================
+
     }
 }

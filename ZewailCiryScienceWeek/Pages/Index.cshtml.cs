@@ -28,18 +28,18 @@ namespace ZewailCiryScienceWeek.Pages
                 TeamClass temp = new TeamClass();
                 DataTable socailMedaiAccount = new DataTable();
                 temp.TeamMemberNationalId = (string)DataTable.Rows[i][0];
-                temp.FirstName = (string)DataTable.Rows[i][2];
-                temp.MiddleName = (string)DataTable.Rows[i][3];
-                temp.LastName = (string)DataTable.Rows[i][4];
-                temp.Position = (string)DataTable.Rows[i][7];
-                temp.CommitteeName = (string)DataTable.Rows[i][11];
+                temp.FirstName = (string)DataTable.Rows[i][1];
+                temp.MiddleName = (string)DataTable.Rows[i][2];
+                temp.LastName = (string)DataTable.Rows[i][3];
+                temp.Position = (string)DataTable.Rows[i][5];
+                temp.CommitteeName = (string)DataTable.Rows[i][6];
                 //temp.TeamMemberPicture = (string)DataTable.Rows[i][2];
                 socailMedaiAccount = (DataTable)DataBaseHolder.TeamHeadsLinks((string)DataTable.Rows[i][0]);
                 for (int j = 0; j < socailMedaiAccount.Rows.Count; j++)
                 {
                     temp.SocialMediaLinks.Add((string)socailMedaiAccount.Rows[j][0]);
                 }
-                temp.SocialMediaLinks.Add((string)DataTable.Rows[i][5]);
+                temp.SocialMediaLinks.Add((string)DataTable.Rows[i][4]);
                 TeamClasses.Add(temp);
 
 
