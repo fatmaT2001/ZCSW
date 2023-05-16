@@ -103,11 +103,17 @@ namespace ZewailCiryScienceWeek.DataClasses
             return ReadTable(Q);
         }
         //========================================================================
+        //============================Searching Part==============================
         public object searchingSpeakers(string part)
         {
             string Q = "select * from PERSON, Speaker where Speaker.Speaker_National_id=PERSON.National_id AND (\r\n    Speaker.category LIKE '%"+part+"%' \r\n    OR fname LIKE '%" + part+"%' \r\n    OR midName LIKE '%" + part+"%' \r\n    OR lName LIKE '%"+part+ "%' \r\n    OR Speaker.SpeakerExperianceInfo LIKE '%"+part+ "%' \r\n    OR Speaker.topicDescription LIKE '%"+part+"%'\r\n)";
             return ReadTable(Q);
 
+        }
+        public object searchingTeamPage(string part)
+        {
+            String Q = "select commiteeId,commiteeName,CommitteeDescription from FestivalCommitees where commiteeName like '%"+part+ "%' or CommitteeDescription like '%"+part+"%'\r\n";
+            return ReadTable(Q);
         }
         //========================================================================
     }

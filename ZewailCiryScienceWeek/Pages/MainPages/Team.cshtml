@@ -20,11 +20,11 @@
     <div class="section-title">
         <h2>Our Expert Team</h2>
     </div>
-    <div class="search mb-4">
+    <form class="search mb-4 " method="post">
         <i class="fa fa-search"></i>
-        <input type="text" class="form-control" placeholder="Search For The Name Of The Speaker">
+        <input type="text" class="form-control" placeholder="Search For The committe" name="part">
         <button class="btn btn-primary">Search</button>
-    </div>
+    </form>
     <section class="differentCommites">
         @for (int i = 0; i < Model.festivalCommitteeClasses.Count(); i++)
         {
@@ -44,12 +44,12 @@
                                     <div class="col-md-3">
                                         <img class="w-75 h-50" src="/img/MainPagePic/Team.png" />
                                         <div class="text-center">
-                                        <p>@Model.festivalCommitteeClasses[j].Members[j].FirstName
-                                            @Model.festivalCommitteeClasses[j].Members[j].MiddleName
-                                            @Model.festivalCommitteeClasses[j].Members[j].LastName
+                                        <p>@Model.festivalCommitteeClasses[i].Members[j].FirstName
+                                            @Model.festivalCommitteeClasses[i].Members[j].MiddleName
+                                            @Model.festivalCommitteeClasses[i].Members[j].LastName
                                         
                                         </p>
-                                        <p>@Model.festivalCommitteeClasses[j].Members[j].Position</p>
+                                        <p>@Model.festivalCommitteeClasses[i].Members[j].Position</p>
                                         <div class="social">
                                             @for (int k = 0; k < Model.festivalCommitteeClasses[i].Members[j].SocialMediaLinks.Count(); k++)
                                             {

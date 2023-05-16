@@ -15,9 +15,8 @@ namespace ZewailCiryScienceWeek.Pages.MainPages
             DataBaseHolder = dataBase;
             festivalCommitteeClasses = new List<FestivalCommitteeClass>();
         }
-        public void commitesinfo()
+        public void commitesinfo(DataTable DataTable)
         {
-            DataTable = (DataTable)DataBaseHolder.CommitteesInformation();
             for (int i = 0; i < DataTable.Rows.Count; i++)
             {
                 FestivalCommitteeClass temp = new FestivalCommitteeClass();
@@ -48,7 +47,15 @@ namespace ZewailCiryScienceWeek.Pages.MainPages
         }
         public void OnGet()
         {
-            commitesinfo();
+            DataTable = (DataTable)DataBaseHolder.CommitteesInformation();
+            commitesinfo(DataTable);
+        }
+        public void OnPost(string part)
+        {
+            DataTable = (DataTable)DataBaseHolder.searchingTeamPage(part);
+            commitesinfo(DataTable);
+            
+
         }
     }
 }
