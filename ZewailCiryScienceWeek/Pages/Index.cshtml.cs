@@ -11,8 +11,9 @@ namespace ZewailCiryScienceWeek.Pages
         private readonly ILogger<IndexModel> _logger;
         public DataBase DataBaseHolder { get; set; }
         DataTable DataTable { get; set; }
-        public List<TeamClass> TeamClasses =new List<TeamClass>();
         public List<SpeakerClass> speakerClasses =new List<SpeakerClass>();
+        public List<TeamClass> TeamClasses = new List<TeamClass>();
+
         public IndexModel(ILogger<IndexModel> logger, DataBase dataBase)
         {
             _logger = logger;
