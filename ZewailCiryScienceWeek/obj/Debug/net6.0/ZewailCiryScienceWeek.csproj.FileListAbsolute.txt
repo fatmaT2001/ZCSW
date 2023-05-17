@@ -452,3 +452,5 @@ C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bi
 C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.csproj.CopyComplete
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\libman.json
+C:\Users\fatma taha\Desktop\ZC\DataBase\DB_project\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\Newtonsoft.Json.dll

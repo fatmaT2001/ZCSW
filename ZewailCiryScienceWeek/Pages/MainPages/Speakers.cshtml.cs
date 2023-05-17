@@ -44,8 +44,9 @@ namespace ZewailCiryScienceWeek.Pages.MainPages
         }
         public void OnPost(string part)
         {
-            DataTable=(DataTable)DataBaseHolder.searchingSpeakers(part);
-            Speakers(DataTable);
+        DataTable=(DataTable)DataBaseHolder.searchingSpeakers(part);
+        Speakers(DataTable);
         }
+  
     }
 }

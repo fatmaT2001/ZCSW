@@ -12,13 +12,15 @@
 </section>
 <!-- ======= Speakers Header Section ======= -->
 <section class="p-4 m-4">
-    <form class="search" method="post">
+   <form class="search" method="post">
         <i class="fa fa-search"></i>
         <input type="text" class="form-control" placeholder="Search" name="part">
-        <button class="btn btn-primary">Search</button>
-    </form>
+        <button class="btn btn-primary" type="submit">Search</button>
+     </form>
 
-    <section class="searching_content mt-3">
+
+    <section class="searching_content mt-3" id="speaker-cards">
+
         @for (int i = 0; i < Model.speakerClasses.Count(); i++)
         {
 
@@ -26,7 +28,7 @@
                     <div class="Speakercard w-75">
                         <div class="row no-gutters ">
                             <div class="col-md-3">
-                                <img src="/img//MainPagePic/Team.png" class="card-img" alt="...">
+                            <img src="/img//MainPagePic/Team.png" class="card-img rounded-circle" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
