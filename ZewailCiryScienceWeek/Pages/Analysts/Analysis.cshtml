@@ -32,16 +32,16 @@
                             festival or a specific room on a given day. Each section represents the
                             proportion of attendees who used a particular payment method.
                         </p>
-                        <form class="card-body form-control" method="">
+                        <form class="card-body form-control" method="post">
                             <div class="mb-3">
                                 <label class="form-label">Enter The Day Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="day">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Enter The Room Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="room">
                             </div>
-                            <button type="submit" class="btn btn-success">Enter</button>
+                            <button  asp-page-handler="CHART1" type="submit" class="btn btn-success">Enter</button>
                         </form>
                     </div>
                 </div>
@@ -69,16 +69,16 @@
                             room on a given day, providing insights into the most popular payment
                             methods used by attendees.
                         </p>
-                        <form class="card-body form-control" method="">
+                        <form class="card-body form-control" method="post">
                             <div class="mb-3">
                                 <label class="form-label">Enter The Day Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="day">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Enter The Room Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="room">
                             </div>
-                            <button type="submit" class="btn btn-success">Enter</button>
+                            <button type="submit" class="btn btn-success" asp-page-handler="CHART2">Enter</button>
                         </form>
                     </div>
                 </div>
@@ -107,12 +107,12 @@
 
 
                         </p>
-                        <form class="card-body form-control" method="">
+                        <form class="card-body form-control" method="post">
                             <div class="mb-3">
                                 <label class="form-label">Enter The Room Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="room">
                             </div>
-                            <button type="submit" class="btn btn-success">Enter</button>
+                            <button asp-page-handler="CHART3" type="submit" class="btn btn-success">submit</button>
                         </form>
                     </div>
                 </div>
@@ -148,16 +148,16 @@
                             patterns for 
                             the entire science festival or for a specific day or room
                         </p>
-                        <form class="card-body form-control" method="">
+                        <form class="card-body form-control" method="post">
                             <div class="mb-3">
                                 <label class="form-label">Enter The Day Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="day">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Enter The Room Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="room">
                             </div>
-                            <button type="submit" class="btn btn-success">Enter</button>
+                            <button asp-page-handler="CHART4" type="submit" class="btn btn-success">Enter</button>
                         </form>
                     </div>
                 </div>
@@ -251,11 +251,11 @@
                         <form class="card-body form-control" method="">
                             <div class="mb-3">
                                 <label class="form-label">Enter The Day Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="day">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Enter The Room Number</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="room">
                             </div>
                             <button type="submit" class="btn btn-success">Enter</button>
                         </form>
@@ -268,5 +268,22 @@
 
 </section>
  </section>
-
+<script>
+    var Chart1Valuesx = @Html.Raw(Json.Serialize(Model.Chart1Valuesx));
+    var Chart1Valuesy = @Html.Raw(Json.Serialize(Model.Chart1Valuesy));
+    var Chart2Valuesx = @Html.Raw(Json.Serialize(Model.Chart2Valuesx));
+    var Chart2Valuesy = @Html.Raw(Json.Serialize(Model.Chart2Valuesy));
+    var Chart3Valuesx = @Html.Raw(Json.Serialize(Model.Chart3Valuesx));
+    var Chart3Valuesy = @Html.Raw(Json.Serialize(Model.Chart3Valuesy));
+    var Chart4Valuesx = @Html.Raw(Json.Serialize(Model.Chart4Valuesx));
+    var Chart4Valuesy = @Html.Raw(Json.Serialize(Model.Chart4Valuesy));
+    var Chart5Valuesx = @Html.Raw(Json.Serialize(Model.Chart5Valuesx));
+    var Chart5Valuesy = @Html.Raw(Json.Serialize(Model.Chart5Valuesy));
+    var Chart6Valuesx = @Html.Raw(Json.Serialize(Model.Chart6Valuesx));
+    var Chart6Valuesy = @Html.Raw(Json.Serialize(Model.Chart6Valuesy));
+    var Chart7Valuesx = @Html.Raw(Json.Serialize(Model.Chart7Valuesx));
+    var Chart7Valuesy = @Html.Raw(Json.Serialize(Model.Chart7Valuesy));
+</script>
+<script src="~/js/charts/Chart.js"></script>
+<script src="~/js/charts/Chart.min.js"></script>
 

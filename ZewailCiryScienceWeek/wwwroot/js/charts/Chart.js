@@ -1,33 +1,9 @@
 $(function () {
-	"use strict";
 
 	// chart 1
     // ===========================Chart1 =====================================================
     // =======================================================================================
-    var xValuesPieM = ["Vodafobe Cash", "mypay", "else"];
-    var yValuesPieM = [55, 49, 100];
-    var barColors = [
-        "#E14423",
-        "#221B10",
-        "brown",
-    ];
-
-    new Chart("chart1", {
-        type: "pie",
-        data: {
-            labels: xValuesPieM,
-            datasets: [{
-                backgroundColor: barColors,
-                data: yValuesPieM
-            }]
-        },
-        options: {
-            title: {
-                display: true,
-                text: "Payment Method"
-            }
-        }
-    });
+ 
 
 	// chart 1
     // ===========================Chart2 =====================================================
@@ -104,33 +80,7 @@ $(function () {
     });
    // ===========================Chart5 =====================================================
    // =======================================================================================
-        var xValuesPieV = ["Facebook", "Twitter", "Instgram","Website","Other"];
-        var yValuesPieV = [55, 49, 100,200,300,400];
-        var barColors = [
-            "#E14423",
-            "#221B10",
-            "brown",
-            "#671C09",
-            "#AA2C0B",
-            "#81071A"
-        ];
 
-        new Chart("chart5", {
-            type: "pie",
-            data: {
-                labels: xValuesPieV,
-                datasets: [{
-                    backgroundColor: barColors,
-                    data: yValuesPieV
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: "How Did You Know About Our Featival"
-                }
-            }
-        });
 
     // ===========================Chart6 =====================================================
     // =======================================================================================

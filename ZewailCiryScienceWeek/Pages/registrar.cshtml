@@ -10,8 +10,8 @@
                  data-scroll-reveal="enter left move 30px over 0.6s after 0.4s" >
                 <div class="features-item" style="background-color:#C9D5D6">
                     <div class="text">
-                        <h2>01</h2>
-                        <br> <br> <br> <br> <br> 
+                        @*<h2>01</h2>*@
+                        @*<br> <br> <br> <br> <br> *@
                         @*<img src="~/images/features-icon-1.png" alt="">*@
                         <h4>Add New Ticket</h4>
                         <br>
@@ -112,8 +112,8 @@
                  data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s" >
                 <div class="features-item" style="background-color:#C9D5D6">
                     <div class="text">
-                        <h2>02</h2>
-                        <br> <br> <br> <br> <br> 
+                        @*<h2>02</h2>
+                        <br> <br> <br> <br> <br> *@
                         @* <img src="~/images/features-icon-2.png" alt="">*@
                         <h4>View All Data About Visitors</h4>
                         <br><br><br>
@@ -127,8 +127,8 @@
                  data-scroll-reveal="enter right move 30px over 0.6s after 0.4s" >
                 <div class="features-item" style="background-color:#C9D5D6">
                     <div class="text">
-                        <h2>03</h2>
-                        <br> <br> <br> <br> <br> <br>
+                        @*<h2>03</h2>
+                        <br> <br> <br> <br> <br> <br>*@
                         @* <img src="~/images/features-icon-3.png" alt="">*@
                         <h4>Check For Used Ticket</h4>
                         <br><br><br>
@@ -155,61 +155,117 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="center-heading">
-                    <h2 style="font-size:40px;">Check for used tickets </h2>
+                    <h2>Check for used tickets </h2>
 
                 </div>
                 <div class="ticket-counts">
                     <h4 class="booked-count">Booked tickets</h4>
+                    @*<h4 class="remaining-count">Remaining tickets</h4>*@
+                </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>First Day</th>
+                                <th>Second Day</th>
+                                <th>Third Day</th>
+                                <th>Fourth Day</th>
+                                <th>fifth Day</th>
+                                <th>sixth Day</th>
+                                <th>seventh Day</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>VIPs</th>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                            <tr>
+                                <th>Regular</th>
+                                <td>Cell 5</td>
+                                <td>Cell 6</td>
+                                <td>Cell 7</td>
+                                <td>Cell 8</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                            <tr>
+                                <th>Zewilans</th>
+                                <td>Cell 9</td>
+                                <td>Cell 10</td>
+                                <td>Cell 11</td>
+                                <td>Cell 12</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <div class="ticket-counts">
+                    @*<h4 class="booked-count">Booked tickets</h4>*@
                     <h4 class="remaining-count">Remaining tickets</h4>
                 </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>First Day</th>
+                            <th>Second Day</th>
+                            <th>Third Day</th>
+                            <th>Fourth Day</th>
+                            <th>fifth Day</th>
+                            <th>sixth Day</th>
+                            <th>seventh Day</th>
 
-                <div class="button-container">
-                    <div class="left-buttons">
-                        <button class="btn btn-primary" onclick="openPopup('VIPs')">VIPs</button>
-                        <button class="btn btn-secondary" onclick="openPopup('Regular')">Regular</button>
-                        <button class="btn btn-success" onclick="openPopup('free')">free</button>
-                    </div>
-                    <div class="right-buttons">
-                        <button class="btn btn-info" onclick="openPopup('day_1')">day_1</button>
-                        <button class="btn btn-warning" onclick="openPopup('day_2')">day_2</button>
-                        <button class="btn btn-danger" onclick="openPopup('day_3')">day_3</button>
-                        <button class="btn btn-dark" onclick="openPopup('day_4')">day_4</button>
-                    </div>
-                </div>
-
-                <div id="popup" class="popup">
-                    <div class="popup-content">
-                        <span class="close" onclick="closePopup()">&times;</span>
-                        <p id="popup-text"></p>
-                        <button onclick="closePopup()">Close</button>
-                    </div>
-                </div>
-
-                <script>
-                    function openPopup(buttonText) {
-                        var popup = document.getElementById("popup");
-                        var popupText = document.getElementById("popup-text");
-                        popup.style.display = "block";
-                        popupText.innerHTML = "10";
-                    }
-
-                    function closePopup() {
-                        document.getElementById("popup").style.display = "none";
-                    }
-                </script>
-
-
-
-
-
-
-
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>VIPs</th>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                        <tr>
+                            <th>Regular</th>
+                            <td>Cell 5</td>
+                            <td>Cell 6</td>
+                            <td>Cell 7</td>
+                            <td>Cell 8</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                        <tr>
+                            <th>Zewilans</th>
+                            <td>Cell 9</td>
+                            <td>Cell 10</td>
+                            <td>Cell 11</td>
+                            <td>Cell 12</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>
     </div>
-    </div>
-    </div>
+    
 </section>
 <!-- ***** VIEW_AND_CHECK Ends ***** -->
 
@@ -218,14 +274,15 @@
         <div class="footer-content">
             <div class="row">
 
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="centered-text">
-                        <h2 style="margin-top: 30px; margin-left: 100px; font-weight:700" >View all data about visitors</h2>
-                        
-                    </div>
+            
+                </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="centered-text">
+                    <h2 Style ="font-weight:900";>View all data about visitors</h2>
+
                 </div>
                 <br>
-                <br>
+                <br><br>
                 <div class="sub-titles">
                     <div class="sub-title-container">
                         <h4 class="first_day">First Day</h4>
@@ -253,10 +310,11 @@
                         <div class="buttons-container">
                             <button class="pop-up-btn" onclick="openpopuptable()">regular</button>
                             <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
+
                         </div>
+                        <br><br><br>
 
                     </div>
-
 
 
                 </div>
