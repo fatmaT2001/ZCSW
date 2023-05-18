@@ -70,23 +70,61 @@
             <div class="underline"></div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
         </div>
-
         <div class="row">
-            @for (int i = 0; i < 4; i++)
+            @for (int i = 0; i < Model.TeamClasses.Count(); i++)
             {
-                <div class="col-lg-6">
-                    <div class="member d-flex align-items-start">
-                        <div class="teampic"><img src="/img/MainPagePic/Team.png" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>James</h4>
-                            <span>Chief Executive Officer</span>
+                <div class="col-lg-3 h-100">
+                    <div class="member card align-items-center mb-2">
+                        <div class="teampic"><img src="/img/MainPagePic/Team.png" class="card-img-top rounded-circle" alt=""></div>
+                        <div class="member-info card-body">
+                            <h4 class="card-title">@Model.TeamClasses[i].FirstName @Model.TeamClasses[i].LastName</h4>
+                            <p class="card-text">@Model.TeamClasses[i].Position @Model.TeamClasses[i].CommitteeName</p>
 
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ducimus.</p>
                             <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                                <a href=""> <i class="bi bi-whatsapp"></i> </a>
+                                @for (int j = 0; j < Model.TeamClasses[i].SocialMediaLinks.Count(); j++)
+                                {
+
+                                    if (Model.TeamClasses[i].SocialMediaLinks[j].Contains("facebook"))
+                                    {
+                                        <a href=@Model.TeamClasses[i].SocialMediaLinks[j]>
+
+                                            <i class="bi bi-facebook"></i>
+
+                                        </a>
+                                    }
+                                    else if (Model.TeamClasses[i].SocialMediaLinks[j].Contains("instagram"))
+                                    {
+                                        <a href=@Model.TeamClasses[i].SocialMediaLinks[j]>
+
+                                            <i class="bi bi-instagram"></i>
+
+                                        </a>
+                                    }
+                                    else if (Model.TeamClasses[i].SocialMediaLinks[j].Contains("linkedin"))
+                                    {
+                                        <a href=@Model.TeamClasses[i].SocialMediaLinks[j]>
+
+                                            <i class="bi bi-linkedin"></i>
+
+                                        </a>
+                                    }
+                                    else if (Model.TeamClasses[i].SocialMediaLinks[j].Contains("twitter"))
+                                    {
+                                        <a href=@Model.TeamClasses[i].SocialMediaLinks[j]>
+
+                                            <i class="bi bi-twitter"></i>
+
+                                        </a>
+                                    }
+                                    else if (Model.TeamClasses[i].SocialMediaLinks[j].Contains("@"))
+                                    {
+                                        <a href=@Model.TeamClasses[i].SocialMediaLinks[j]>
+
+                                            <i class="bi bi-envelope"></i>
+
+                                        </a>
+                                    }
+                                }
                             </div>
                         </div>
                     </div>
@@ -94,6 +132,7 @@
 
             }
         </div>
+
         <div class="text-center m-3">
             <a class="about-btn btn text-black w-25">                  Read More                </a>
 
@@ -118,18 +157,60 @@
                         <div class="Speakercard mb-3 w-75">
                             <div class="row no-gutters">
                                 <div class="col-md-3">
-                                    <img src="/img//MainPagePic/Team.png" class="card-img" alt="...">
+                                    <img src="/img//MainPagePic/Team.png" class="card-img rounded-circle" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">David leo</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                        <h2 class="card-title text-light">@Model.speakerClasses[0].FirstName @Model.speakerClasses[0].MiddleName @Model.speakerClasses[0].LastName </h2>
+                                        <div class="card-text">
+                                            <p class="mb=0">@Model.speakerClasses[0].SpeakerExperienceInfo</p>
+                                            <p>The Topic is  @Model.speakerClasses[0].Topic @Model.speakerClasses[0].Topicdescription</p>
+                                            <div class="social">
+                                                @for (int j = 0; j < Model.speakerClasses[0].SocialMediaLinks.Count(); j++)
+                                                {
+                                                    if (Model.speakerClasses[0].SocialMediaLinks[j].Contains("facebook"))
+                                                    {
+                                                        <a href=@Model.speakerClasses[0].SocialMediaLinks[j]>
 
-                                            ut labore et dolore magna aliqua.
-                                        </p>
+                                                            <i class="bi bi-facebook text-light"></i>
+
+                                                        </a>
+                                                    }
+                                                    else if (Model.speakerClasses[0].SocialMediaLinks[j].Contains("instagram"))
+                                                    {
+                                                        <a href=@Model.speakerClasses[0].SocialMediaLinks[j]>
+
+                                                            <i class="bi bi-instagram text-light"></i>
+
+                                                        </a>
+                                                    }
+                                                    else if (Model.speakerClasses[0].SocialMediaLinks[j].Contains("linkedin"))
+                                                    {
+                                                        <a href=@Model.speakerClasses[0].SocialMediaLinks[j]>
+
+                                                            <i class="bi bi-linkedin text-light"></i>
+
+                                                        </a>
+                                                    }
+                                                    else if (Model.speakerClasses[0].SocialMediaLinks[j].Contains("twitter"))
+                                                    {
+                                                        <a href=@Model.speakerClasses[0].SocialMediaLinks[j]>
+
+                                                            <i class="bi bi-twitter text-light"></i>
+
+                                                        </a>
+                                                    }
+                                                    else if (Model.speakerClasses[0].SocialMediaLinks[j].Contains("@"))
+                                                    {
+                                                        <a href=@Model.speakerClasses[0].SocialMediaLinks[j]>
+
+                                                            <i class="bi bi-envelope text-light"></i>
+
+                                                        </a>
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -137,26 +218,68 @@
                     </div>
                 </div>
 
-                @for (int i = 0; i < 10; i++)
+                @for (int i = 1; i < Model.speakerClasses.Count(); i++)
                 {
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <div class="d-flex justify-content-center align-items-center ">
+                    <div class="carousel-item  " data-bs-interval="2000">
+                        <div class="d-flex justify-content-center align-items-center speaker_member ">
                             <div class="Speakercard mb-3 w-75">
                                 <div class="row no-gutters">
                                     <div class="col-md-3">
-                                        <img src="/img//MainPagePic/Team.png" class="card-img" alt="...">
+                                        <img src="/img//MainPagePic/Team.png" class="card-img rounded-circle" alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">David leo</h5>
-                                            <p class="card-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                            <h2 class="card-title text-light">@Model.speakerClasses[i].FirstName @Model.speakerClasses[i].MiddleName @Model.speakerClasses[i].LastName </h2>
+                                            <div class="card-text">
+                                                <p class="mb=0">@Model.speakerClasses[i].SpeakerExperienceInfo</p>
+                                                <p>The Topic is  @Model.speakerClasses[i].Topic @Model.speakerClasses[i].Topicdescription</p>
+                                                <div class="social ">
+                                                    @for (int j = 0; j < Model.speakerClasses[i].SocialMediaLinks.Count(); j++)
+                                                    {
+                                                        if (Model.speakerClasses[i].SocialMediaLinks[j].Contains("facebook"))
+                                                        {
+                                                            <a href=@Model.speakerClasses[i].SocialMediaLinks[j]>
 
-                                                ut labore et dolore magna aliqua.
-                                            </p>
+                                                                <i class="bi bi-facebook text-light"></i>
+
+                                                            </a>
+                                                        }
+                                                        else if (Model.speakerClasses[i].SocialMediaLinks[j].Contains("instagram"))
+                                                        {
+                                                            <a href=@Model.speakerClasses[i].SocialMediaLinks[j]>
+
+                                                                <i class="bi bi-instagram text-light"></i>
+
+                                                            </a>
+                                                        }
+                                                        else if (Model.speakerClasses[i].SocialMediaLinks[j].Contains("linkedin"))
+                                                        {
+                                                            <a href=@Model.speakerClasses[i].SocialMediaLinks[j]>
+
+                                                                <i class="bi bi-linkedin text-light"></i>
+
+                                                            </a>
+                                                        }
+                                                        else if (Model.speakerClasses[i].SocialMediaLinks[j].Contains("twitter"))
+                                                        {
+                                                            <a href=@Model.speakerClasses[i].SocialMediaLinks[j]>
+
+                                                                <i class="bi bi-twitter text-light"></i>
+
+                                                            </a>
+                                                        }
+                                                        else if (Model.speakerClasses[i].SocialMediaLinks[j].Contains("@"))
+                                                        {
+                                                            <a href=@Model.speakerClasses[i].SocialMediaLinks[j]>
+
+                                                                <i class="bi bi-envelope text-light"></i>
+
+                                                            </a>
+                                                        }
+                                                    }
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
