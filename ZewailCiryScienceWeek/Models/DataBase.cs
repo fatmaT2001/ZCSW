@@ -20,7 +20,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         private object ReadTable(string query)
         {
             DataTable dataTable = new DataTable();
-            tryd
+            try
             {
                 con.Open();
                 SqlCommand comand = new SqlCommand(query, con);
@@ -155,11 +155,49 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
         public object onpostFunctionChart3(int roomId)
         {
-            string Q = "select sum(payment_fess)as[total money], payment.fastival_day from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id="+roomId+"\r\ngroup by fastival_day";
+            string Q = "select sum(payment_fess)as[total money], payment.fastival_day from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by fastival_day";
+            return ReadTable(Q);
 
+        }
 
+        //==============================================================================
+        //===================VISITORS ANALYSIS
+        //Festival Attendence
+        public object ongetFunctionChart4()
+        {
+            string Q = "select count(*),sex from visitor\r\ngroup by sex";
+            return ReadTable(Q);
+        }
+        public object onpostFunctionChart4(int roomId, int day)
+        {
+            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+
+            return ReadTable(Q);
+        }
+        //===================
+        // how did you know about us 
+        public object ongetFunctionChart5()
+        {
+            string Q = "select count(*) , visitor.HowYouKnowUs from visitor\r\ngroup by HowYouKnowUs";
+            return ReadTable(Q);
+        }
+        //====================
+        //festival attendence
+        public object ongetFunctionChart6()
+        {
+            string Q = "select count(*),sex from visitor\r\ngroup by sex";
+            return ReadTable(Q);
+        }
+        public object onpostFunctionChart6(int roomId, int day)
+        {
+            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+            return ReadTable(Q);
+
+        }
+        ///  end of charts 
+        //=====================================================================================
         //=============================Visitor Functions ===========================================
-       
+
         public void adduser(Person p , visitor v)
         {
             string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertyep + ") ";
@@ -188,44 +226,12 @@ namespace ZewailCiryScienceWeek.DataClasses
             return ReadScaler(Q);
         }
 
-         public bool CheckPassword(string Email, string password)
+        public bool CheckPassword(string Email, string password)
         {
-            string Q = " Select user_password from Person  where Email= '+ Email +'";
+            string Q = " Select user_password from Person  where Email= '" + Email + "'";
             return (string)ReadScaler(Q) == password;
         }
-            return ReadTable(Q);
-        }
-        //==============================================================================
-        //===================VISITORS ANALYSIS
-        //Festival Attendence
-        public object ongetFunctionChart4()
-        {
-            string Q = "select count(*),sex from visitor\r\ngroup by sex";
-            return ReadTable(Q);
-        }
-        public object onpostFunctionChart4(int roomId,int day)
-        {
-            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id="+roomId+" and visitors_room.festivalDay="+day+"\r\ngroup by sex";
 
-            return ReadTable(Q);
-        }
-        //===================
-        // how did you know about us 
-        public object ongetFunctionChart5()
-        {
-            string Q = "select count(*) , visitor.HowYouKnowUs from visitor\r\ngroup by HowYouKnowUs";
-            return ReadTable(Q);
-        }
-        //====================
-        //festival attendence
-        public object ongetFunctionChart6()
-        {
-            string Q = "select count(*),sex from visitor\r\ngroup by sex";
-            return ReadTable(Q);
-        }
-        public object onpostFunctionChart6(int roomId, int day)
-        {
-            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
         public object maxIDPerson()
         {
             int m = -1;
@@ -256,10 +262,9 @@ namespace ZewailCiryScienceWeek.DataClasses
        
       
 
-            return ReadTable(Q);
         }
 
     }//
 
 
-}
+
