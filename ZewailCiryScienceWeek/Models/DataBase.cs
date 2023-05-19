@@ -1,6 +1,8 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using ZewailCiryScienceWeek.Models;
+using ZewailCiryScienceWeek.Pages.Visitor;
 
 namespace ZewailCiryScienceWeek.DataClasses
 
@@ -10,7 +12,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=DESKTOP-ECB5J03;Initial Catalog=ZCSW;Integrated Security=True";
+            string Cstring = "Data Source=LAPTOP-TK7SBN2G;Initial Catalog=ZCSW;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -99,7 +101,71 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
 
 
-        //========================================================================
+        //=============================Visitor Functions ===========================================
+       
+        public void adduser(Person p , visitor v)
+        {
+            string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertyep + ") ";
+            excuteNonQuery(Q);
+
+
+            switch (p.usertyep)
+            {
+                case 0:
+                    string Q1 = " INSERT INTO VISITOR Visitor VALUES  ('" + p.ssn + "', " + v.age + ", '" + v.Gender + "')";
+                    excuteNonQuery(Q1);
+                    break;
+
+                case 4:
+                    string Q2 = " ";     //EDIT HERE
+                    excuteNonQuery(Q2);
+                    break;
+            }
+
+                    
+      
+        }
+        public object Gettyep(string Email)
+        {
+            string Q = "SELECT userType FROM Person WHERE Email ='" + Email + "'";
+            return ReadScaler(Q);
+        }
+
+         public bool CheckPassword(string Email, string password)
+        {
+            string Q = " Select user_password from Person  where Email= '+ Email +'";
+            return (string)ReadScaler(Q) == password;
+        }
+
+        public object maxIDPerson()
+        {
+            int m = -1;
+            string Q = " Select COUNT(*) from PERSON ";
+            m = (int)ReadScaler(Q);
+            return m + 1;
+        }
+        public object maxIDVisitor()
+        {
+            int m = -1;
+            string Q = " Select COUNT(*) from Visitor ";
+            m = (int)ReadScaler(Q);
+            return m + 1;
+        }
+
+        public object maxIDResearcher()
+        {
+            int m = -1;
+            string Q = " Select COUNT(*) from Researcher ";
+            m = (int)ReadScaler(Q);
+            return m + 1;
+        }
+        /// <summary> /// ////////////////////////////////////////////////////////////////////////////////////////
+
+        
+       
+
+       
+      
 
     }
 }
