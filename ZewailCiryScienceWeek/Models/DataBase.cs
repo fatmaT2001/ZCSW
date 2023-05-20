@@ -13,9 +13,8 @@ namespace ZewailCiryScienceWeek.DataClasses
         public DataBase()
         {
             string Cstring = "Data Source=DESKTOP-7JS7BD2;Initial Catalog=project;Integrated Security=True";
-
-            string Cstring = "Data Source=LAPTOP-TK7SBN2G;Initial Catalog=ZCW;Integrated Security=True";
             con = new SqlConnection(Cstring);
+
         }
 
         private object ReadTable(string query)
