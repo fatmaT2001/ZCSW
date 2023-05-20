@@ -12,7 +12,8 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=LAPTOP-TK7SBN2G;Initial Catalog=ZCSW;Integrated Security=True";
+            string Cstring = "Data Source=DESKTOP-7JS7BD2;Initial Catalog=project;Integrated Security=True";
+
             con = new SqlConnection(Cstring);
         }
 
@@ -83,7 +84,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         // =============== Start speaker section =======
         public object SpeakersInfo()
         {
-            string Q = "select * from PERSON, Speaker where Speaker.Speaker_National_id=PERSON.National_id";
+            string Q = "select Speaker_National_id,PERSON.lName,midName,fName,category,topic,Speaker.SpeakerExperianceInfo,Speaker.topicDescription from PERSON, Speaker where Speaker.Speaker_National_id=PERSON.National_id";
             return ReadTable(Q);
         }
         public object SpeakersLinks(string id)
@@ -154,11 +155,49 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
         public object onpostFunctionChart3(int roomId)
         {
-            string Q = "select sum(payment_fess)as[total money], payment.fastival_day from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id="+roomId+"\r\ngroup by fastival_day";
+            string Q = "select sum(payment_fess)as[total money], payment.fastival_day from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by fastival_day";
+            return ReadTable(Q);
 
+        }
 
+        //==============================================================================
+        //===================VISITORS ANALYSIS
+        //Festival Attendence
+        public object ongetFunctionChart4()
+        {
+            string Q = "select count(*),sex from visitor\r\ngroup by sex";
+            return ReadTable(Q);
+        }
+        public object onpostFunctionChart4(int roomId, int day)
+        {
+            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+
+            return ReadTable(Q);
+        }
+        //===================
+        // how did you know about us 
+        public object ongetFunctionChart5()
+        {
+            string Q = "select count(*) , visitor.HowYouKnowUs from visitor\r\ngroup by HowYouKnowUs";
+            return ReadTable(Q);
+        }
+        //====================
+        //festival attendence
+        public object ongetFunctionChart6()
+        {
+            string Q = "select count(*),sex from visitor\r\ngroup by sex";
+            return ReadTable(Q);
+        }
+        public object onpostFunctionChart6(int roomId, int day)
+        {
+            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+            return ReadTable(Q);
+
+        }
+        ///  end of charts 
+        //=====================================================================================
         //=============================Visitor Functions ===========================================
-       
+
         public void adduser(Person p , visitor v)
         {
             string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertyep + ") ";
@@ -187,44 +226,12 @@ namespace ZewailCiryScienceWeek.DataClasses
             return ReadScaler(Q);
         }
 
-         public bool CheckPassword(string Email, string password)
+        public bool CheckPassword(string Email, string password)
         {
-            string Q = " Select user_password from Person  where Email= '+ Email +'";
+            string Q = " Select user_password from Person  where Email= '" + Email + "'";
             return (string)ReadScaler(Q) == password;
         }
-            return ReadTable(Q);
-        }
-        //==============================================================================
-        //===================VISITORS ANALYSIS
-        //Festival Attendence
-        public object ongetFunctionChart4()
-        {
-            string Q = "select count(*),sex from visitor\r\ngroup by sex";
-            return ReadTable(Q);
-        }
-        public object onpostFunctionChart4(int roomId,int day)
-        {
-            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id="+roomId+" and visitors_room.festivalDay="+day+"\r\ngroup by sex";
 
-            return ReadTable(Q);
-        }
-        //===================
-        // how did you know about us 
-        public object ongetFunctionChart5()
-        {
-            string Q = "select count(*) , visitor.HowYouKnowUs from visitor\r\ngroup by HowYouKnowUs";
-            return ReadTable(Q);
-        }
-        //====================
-        //festival attendence
-        public object ongetFunctionChart6()
-        {
-            string Q = "select count(*),sex from visitor\r\ngroup by sex";
-            return ReadTable(Q);
-        }
-        public object onpostFunctionChart6(int roomId, int day)
-        {
-            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
         public object maxIDPerson()
         {
             int m = -1;
@@ -249,15 +256,30 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
         /// <summary> /// ////////////////////////////////////////////////////////////////////////////////////////
 
-        
-       
-
-       
-      
-
-            return ReadTable(Q);
+        public int getremainticket(string day, string type)
+        {
+            string Q = "SELECT number_of_tickets AS ticket_count\r\nFROM non_booked_ticket\r\nWHERE ticket_day = '" + day + "' AND ticket_type = '" + type + "';\r\n";
+            return (int)ReadScaler(Q);
         }
+
+        public void UpdateNumberOfTickets(int quantity, string dayAttending)
+        {
+            string Q = "UPDATE non_booked_ticket SET number_of_tickets = number_of_tickets + " + quantity + " WHERE ticket_day = " + dayAttending + "and  ticket_type = 'rgular'";
+            excuteNonQuery(Q);
+        }
+        public int getbookedticket(string day, string type)
+        {
+            string Q = "SELECT COUNT(*) AS TicketCount FROM Tickets WHERE ticketday = '" + day + "' AND ticket_type = '" + type + "'";
+            return (int)ReadScaler(Q);
+        }
+
+
+
+
+
+    }
 
     }//
 
-}
+
+

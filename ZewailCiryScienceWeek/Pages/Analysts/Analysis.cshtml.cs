@@ -28,7 +28,7 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
         public List<string> Chart5Valuesy { get; set; }
         // for the sixth chart 
         public List<int> Chart6Valuesx { get; set; }
-        public List<string> Chart6Valuesy { get; set; }
+        public List<int> Chart6Valuesy { get; set; }
         // for the sivinth chart 
         public List<int> Chart7Valuesx { get; set; }
         public List<string> Chart7Valuesy { get; set; }
@@ -51,7 +51,7 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             Chart5Valuesy = new List<string>();
             //===================================
             Chart6Valuesx = new List<int>();
-            Chart6Valuesy = new List<string>();
+            Chart6Valuesy = new List<int>();
             //===================================
             Chart7Valuesx = new List<int>();
             Chart7Valuesy = new List<string>();
@@ -114,8 +114,8 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             dataTable = (DataTable)DB.ongetFunctionChart3();
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                Chart3Valuesx.Add((int)dataTable.Rows[i][0]);
-                Chart3Valuesy.Add((int)dataTable.Rows[i][1]);
+                Chart6Valuesx.Add((int)dataTable.Rows[i][0]);
+                Chart6Valuesy.Add((int)dataTable.Rows[i][1]);
             }
 
         }
@@ -137,7 +137,9 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
         {
             chart2OnGet();
             chart3OnGet();
+            chart4OnGet();
             chart5OnGet();
+            chart6OnGet();
             dataTable=(DataTable)DB.onpostFunctionChart1(room,day);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
@@ -151,7 +153,7 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             chart3OnGet();
             chart4OnGet();
             chart5OnGet();
-
+            chart6OnGet();
             dataTable = (DataTable)DB.onpostFunctionChart2(room, day);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
@@ -165,6 +167,7 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             chart2OnGet();
             chart4OnGet();
             chart5OnGet();
+            chart6OnGet();
             dataTable = (DataTable)DB.onpostFunctionChart3(room);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
@@ -178,6 +181,7 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             chart2OnGet();
             chart3OnGet();
             chart5OnGet();
+            chart6OnGet();
             dataTable = (DataTable)DB.onpostFunctionChart4(room,day);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
@@ -185,6 +189,21 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
                 Chart4Valuesy.Add((string)dataTable.Rows[i][1]);
             }
         }
+        public void Chart6Onpost(int room, int day)
+        {
+            chart1OnGet();
+            chart2OnGet();
+            chart3OnGet();
+            chart5OnGet();
+            chart4OnGet();
+            dataTable = (DataTable)DB.onpostFunctionChart6(room, day);
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                Chart4Valuesx.Add((int)dataTable.Rows[i][0]);
+                Chart4Valuesy.Add((string)dataTable.Rows[i][1]);
+            }
+        }
+
         public void OnGet()
         {
             chart1OnGet();
@@ -192,6 +211,7 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             chart3OnGet();
             chart4OnGet();
             chart5OnGet();
+            chart6OnGet();
 
         }
         public void OnPostCHART1(int room=0,int day = 0)
@@ -225,6 +245,14 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
                 chart4OnGet();
             }
             Chart4Onpost(room, day);
+        }
+        public void OnPostCHART6(int room = 0, int day = 0)
+        {
+            if (room == 0 && day == 0)
+            {
+                chart6OnGet();
+            }
+            Chart6Onpost(room, day);
         }
     }
 }

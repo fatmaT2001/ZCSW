@@ -54,13 +54,13 @@ namespace ZewailCiryScienceWeek.Pages
             {
                 SpeakerClass speaker= new SpeakerClass();
                 speaker.SpeakerNationalId = (string)DataTable.Rows[i][0];
-                speaker.FirstName = (string)DataTable.Rows[i][2];
-                speaker.MiddleName = (string)DataTable.Rows[i][3];
-                speaker.LastName = (string)DataTable.Rows[i][4];
-                speaker.Category = (string)DataTable.Rows[i][7];
-                speaker.Topic = (string)DataTable.Rows[i][8];
-                speaker.SpeakerExperienceInfo = (string)DataTable.Rows[i][9];
-                speaker.Topicdescription = (string)DataTable.Rows[i][10];
+                speaker.FirstName = (string)DataTable.Rows[i][1];
+                speaker.MiddleName = (string)DataTable.Rows[i][2];
+                speaker.LastName = (string)DataTable.Rows[i][3];
+                speaker.Category = (string)DataTable.Rows[i][4];
+                speaker.Topic = (string)DataTable.Rows[i][5];
+                speaker.SpeakerExperienceInfo = (string)DataTable.Rows[i][6];
+                speaker.Topicdescription = (string)DataTable.Rows[i][7];
                 DataTable socailMedaiAccount = new DataTable();
                 socailMedaiAccount = (DataTable)DataBaseHolder.SpeakersLinks((string)DataTable.Rows[i][0]);
                 for (int j = 0; j < socailMedaiAccount.Rows.Count; j++)

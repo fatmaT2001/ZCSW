@@ -10,9 +10,6 @@
                  data-scroll-reveal="enter left move 30px over 0.6s after 0.4s" >
                 <div class="features-item" style="background-color:#C9D5D6">
                     <div class="text">
-                        @*<h2>01</h2>*@
-                        @*<br> <br> <br> <br> <br> *@
-                        @*<img src="~/images/features-icon-1.png" alt="">*@
                         <h4>Add New Ticket</h4>
                         <br>
                         <button href="#" onclick="openStform()"><span class="text">Add standard ticket</span></button>
@@ -35,22 +32,31 @@
                     <h2 style="color:#2a2a2a">Add a standard ticket</h2>
                     <br><br>
 
-                    <form method="post" action="index.html">
+                    <form method="post" action="OnPost" >
                         <label for="ticket-quantity">Number of tickets:</label>
-                        <input type="number" id="ticket-quantity" name="ticket-quantity" min="1" value="1">
+                        <input type="number" id="ticket-quantity" name="ticket-quantity" min="1" value="1" @*@asp-for="@Model.ticketQuantity"@*@>
 
 
 
                         <br><br>
-                        <label for="date-attending">Date of attending:</label>
-                        <input type="date" id="date-attending" name="date-attending">
+                        <label for="day-attending">Day of attending:</label>
+                        <select id="day-attending" name="day-attending" @*@asp-for="@Model.dayAttending"@*@>
+                            <option value="1">Day 1</option>
+                            <option value="2">Day 2</option>
+                            <option value="3">Day 3</option>
+                            <option value="4">Day 4</option>
+                            <option value="5">Day 5</option>
+                            <option value="6">Day 6</option>
+                            <option value="7">Day 7</option>
+                        </select>
                         <button type="submit"><span class="text">Confirm</span></button>
-
+                        
 
                     </form>
+
                 </div>
             </div>
-
+            
             <div id="Frform" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeFrform()">&times;</span>
@@ -141,7 +147,7 @@
         </div>
     </div>
 </section>
-<!-- ***** Features Big Item End ***** -->
+<!-- ** Features Big Item End ** -->
 
 <div class="left-image-decor"></div>
 
@@ -149,7 +155,7 @@
 
 <div class="right-image-decor"></div>
 
-<!-- ***** VIEW_AND_CHECK Starts ***** -->
+<!-- ** VIEW_AND_CHECK Starts ** -->
 <section class="section" id="VIEW_AND_CHECK" style="background-color:#E5EBEB" height: 500px;>
     <div class="container">
         <div class="row">
@@ -160,7 +166,7 @@
                 </div>
                 <div class="ticket-counts">
                     <h4 class="booked-count">Booked tickets</h4>
-                    @*<h4 class="remaining-count">Remaining tickets</h4>*@
+                    <h4 class="remaining-count">Remaining tickets</h4>
                 </div>
 
                     <table>
@@ -180,38 +186,38 @@
                         <tbody>
                             <tr>
                                 <th>VIPs</th>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
+                            <td>@Model.bookedday1vip</td>
+                            <td>@Model.bookedday2vip</td>
+                            <td>@Model.bookedday3vip</td>
+                            <td>@Model.bookedday4vip</td>
+                            <td>@Model.bookedday5vip</td>
+                            <td>@Model.bookedday6vip</td>
+                            <td>@Model.bookedday7vip</td>
                             </tr>
                             <tr>
                                 <th>Regular</th>
-                                <td>Cell 5</td>
-                                <td>Cell 6</td>
-                                <td>Cell 7</td>
-                                <td>Cell 8</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
+                            <td>@Model.bookedday1reg</td>
+                            <td>@Model.bookedday2reg</td>
+                            <td>@Model.bookedday3reg</td>
+                            <td>@Model.bookedday4reg</td>
+                            <td>@Model.bookedday5reg</td>
+                            <td>@Model.bookedday6reg</td>
+                            <td>@Model.bookedday7reg</td>
                             </tr>
                             <tr>
                                 <th>Zewilans</th>
-                                <td>Cell 9</td>
-                                <td>Cell 10</td>
-                                <td>Cell 11</td>
-                                <td>Cell 12</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
+                            <td>@Model.bookedday1zew</td>
+                            <td>@Model.bookedday2zew</td>
+                            <td>@Model.bookedday3zew</td>
+                            <td>@Model.bookedday4zew</td>
+                            <td>@Model.bookedday5zew</td>
+                            <td>@Model.bookedday6zew</td>
+                            <td>@Model.bookedday7zew</td>
                             </tr>
                         </tbody>
                     </table>
                 <div class="ticket-counts">
-                    @*<h4 class="booked-count">Booked tickets</h4>*@
+                    <h4 class="booked-count">Booked tickets</h4>
                     <h4 class="remaining-count">Remaining tickets</h4>
                 </div>
                 <table>
@@ -231,33 +237,33 @@
                     <tbody>
                         <tr>
                             <th>VIPs</th>
-                            <td>Cell 1</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
+                            <td>@Model.RemainingDay1Vip</td>
+                            <td>@Model.RemainingDay2Vip</td>
+                            <td>@Model.RemainingDay3Vip</td>
+                            <td>@Model.RemainingDay4Vip</td>
+                            <td>@Model.RemainingDay5Vip</td>
+                            <td>@Model.RemainingDay6Vip</td>
+                            <td>@Model.RemainingDay7Vip</td>
                         </tr>
                         <tr>
                             <th>Regular</th>
-                            <td>Cell 5</td>
-                            <td>Cell 6</td>
-                            <td>Cell 7</td>
-                            <td>Cell 8</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
+                            <td>@Model.RemainingDay1reg</td>
+                            <td>@Model.RemainingDay2reg</td>
+                            <td>@Model.RemainingDay3reg</td>
+                            <td>@Model.RemainingDay4reg</td>
+                            <td>@Model.RemainingDay5reg</td>
+                            <td>@Model.RemainingDay6reg</td>
+                            <td>@Model.RemainingDay7reg</td>
                         </tr>
                         <tr>
                             <th>Zewilans</th>
-                            <td>Cell 9</td>
-                            <td>Cell 10</td>
-                            <td>Cell 11</td>
-                            <td>Cell 12</td>
-                            <td>Cell 2</td>
-                            <td>Cell 3</td>
-                            <td>Cell 4</td>
+                            <td>@Model.RemainingDay1zew</td>
+                            <td>@Model.RemainingDay2zew</td>
+                            <td>@Model.RemainingDay3zew</td>
+                            <td>@Model.RemainingDay4zew</td>
+                            <td>@Model.RemainingDay5zew</td>
+                            <td>@Model.RemainingDay6zew</td>
+                            <td>@Model.RemainingDay7zew</td>
                         </tr>
                     </tbody>
                 </table>
@@ -267,7 +273,7 @@
     </div>
     
 </section>
-<!-- ***** VIEW_AND_CHECK Ends ***** -->
+<!-- ** VIEW_AND_CHECK Ends ** -->
 
 <section class="section" id="pop" style="background-color:#E5EBEB">
     <div class="container">
