@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace projecttt.Pages
+namespace ZewailCiryScienceWeek.Pages.Admin
 {
     public class promocodeModel : PageModel
     {

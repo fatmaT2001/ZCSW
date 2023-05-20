@@ -16,25 +16,29 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <span class="form-label">Name</span>
-                                    <input class="form-control" type="text" placeholder="#">
+                                    <input class="form-control" type="text" asp-for="@Model.ticket.fname" placeholder="#">
+                                    <span asp-validation-for="@Model.ticket.fname"></span>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <span class="form-label">Email</span>
-                                    <input class="form-control" type="email" placeholder="#">
+                                    <input class="form-control" type="email" asp-for="@Model.ticket.Email" placeholder="#">
+                                    <span asp-validation-for="@Model.ticket.Email"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <span class="form-label">Phone</span>
                             <input class="form-control" type="tel" placeholder="# ">
+
                         </div>
 
                         <div class="form-group">
                             <label class="form-label" style="height: 3.5vh ">Ticket Type</label>
                             <div class="select">
-                                <select class="form-control" style="height: 3.5vh">
+                                <select class="form-control" asp-for="@Model.ticket.tickettyep" style="height: 3.5vh">
+                                    <span asp-validation-for="@Model.ticket.tickettyep"></span>
                                     <option value="" selected disabled></option>
                                     <option value="vip">VIP</option>
                                     <option value="zewailian">Zewailian Ticket</option>
@@ -49,7 +53,8 @@
                         <div class="form-group">
                             <label class="form-label" style="height: 3vh"> Attended Day </label>
                             <div class="select">
-                                <select class="form-control" style="height: 3.5vh">
+                                <select class="form-control" asp-for="@Model.ticket.day" style="height: 3.5vh">
+                                    <span asp-validation-for="@Model.ticket.day"></span>
                                     <option value="" selected disabled>  </option>
                                     <option value="Day1" style="font-size: 10px">Day1</option>
                                     <option value="Day2">Day2</option>
@@ -67,7 +72,7 @@
                         <div class="form-group">
                             <label class="form-label" style="height: 3vh"> Payment Method </label>
                             <div class="select">
-                                <select class="form-control" style="height: 3.5vh">
+                                <select class="form-control" asp-for="@Model.ticket.paymentmethod" style="height: 3.5vh">
                                     <option value="" selected disabled> </option>
                                     <option value="Fawry">Fawry</option>
                                     <option value="Bank">Bank</option>
@@ -77,14 +82,18 @@
                                     <i class="zmdi zmdi-chevron-down"></i>
                                 </span>
                             </div>
+                             <div class="form-group">
+                                    <span class="form-label">Add PromoCode</span>
+                                    <input class="form-control" type="email" asp-for="@Model.ticket.promocode" placeholder="#">
+                                <span asp-validation-for="@Model.ticket.promocode"></span>
+                                </div>
                         </div>
                         <div class="mt-5 text-center">
                             <a href="#">
                                 <button class="login100-form-btn" style="background: #4D7577" type="button">Submit</button>
                             </a>
-
-
-                    </form>>
+                    </form>
+                    <p style="color:red">@Model.msg</p>
                 </div>
             </div>
         </div>

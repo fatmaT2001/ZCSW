@@ -14,6 +14,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         {
             string Cstring = "Data Source=DESKTOP-7JS7BD2;Initial Catalog=project;Integrated Security=True";
 
+            string Cstring = "Data Source=LAPTOP-TK7SBN2G;Initial Catalog=ZCW;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -153,16 +154,6 @@ namespace ZewailCiryScienceWeek.DataClasses
             string Q = "select SUM(payment_fess)as [total money],payment.fastival_day from payment \r\ngroup by payment.fastival_day order by [total money]  ";
             return ReadTable(Q);
         }
-        public object onpostFunctionChart3(int roomId)
-        {
-            string Q = "select sum(payment_fess)as[total money], payment.fastival_day from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by fastival_day";
-            return ReadTable(Q);
-
-        }
-
-        //==============================================================================
-        //===================VISITORS ANALYSIS
-        //Festival Attendence
         public object ongetFunctionChart4()
         {
             string Q = "select count(*),sex from visitor\r\ngroup by sex";
@@ -192,46 +183,39 @@ namespace ZewailCiryScienceWeek.DataClasses
         {
             string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
             return ReadTable(Q);
-
         }
-        ///  end of charts 
-        //=====================================================================================
+        public object onpostFunctionChart3(int roomId)
+        {
+            string Q = "select sum(payment_fess)as[total money], payment.fastival_day from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by fastival_day";
+            return ReadTable(Q);
+        }
+
+
         //=============================Visitor Functions ===========================================
 
-        public void adduser(Person p , visitor v)
+        public void adduser(Person p, visitor v)
         {
+            
             string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertyep + ") ";
             excuteNonQuery(Q);
-
-
             switch (p.usertyep)
             {
                 case 0:
+
+                    v.id = (int)maxIDVisitor();
                     string Q1 = " INSERT INTO VISITOR Visitor VALUES  ('" + p.ssn + "', " + v.age + ", '" + v.Gender + "')";
                     excuteNonQuery(Q1);
                     break;
 
                 case 4:
+
                     string Q2 = " ";     //EDIT HERE
                     excuteNonQuery(Q2);
                     break;
             }
 
-                    
-      
-        }
-        public object Gettyep(string Email)
-        {
-            string Q = "SELECT userType FROM Person WHERE Email ='" + Email + "'";
-            return ReadScaler(Q);
-        }
 
-        public bool CheckPassword(string Email, string password)
-        {
-            string Q = " Select user_password from Person  where Email= '" + Email + "'";
-            return (string)ReadScaler(Q) == password;
         }
-
         public object maxIDPerson()
         {
             int m = -1;
@@ -254,7 +238,6 @@ namespace ZewailCiryScienceWeek.DataClasses
             m = (int)ReadScaler(Q);
             return m + 1;
         }
-        /// <summary> /// ////////////////////////////////////////////////////////////////////////////////////////
 
         public int getremainticket(string day, string type)
         {
@@ -276,10 +259,49 @@ namespace ZewailCiryScienceWeek.DataClasses
 
 
 
+        public object Gettyep(string Email)
+        {
+            string Q = "SELECT userType FROM Person WHERE Email ='" + Email + "'";
+            return ReadScaler(Q);
+        }
 
-    }
+        public bool CheckPassword(string Email, string password)
+        {
+            string Q = " Select user_password from Person  where Email= '"+ Email +"'";
+            return (string)func2(Q) == password;
+        }
+        public object nextTicketID()
+        {
+            int m = -1;
+            string Q = " Select COUNT(*) from Tickets ";
+            m = (int)ReadScaler(Q);
+            return m + 1;
 
-    }//
+        }
+        public void InsertnewTicket(Ticket t)
+        {
+            t.ticketid = (int)nextTicketID();
+            string Q = " INSERT INTO TICKETS VALUES ('" + t.ticketid + "', '" + t.tickettyep + "', " + t.promocode + ")";
+            excuteNonQuery(Q);  
+        }
+        public object func2(string Q)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Q, con);
+                object result = cmd.ExecuteScalar();
+                con.Close();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                return ex;
+            }
+        }
+    };
+}
 
 
 

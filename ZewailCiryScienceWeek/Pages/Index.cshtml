@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexModel
+@model ZewailCiryScienceWeek.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
@@ -232,7 +232,7 @@
                                         <div class="card-body">
                                             <h2 class="card-title text-light">@Model.speakerClasses[i].FirstName @Model.speakerClasses[i].MiddleName @Model.speakerClasses[i].LastName </h2>
                                             <div class="card-text">
-                                                <p class="mb=0">@Model.speakerClasses[i].SpeakerExperienceInfo</p>
+                                                <p class="mb-0">@Model.speakerClasses[i].SpeakerExperienceInfo</p>
                                                 <p>The Topic is  @Model.speakerClasses[i].Topic @Model.speakerClasses[i].Topicdescription</p>
                                                 <div class="social ">
                                                     @for (int j = 0; j < Model.speakerClasses[i].SocialMediaLinks.Count(); j++)
@@ -319,7 +319,7 @@
         </div>
 
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-
+            
             @for (int i = 1; i <= 8; i++)
             {
                 <div class="col-lg-3 col-md-4 col-xs-6">
@@ -329,14 +329,11 @@
                     </div>
                 </div>
             }
-
-
-
-        </div>
-
-    </div>
-
+            
+         </div>
+</div>
 </section>
+
 <!--======================================================================-->
 <!-- End Sponsors Section -->
 <!--======================================================================-->
