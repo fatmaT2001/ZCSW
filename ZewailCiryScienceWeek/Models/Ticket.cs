@@ -1,4 +1,4 @@
-﻿using projecttt.Pages;
+﻿using ZewailCiryScienceWeek.Pages;
 using System.ComponentModel.DataAnnotations;
 using ZewailCiryScienceWeek.DataClasses;
 
