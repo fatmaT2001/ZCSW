@@ -117,3 +117,22 @@ new Chart("chart5", {
         }
     }
 });
+//=============================chart 6
+var color = "blue"
+new Chart("chart6", {
+    type: "horizontalBar",
+    data: {
+        labels: window.Chart6Valuesy,
+        datasets: [{
+            backgroundColor: color,
+            data: window.Chart6Valuesx
+        }]
+    },
+    options: {
+        legend: { display: false },
+        title: {
+            display: true,
+            text: "festival attendance for each day of the week"
+        }
+    }
+});

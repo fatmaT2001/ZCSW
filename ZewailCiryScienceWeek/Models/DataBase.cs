@@ -83,7 +83,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         // =============== Start speaker section =======
         public object SpeakersInfo()
         {
-            string Q = "select * from PERSON, Speaker where Speaker.Speaker_National_id=PERSON.National_id";
+            string Q = "select Speaker_National_id,PERSON.lName,midName,fName,category,topic,Speaker.SpeakerExperianceInfo,Speaker.topicDescription from PERSON, Speaker where Speaker.Speaker_National_id=PERSON.National_id";
             return ReadTable(Q);
         }
         public object SpeakersLinks(string id)

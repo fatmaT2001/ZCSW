@@ -84,26 +84,7 @@ $(function () {
 
     // ===========================Chart6 =====================================================
     // =======================================================================================
-    var xValuesHbarV = ["Day1", "Day2", "Day3", "Day4", "Day5", "Day6", "Day7"];
-    var yValuesHbarV = [55, 49, 100, 200, 300, 400, 500];
-    var color = "blue"
-    new Chart("chart6", {
-        type: "horizontalBar",
-        data: {
-            labels: xValuesHbarV,
-            datasets: [{
-                backgroundColor: color,
-                data: yValuesHbarV
-            }]
-        },
-        options: {
-            legend: { display: false },
-            title: {
-                display: true,
-                text: "festival attendance for each day of the week"
-            }
-        }
-    });
+   
     // ===========================Chart7 =====================================================
     // =======================================================================================
     var xyValuesSV = [
