@@ -55,7 +55,6 @@ namespace ZewailCiryScienceWeek.Pages.MainPages
             DataTable = (DataTable)DataBaseHolder.searchingTeamPage(part);
             commitesinfo(DataTable);
             
-
         }
     }
 }

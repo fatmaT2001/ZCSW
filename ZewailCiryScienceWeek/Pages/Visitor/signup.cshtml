@@ -10,42 +10,42 @@
 					
 					<div class="form-group">
 						<div class="form-row form-row-1">
-							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="First Name" required>
+							<input type="text" name="first_name" id="first_name" class="input-text" asp-for="@Model.p1.fname" placeholder="First Name" required>
 						</div>
 						<div class="form-row form-row-2">
-							<input type="text" name="last_name" id="last_name" class="input-text" placeholder="Last Name" required>
+							<input type="text" name="last_name" id="last_name" class="input-text" asp-for="@Model.p1.lname"  placeholder="Last Name" required>
 						</div>
 					</div>
 					<div class="form-row">
-						<select name="title">
+						<select name="title" asp-for="@Model.v1.Gender">
 						    <option class="option" value="title">Gender</option>
 						    <option class="option" value="businessman">Male</option>
 						    <option class="option" value="reporter">Female</option>
 z
 						</select>
 						<span class="select-btn">
-						  	<i class="zmdi zmdi-chevron-down"></i>
+						  	<i class="zmdi zmdi-chevron-down" ></i>
 						</span>
 					</div>
 					<div class="form-row">
-						<select name="title">
+						<select name="title" asp-for="@Model.p1.type">
 						    <option class="option" value="title">Type</option>
-						    <option class="option" value="businessman">Visitor</option>
-						    <option class="option" value="reporter"></option>
+						    <option class="option" value="Visitor">Visitor</option>
+						    <option class="option" value="Researcher"> Researcher</option>
 z
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
 						</span>
 					</div>
+				<div class="form-row form-row-2">
+							<input type="text" name="age" id="age" class="input-text"  asp-for="@Model.v1.age" placeholder="Age" required>
+						</div>
 				<div class="form-row">
-					<input type="date" name="dob" class="dob" id="dob" placeholder="Date of Birth" required>
+					<input type="text" name="ssn" id="ssn" class="input-text" asp-for="@Model.p1.ssn" placeholder="Social Security Number" required>
 				</div>
 				<div class="form-row">
-					<input type="text" name="ssn" id="ssn" class="input-text" placeholder="Social Security Number" required>
-				</div>
-				<div class="form-row">
-					<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
+					<input type="text" name="phone" class="phone" id="phone"  asp-for="@Model.p1.phonenum"  placeholder="Phone Number" required>
 				</div>
 
 				<div class="form-row">
@@ -56,14 +56,26 @@ z
 					@*<h2>Contact Details</h2>*@
 				<div class="form-row">
 
-					<input type="email" name="email" class="email" id="email" placeholder="Email" required>
+					<input type="email"  class="email" id="email" asp-for="@Model.p1.email" placeholder="Email" required>
 				</div>
 				<div class="form-row">
-					<input type="password" name="password" class="password" id="password" placeholder="Password" required>
+					<input type="password"  class="password" id="password" asp-for="@Model.p1.password" placeholder="Password" required>
 				</div>
 				<div class="form-row">
-					<input type="password" name="confirm_password" class="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+					<input type="password"  class="confirm_password" id="confirm_password" asp-for="@Model.p1.repassword" placeholder="Confirm Password" required>
 				</div>
+				<div class="form-row">
+					<select name="title" asp-for="@Model.p1.howdidyouknowus">
+						<option class="option" value="title">How did you know us</option>
+						<option class="option" value="businessman">Facebook</option>
+						<option class="option" value="reporter">Instgram</option>
+						<option class="option" value="reporter">Other</option>
+					</select>
+					<span class="select-btn">
+						<i class="zmdi zmdi-chevron-down"></i>
+					</span>
+				</div>
+				
 					
 					<div class="form-row">
 						@*<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">*@
