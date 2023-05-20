@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using ZewailCiryScienceWeek.Models;
 
 namespace ZewailCiryScienceWeek.DataClasses
 
@@ -10,7 +11,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=DESKTOP-ECB5J03;Initial Catalog=ZCSW;Integrated Security=True";
+            string Cstring = "Data Source=SHROUK;Initial Catalog=ZCSF_DB;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -190,7 +191,58 @@ namespace ZewailCiryScienceWeek.DataClasses
 
             return ReadTable(Q);
         }
+        //PromoCodes
+        public object ReadAllTable(string table)
+        {
+            string Q = "select * from " + table;
+            return ReadTable(Q);
+        }
+        
+        public void InsertRowPromo(promocode pc)
+        {
+            string Q = "insert into PromoCodes values ('"+pc.PromoName+"', " + pc.DiscountPercent + ", " + pc.NumTicketsOffered + ","+pc.NumOfPassing+",'"+pc.AssignedTo+"',"+pc.NumTicketsOffered+")";
+            excuteNonQuery(Q);
+        }
+        //tickets
+        public object DisplayTickets()
+        {
+            string Q = "select ticket_id,Tickets.visitor_id,ticket_type,ticket_price,used.payment_code,number_of_passing,fastival_day,PromoCodeName from Tickets, used,payment where Tickets.ticket_id=used.tiket_id and used.payment_code=payment.payment_code";
+            return ReadTable(Q);
+        }
+        //visitors
+        public object DisplayVisitors()
+        {
+            string Q = "select fName,lName,age,visitor.national_id,Email,Phone_num,sex,user_password from visitor, PERSON where visitor.national_id = PERSON.National_id";
+            return ReadTable(Q);
+        }
+        //Read visitor
 
+        public visitor_edit ReadVisitorRow(string id)
+        {
+            visitor_edit v = new visitor_edit();
+            DataTable dt = new DataTable();
+            string Q = "Select * From users Where ID = '" + id + "'";
+            dt =(DataTable)ReadTable(Q);
+            v.fName = (string)dt.Rows[0]["fName"];
+            v.lName = (string)dt.Rows[0]["lName"];
+            v.national_id = (string)dt.Rows[0]["national_id"];
+            v.email = (string)dt.Rows[0]["email"];
+            v.phone_num = (string)dt.Rows[0]["phone_num"];
+            v.password = (string)dt.Rows[0]["password"];
+            return v;
+
+        }
+        //update visitor
+        public void UpdateVisitorInfo(visitor_edit v)
+        {
+            string Q = "UPDATE Person SET fName = '"+v.fName+"', lName = '"+v.lName+"', Email ='"+v.email+"', Phone_num = '"+v.phone_num+"', user_password = '"+v.password+"' WHERE National_id = '"+v.national_id+"' ";
+            excuteNonQuery(Q);
+        }
+        public void RemoveVisitor(string id)
+        {
+            string Q = "Delete From Person Where ID='"+id+"'";
+            excuteNonQuery(Q);
+        }
     }//
 
 }
