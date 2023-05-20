@@ -49,27 +49,27 @@ namespace ZewailCiryScienceWeek.Pages
         // ======================MainPage Team Section ===============================
         private void Speakers()
         {
-            DataTable = (DataTable)DataBaseHolder.SpeakersInfo();
-            for (int i=0;i<DataTable.Rows.Count;i++)
-            {
-                SpeakerClass speaker= new SpeakerClass();
-                speaker.SpeakerNationalId = (string)DataTable.Rows[i][0];
-                speaker.FirstName = (string)DataTable.Rows[i][2];
-                speaker.MiddleName = (string)DataTable.Rows[i][3];
-                speaker.LastName = (string)DataTable.Rows[i][4];
-                speaker.Category = (string)DataTable.Rows[i][7];
-                speaker.Topic = (string)DataTable.Rows[i][8];
-                speaker.SpeakerExperienceInfo = (string)DataTable.Rows[i][9];
-                speaker.Topicdescription = (string)DataTable.Rows[i][10];
-                DataTable socailMedaiAccount = new DataTable();
-                socailMedaiAccount = (DataTable)DataBaseHolder.SpeakersLinks((string)DataTable.Rows[i][0]);
-                for (int j = 0; j < socailMedaiAccount.Rows.Count; j++)
-                {
-                    speaker.SocialMediaLinks.Add((string)socailMedaiAccount.Rows[j][0]);
-                }
-                speaker.SocialMediaLinks.Add((string)DataTable.Rows[i][5]);
-                speakerClasses.Add(speaker);
-            }
+            //DataTable = (DataTable)DataBaseHolder.SpeakersInfo();
+            //for (int i=0;i<DataTable.Rows.Count;i++)
+            //{
+            //    SpeakerClass speaker= new SpeakerClass();
+            //    speaker.SpeakerNationalId = (string)DataTable.Rows[i][0];
+            //    speaker.FirstName = (string)DataTable.Rows[i][2];
+            //    speaker.MiddleName = (string)DataTable.Rows[i][3];
+            //    speaker.LastName = (string)DataTable.Rows[i][4];
+            //    speaker.Category = (string)DataTable.Rows[i][7];
+            //    speaker.Topic = (string)DataTable.Rows[i][8];
+            //    speaker.SpeakerExperienceInfo = (string)DataTable.Rows[i][9];
+            //    speaker.Topicdescription = (string)DataTable.Rows[i][10];
+            //    DataTable socailMedaiAccount = new DataTable();
+            //    socailMedaiAccount = (DataTable)DataBaseHolder.SpeakersLinks((string)DataTable.Rows[i][0]);
+            //    for (int j = 0; j < socailMedaiAccount.Rows.Count; j++)
+            //    {
+            //        speaker.SocialMediaLinks.Add((string)socailMedaiAccount.Rows[j][0]);
+            //    }
+            //    speaker.SocialMediaLinks.Add((string)DataTable.Rows[i][5]);
+            //    speakerClasses.Add(speaker);
+            //}
         }
         public void OnGet()
         {

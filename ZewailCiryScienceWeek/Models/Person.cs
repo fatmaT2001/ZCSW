@@ -11,6 +11,10 @@ namespace ZewailCiryScienceWeek.Models
         [Required]
         public string lname { get; set; }
         [Required]
+        public string type { get; set; }
+        [Required]
+        public string howdidyouknowus { get; set; }
+        [Required]
         public int ssn { get; set; }
         [Required]
         public int usertyep { get; set; }

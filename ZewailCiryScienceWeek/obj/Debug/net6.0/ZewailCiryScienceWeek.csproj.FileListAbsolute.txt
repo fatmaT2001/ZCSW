@@ -486,3 +486,5 @@ D:\userDB\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\refint\ZewailCiryScienceWe
 D:\userDB\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.pdb
 D:\userDB\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ZewailCiryScienceWeek.genruntimeconfig.cache
 D:\userDB\ZCSW\ZewailCiryScienceWeek\obj\Debug\net6.0\ref\ZewailCiryScienceWeek.dll
+D:\userDB\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\libman.json
+D:\userDB\ZCSW\ZewailCiryScienceWeek\bin\Debug\net6.0\Newtonsoft.Json.dll

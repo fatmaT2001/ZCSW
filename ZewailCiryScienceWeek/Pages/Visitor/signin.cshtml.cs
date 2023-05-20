@@ -19,19 +19,32 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
         public visitor v1 { get; set; }
         [BindProperty]
         public string msg { get; set; }
+
+        public signinModel( DataBase dp)
+
+        {
+            this.db = dp;
+        }
         public void OnGet()
         {
         }
         public IActionResult OnPost() {
 
-            if (db.CheckPassword(p1.email, p1.password))
+
+            if (string.IsNullOrEmpty(p1.email) || string.IsNullOrEmpty(p1.password))
+            {
+
+                msg = "Please enter both email and password.";
+                return Page();
+            }
+            if  (db.CheckPassword(p1.email, p1.password))
             {
                 switch ((int)db.Gettyep(p1.email))
                 {
                     case 0:
                         Flags.Signed = 1;
                         Flags.Type = "Visitor";
-                        return RedirectToPage("/userprofile");
+                        return RedirectToPage("userprofile");
                     case 1:
                         Flags.Signed = 1;
                         Flags.Type = "Visitor";
@@ -43,7 +56,7 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
                     case 3:
                         Flags.Signed = 1;
                         Flags.Type = "Analyst";
-                        return RedirectToPage("/Analysts/Analysis");
+                        return RedirectToPage("/Index");
                     case 4:
                         Flags.Signed = 1;
                         Flags.Type = "Researcher";
@@ -53,7 +66,8 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
                         Flags.Type = "Visitor";
                         return RedirectToPage("/userprofile");
                 }
-            } else { msg = "Incorrect Password"; return Page(); }
+            } else { msg = "Incorrect email or password."; return Page(); }
+       
         }
     }
 }
