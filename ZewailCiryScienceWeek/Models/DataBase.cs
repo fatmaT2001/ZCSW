@@ -294,7 +294,6 @@ namespace ZewailCiryScienceWeek.DataClasses
             string Q = "Delete From Person Where ID='"+id+"'";
             excuteNonQuery(Q);
         }
-    }//
         public void UpdateNumberOfTickets(int quantity, string dayAttending)
         {
             string Q = "UPDATE non_booked_ticket SET number_of_tickets = number_of_tickets + " + quantity + " WHERE ticket_day = " + dayAttending + "and  ticket_type = 'rgular'";
@@ -350,8 +349,8 @@ namespace ZewailCiryScienceWeek.DataClasses
                 return ex;
             }
         }
-    };
-}
+    }
+};
 
 
 

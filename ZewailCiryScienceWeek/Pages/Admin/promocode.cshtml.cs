@@ -1,11 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace ZewailCiryScienceWeek.Pages.Admin
 using System.Data;
 using ZewailCiryScienceWeek.DataClasses;
 using ZewailCiryScienceWeek.Models;
-namespace projecttt.Pages
+namespace ZewailCiryScienceWeek.Pages.Admin
 {
     public class promocodeModel : PageModel
     {
