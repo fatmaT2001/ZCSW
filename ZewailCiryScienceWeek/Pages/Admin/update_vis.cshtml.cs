@@ -21,7 +21,7 @@ namespace ZewailCiryScienceWeek.Pages.Admin
         public IActionResult OnPost()
         {
             db.UpdateVisitorInfo(vis);
-            return RedirectToPage("/Admin/update_vis");
+            return RedirectToPage("/Admin/visitor");
         }
     }
 }

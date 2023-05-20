@@ -273,15 +273,21 @@ namespace ZewailCiryScienceWeek.DataClasses
             visitor_edit v = new visitor_edit();
             DataTable dt = new DataTable();
             string Q = "Select * From users Where ID = '" + id + "'";
-            dt =(DataTable)ReadTable(Q);
-            v.fName = (string)dt.Rows[0]["fName"];
-            v.lName = (string)dt.Rows[0]["lName"];
-            v.national_id = (string)dt.Rows[0]["national_id"];
-            v.email = (string)dt.Rows[0]["email"];
-            v.phone_num = (string)dt.Rows[0]["phone_num"];
-            v.password = (string)dt.Rows[0]["password"];
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Q, con);
+                dt.Load(cmd.ExecuteReader());
+                v.fName = (string)dt.Rows[0]["fName"];
+                v.lName = (string)dt.Rows[0]["lName"];
+                v.national_id = (string)dt.Rows[0]["national_id"];
+                v.email = (string)dt.Rows[0]["email"];
+                v.phone_num = (string)dt.Rows[0]["phone_num"];
+                v.password = (string)dt.Rows[0]["password"];
+            }
+            catch (SqlException ex) { }
+            finally { con.Close(); }
             return v;
-
         }
         //update visitor
         public void UpdateVisitorInfo(visitor_edit v)
