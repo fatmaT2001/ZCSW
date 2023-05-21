@@ -17,6 +17,7 @@
             </div>
             <ul>
                 <li><a class="nav-link scrollto" href="/Index">Home</a></li>
+                <li><a class="nav-link scrollto" href="/Analysts/Analysis">Analysis</a></li>
                 <li><a class="nav-link scrollto" href="/Admin/visitor">Visitors Info</a></li>
                 <li><a class="nav-link scrollto" href="/Admin/tickets">Tickets</a></li>
                 <li><a class="select-control buy-tickets scrollto nav-link" href="/Admin/Promotable">Add Promo Code</a></li>
@@ -45,8 +46,7 @@
 
                             <div class="col-md-12">
                                 <input class="form-control" type="text" name="name" placeholder="Promo Code" required>
-                                <div class="valid-feedback">Username field is valid!</div>
-                                <div class="invalid-feedback">Username field cannot be blank!</div>
+                                @*<span asp-validation-for="@Model.pc.PromoName"></span>*@
                             </div>
 
                             <div class="col-md-12">
@@ -59,28 +59,16 @@
                             </div>
 
                             <div class="col-md-12">
+                                <input class="form-control" type="text" name="Number Of Passing" placeholder="Number Of Passing" required>
+
+                            </div>
+                            <div class="col-md-12">
                                 <input class="form-control" type="text" name="Assigned To" placeholder="Assigned To" required>
 
                             </div>
 
 
 
-
-
-
-                            <div class="col-md-12 mt-3">
-                                <label class="mb-3 mr-1" for="Promo Code Type">Promo Code Type: </label>
-
-                                <input type="radio" class="btn-check" name="Promo Code Type" id="Regular" autocomplete="off" required>
-                                <label class="btn btn-sm btn-outline-secondary" for="Regular">Regular</label>
-
-                                <input type="radio" class="btn-check" name="Promo Code Type" id="Group" autocomplete="off" required>
-                                <label class="btn btn-sm btn-outline-secondary" for="Group">Group</label>
-
-
-
-                                <div class="invalid-feedback mv-up">Please select a type!</div>
-                            </div>
 
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

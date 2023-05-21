@@ -5,8 +5,7 @@
 }
 
 
-<body>
-    <header id="header" class="d-flex align-items-center p-4 ">
+<header id="header" class="d-flex align-items-center p-4 ">
         <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
 
             <div id="logo">
@@ -16,6 +15,7 @@
             </div>
             <ul>
                 <li><a class="nav-link scrollto" href="/Index">Home</a></li>
+                <li><a class="nav-link scrollto" href="/Analysts/Analysis">Analysis</a></li>
                 <li><a class="nav-link scrollto" href="/Admin/visitor">Visitors Info</a></li>
                 <li><a class="select-control buy-tickets scrollto nav-link" href="#supporters">Tickets</a></li>
                 <li><a class="nav-link scrollto" href="/Admin/Promotable">Promo Codes</a></li>
@@ -50,8 +50,11 @@
                                     <th>Ticket ID</th>
                                     <th>Visitor ID</th>
                                     <th>Type</th>
+                                    <th>Fees</th>
+                                    <th>Payment Code</th>
                                     <th>Capacity</th>
                                     <th>Day</th>
+                                    <th>Promocode</th>
                                     <th>Status</th>
                                 </tr>
                             </thead>
@@ -61,86 +64,33 @@
                                     <th>Ticket ID</th>
                                     <th>Visitor ID</th>
                                     <th>Type</th>
+                                    <th>Fees</th>
+                                    <th>Payment Code</th>
                                     <th>Capacity</th>
                                     <th>Day</th>
+                                    <th>Promocode</th>
                                     <th class="col-remove">Status</th>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <tr>
-                                    <td>#233</td>
-                                    <td>4567896</td>
-                                    <td>Regular</td>
-                                    <td>1</td>
-                                    <td>Sunday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-                                <tr>
-                                    <td>#456</td>
-                                    <td>9876543</td>
-                                    <td>Group</td>
-                                    <td>3</td>
-                                    <td>Tuesday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-                                <tr>
-                                    <td>#257</td>
-                                    <td>8765432</td>
-                                    <td>Regular</td>
-                                    <td>1</td>
-                                    <td>Monday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-                                <tr>
-                                    <td>#193</td>
-                                    <td>3457852</td>
-                                    <td>VIP</td>
-                                    <td>1</td>
-                                    <td>Sunday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-                                <tr>
-                                    <td>#575</td>
-                                    <td>365880</td>
-                                    <td>Group</td>
-                                    <td>5</td>
-                                    <td>Saturday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-                                <tr>
-                                    <td>#458</td>
-                                    <td>5376483</td>
-                                    <td>New York</td>
-                                    <td>61</td>
-                                    <td>Wednesday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-                                <tr>
-                                    <td>#126</td>
-                                    <td>3574692</td>
-                                    <td>Group</td>
-                                    <td>3</td>
-                                    <td>Tuesday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-                                <tr>
-                                    <td>#399</td>
-                                    <td>632843</td>
-                                    <td>Regular</td>
-                                    <td>1</td>
-                                    <td>Monday</td>
-                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                </tr>
-
+                                @for (int i = 0; i < Model.dt.Rows.Count; i++)
+                                {
+                                    <tr>
+                                        <th scope="row">@Model.dt.Rows[i][0]</th>
+                                        @for (int j = 1; j < @Model.dt.Columns.Count; j++)
+                                        {
+                                            <td>@Model.dt.Rows[i][j]</td>
+                                        }
+                                        <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-</body>
 <style>
     table {
         background-color: #E5EBEB;

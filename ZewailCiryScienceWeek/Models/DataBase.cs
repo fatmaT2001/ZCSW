@@ -12,7 +12,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=LAPTOP-TK7SBN2G;Initial Catalog=ZCW;Integrated Security=True";
+            string Cstring = "Data Source=SHROUK;Initial Catalog=ZCSF_DB;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -237,6 +237,83 @@ namespace ZewailCiryScienceWeek.DataClasses
             return m + 1;
         }
 
+        public int getremainticket(string day, string type)
+        {
+            string Q = "SELECT number_of_tickets AS ticket_count\r\nFROM non_booked_ticket\r\nWHERE ticket_day = '" + day + "' AND ticket_type = '" + type + "';\r\n";
+            return (int)ReadScaler(Q);
+        }
+        //PromoCodes
+        public object ReadAllTable(string table)
+        {
+            string Q = "select * from " + table;
+            return ReadTable(Q);
+        }
+        
+        public void InsertRowPromo(promocode pc)
+        {
+            string Q = "insert into PromoCodes values ('"+pc.PromoName+"', " + pc.DiscountPercent + ", " + pc.NumTicketsOffered + ","+pc.NumOfPassing+",'"+pc.AssignedTo+"',"+pc.NumTicketsOffered+")";
+            excuteNonQuery(Q);
+        }
+        //tickets
+        public object DisplayTickets()
+        {
+            string Q = "select ticket_id,Tickets.visitor_id,ticket_type,ticket_price,used.payment_code,number_of_passing,fastival_day,PromoCodeName from Tickets, used,payment where Tickets.ticket_id=used.tiket_id and used.payment_code=payment.payment_code";
+            return ReadTable(Q);
+        }
+        //visitors
+        public object DisplayVisitors()
+        {
+            string Q = "select fName,lName,age,visitor.national_id,Email,Phone_num,sex,user_password from visitor, PERSON where visitor.national_id = PERSON.National_id";
+            return ReadTable(Q);
+        }
+        //Read visitor
+
+        public visitor_edit ReadVisitorRow(string id)
+        {
+            visitor_edit v = new visitor_edit();
+            DataTable dt = new DataTable();
+            string Q = "Select * From users Where ID = '" + id + "'";
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Q, con);
+                dt.Load(cmd.ExecuteReader());
+                v.fName = (string)dt.Rows[0]["fName"];
+                v.lName = (string)dt.Rows[0]["lName"];
+                v.national_id = (string)dt.Rows[0]["national_id"];
+                v.email = (string)dt.Rows[0]["email"];
+                v.phone_num = (string)dt.Rows[0]["phone_num"];
+                v.password = (string)dt.Rows[0]["password"];
+            }
+            catch (SqlException ex) { }
+            finally { con.Close(); }
+            return v;
+        }
+        //update visitor
+        public void UpdateVisitorInfo(visitor_edit v)
+        {
+            string Q = "UPDATE Person SET fName = '"+v.fName+"', lName = '"+v.lName+"', Email ='"+v.email+"', Phone_num = '"+v.phone_num+"', user_password = '"+v.password+"' WHERE National_id = '"+v.national_id+"' ";
+            excuteNonQuery(Q);
+        }
+        public void RemoveVisitor(string id)
+        {
+            string Q = "Delete From Person Where ID='"+id+"'";
+            excuteNonQuery(Q);
+        }
+        public void UpdateNumberOfTickets(int quantity, string dayAttending)
+        {
+            string Q = "UPDATE non_booked_ticket SET number_of_tickets = number_of_tickets + " + quantity + " WHERE ticket_day = " + dayAttending + "and  ticket_type = 'rgular'";
+            excuteNonQuery(Q);
+        }
+        public int getbookedticket(string day, string type)
+        {
+            string Q = "SELECT COUNT(*) AS TicketCount FROM Tickets WHERE ticketday = '" + day + "' AND ticket_type = '" + type + "'";
+            return (int)ReadScaler(Q);
+        }
+
+
+
+
         public object Gettyep(string Email)
         {
             string Q = "SELECT userType FROM Person WHERE Email ='" + Email + "'";
@@ -278,8 +355,8 @@ namespace ZewailCiryScienceWeek.DataClasses
                 return ex;
             }
         }
-    };
-}
+    }
+};
 
 
 

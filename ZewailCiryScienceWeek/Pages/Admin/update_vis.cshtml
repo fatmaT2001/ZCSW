@@ -1,0 +1,180 @@
+﻿@page
+@model ZewailCiryScienceWeek.Pages.Admin.update_visModel
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<header id="header" class="d-flex align-items-center p-4 ">
+    <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
+
+        <div id="logo">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+            <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/Artboard 3 (1).png" alt="" title=""></a>
+        </div>
+        <ul>
+            <li><a class="nav-link scrollto" href="/Index">Home</a></li>
+            <li><a class="nav-link scrollto" href="/Analysts/Analysis">Analysis</a></li>
+            <li><a class="select-control buy-tickets scrollto nav-link" href="/Admin/visitor">Visitore Info</a></li>
+            <li><a class="nav-link scrollto" href="/Admin/tickets">Tickets</a></li>
+            <li><a class="nav-link scrollto" href="/Admin/Promotable">Promo Codes</a></li>
+            <li><a class="nav-link scrollto" href="/Admin/AdminMain">Admin</a></li>
+        </ul>
+        <!--=====================================================-->
+
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </div>
+
+
+</header>
+<section class="h-100 gradient-custom-2" style="background-color: #E5EBEB">
+    <div class="text-center" style="padding: 100px">
+        <h1 class="h_visitor">Edit User</h1>
+        <form>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="editFirst" placeholder="First">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="editLast" placeholder="Last">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="editAge" placeholder="Age">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="editNationalID" placeholder="National ID">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="editEmail" placeholder="Email">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="editNumber" placeholder="Phone Number">
+            </div>
+            <div style="margin-bottom: 10px;">
+                <button type="button" class="btn btn-secondary">Save</button>
+                <button type="button" class="btn btn-dark">Cancel</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+</div>
+</section>
+
+
+
+<style>
+    body {
+        text-align: center;
+        background-color: #E5EBEB;
+    }
+
+    .visitor-body {
+        background-color: #E5EBEB;
+    }
+
+    h1.h_visitor {
+        margin: 20px auto; /* Add margin to create space between the title and the table */
+        text-align: center;
+        color: #023b3d;
+        background-color: #E5EBEB;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 5px;
+        font-size: 40px;
+        width: 50%;
+    }
+
+    h_visitor {
+        color: #023b3d;
+        background-color: #E5EBEB;
+        margin: 50px auto;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 40px; /* Increase the padding to add more space */
+        font-size: 20px; /* Increase the font size */
+    }
+
+    visitor_table {
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 80%;
+        margin: 100px auto;
+        background-color: #C9D5D6; /* Change the background color of the table */
+        color: white; /* Change the text color */
+    }
+
+
+    .thead-dark th {
+        background-color: #023b3d; /* Change the background color of the table header */
+        color: white; /* Change the text color in the table header */
+        text-transform: uppercase;
+    }
+
+
+    .custom-table input[type="text"] {
+        background-color: #023b3d; /* Set the background color of text boxes */
+        border: #cccccc;
+    }
+
+
+    th1 {
+        color: white;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        font-weight: bold;
+    }
+
+    td {
+        color: #023b3d;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #C9D5D6;
+    }
+
+    .edit-popup,
+    .delete-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #C9D5D6;
+        border: 1px solid #ccc;
+        z-index: 1;
+        color: #023b3d;
+        margin: 50px auto;
+        font-weight: bold;
+        padding: 40px; /* Increase the padding to add more space */
+        font-size: 20px; /* Increase the font size */
+    }
+
+        .edit-popup input {
+            margin-bottom: 10px;
+        }
+
+        .edit-popup button {
+            margin-right: 5px;
+        }
+
+    .delete-popup {
+        text-align: center;
+    }
+
+        .delete-popup button {
+            margin: 20px;
+        }
+</style>
+
