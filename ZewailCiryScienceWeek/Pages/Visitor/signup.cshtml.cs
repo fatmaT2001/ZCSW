@@ -17,6 +17,7 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
         public visitor v1 { get; set; }
         [BindProperty]
         public string msg { get; set; }
+      
         public void OnGet()
         {
         }
@@ -27,6 +28,11 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
                 Flags.Signed = 1;
                 Flags.Type = "Visitor";
                 db.adduser(p1, v1);
+                TempData["fName"] = p1.fname;
+                TempData["lname"] = p1.lname;
+                TempData["ssn"] = p1.ssn;
+                TempData["Email"] = p1.email;
+                TempData["phone"] = p1.phonenum;
                 return RedirectToPage("userprofile");
             }else if ((ModelState.IsValid) && (p1.type == "Researcher"))
             {
