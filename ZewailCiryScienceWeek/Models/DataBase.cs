@@ -12,7 +12,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=SHROUK;Initial Catalog=ZCSF_DB;Integrated Security=True";
+            string Cstring = "Data Source=DESKTOP-7JS7BD2;Initial Catalog=project;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
