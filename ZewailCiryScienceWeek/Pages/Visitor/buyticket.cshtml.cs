@@ -37,7 +37,7 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
                 db.InsertnewTicket(ticket);
                 return RedirectToPage("ticketdesign");
             }
-            else { msg = "Please Enter Valied Data "; return Page(); }
+            else { msg = "Please Enter Valied Data "; return RedirectToPage("Index"); }
         }
     }
 
