@@ -4,34 +4,37 @@
 }
 <div class="page-content">
 		<div class="form-v10-content">
-			<form class="form-detail" action="#" method="post" id="myform">
+		<form class="form-detail" method="post" id="myform" asp-page="signup">
 				<div class="form-left" style="padding-top: 30px">
 					<h2>Sign Up</h2>
 					
 					<div class="form-group">
 						<div class="form-row form-row-1">
-							<input type="text" name="first_name" id="first_name" class="input-text" asp-for="@Model.p1.fname" placeholder="First Name" required>
+							<input type="text"  id="first_name" class="input-text" asp-for="@Model.p1.fname" placeholder="First Name" required>
 						</div>
+					<div class="form-row">
+						<input type="text" class="input-text" id="midname" asp-for="@Model.p1.midname" placeholder="midname" required>
+					</div>
 						<div class="form-row form-row-2">
-							<input type="text" name="last_name" id="last_name" class="input-text" asp-for="@Model.p1.lname"  placeholder="Last Name" required>
+							<input type="text"  id="last_name" class="input-text" asp-for="@Model.p1.lname"  placeholder="Last Name" required>
 						</div>
 					</div>
 					<div class="form-row">
-						<select name="title" asp-for="@Model.v1.Gender">
+						<select  asp-for="@Model.v1.Gender">
 						    <option class="option" value="title">Gender</option>
 						    <option class="option" value="businessman">Male</option>
 						    <option class="option" value="reporter">Female</option>
-z
+
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down" ></i>
 						</span>
 					</div>
 					<div class="form-row">
-						<select name="title" asp-for="@Model.p1.type">
+						<select  asp-for="@Model.p1.usertype">
 						    <option class="option" value="title">Type</option>
-						    <option class="option" value="Visitor">Visitor</option>
-						    <option class="option" value="Researcher"> Researcher</option>
+						    <option class="option" value="0">visitor</option>
+						    <option class="option" value="4"> researcher</option>
 z
 						</select>
 						<span class="select-btn">
@@ -39,18 +42,16 @@ z
 						</span>
 					</div>
 				<div class="form-row form-row-2">
-							<input type="text" name="age" id="age" class="input-text"  asp-for="@Model.v1.age" placeholder="Age" required>
+							<input type="text"  id="age" class="input-text"  asp-for="@Model.v1.age" placeholder="Age" >
 						</div>
 				<div class="form-row">
-					<input type="text" name="ssn" id="ssn" class="input-text" asp-for="@Model.p1.ssn" placeholder="Social Security Number" required>
+					<input type="text"  id="ssn" class="input-text" asp-for="@Model.p1.ssn" placeholder="Social Security Number" required>
 				</div>
 				<div class="form-row">
-					<input type="text" name="phone" class="phone" id="phone"  asp-for="@Model.p1.phonenum"  placeholder="Phone Number" required>
+					<input type="text"  class="phone" id="phone"  asp-for="@Model.p1.phonenum"  placeholder="Phone Number" required>
 				</div>
 
-				<div class="form-row">
-					<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" required>
-				</div>
+				
 			</div>
 			<div class="form-right" style="background: #4D7577 ; padding-top: 130px">
 					@*<h2>Contact Details</h2>*@
@@ -65,7 +66,7 @@ z
 					<input type="password"  class="confirm_password" id="confirm_password" asp-for="@Model.p1.repassword" placeholder="Confirm Password" required>
 				</div>
 				<div class="form-row">
-					<select name="title" asp-for="@Model.p1.howdidyouknowus">
+					<select  asp-for="@Model.p1.howdidyouknowus">
 						<option class="option" value="title">How did you know us</option>
 						<option class="option" value="businessman">Facebook</option>
 						<option class="option" value="reporter">Instgram</option>
@@ -82,12 +83,12 @@ z
 					</div>
 					<div class="form-checkbox">
 						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
-						  	<input type="checkbox" name="checkbox">
+						  	<input type="checkbox" >
 						  	<span class="checkmark"></span>
 						</label>
 					</div>
 					<div class="form-row-last">
-						<input type="submit" name="register" class="register" value="Sign Up">
+					<input type="submit"  class="save" value="Sign Up" asp-page-handler="sign">
 					</div>
 				</div>
 			</form>
