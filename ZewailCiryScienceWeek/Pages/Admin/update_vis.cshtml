@@ -32,27 +32,27 @@
 <section class="h-100 gradient-custom-2" style="background-color: #E5EBEB">
     <div class="text-center" style="padding: 100px">
         <h1 class="h_visitor">Edit User</h1>
-        <form>
+        <form method="post">
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editFirst" placeholder="First">
+                <input type="text" id="editFirst">
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editLast" placeholder="Last">
+                <input type="text" id="editLast" >
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editAge" placeholder="Age">
+                <input type="text" id="editAge" >
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editNationalID" placeholder="National ID">
+                <input type="text" id="editNationalID">
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editEmail" placeholder="Email">
+                <input type="text" id="editEmail" >
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editNumber" placeholder="Phone Number">
+                <input type="text" id="editNumber" >
             </div>
             <div style="margin-bottom: 10px;">
-                <button type="button" class="btn btn-secondary">Save</button>
+                <button type="button" class="btn btn-secondary" asp-page-handler="edit">Save</button>
                 <button type="button" class="btn btn-dark">Cancel</button>
             </div>
         </form>

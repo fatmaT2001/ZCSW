@@ -8,7 +8,9 @@ namespace ZewailCiryScienceWeek.Pages.Admin
 {
     public class visitorModel : PageModel
     {
-        
+
+        [BindProperty]
+        public visitor_edit vis { get; set; }
         public DataTable dt { get; set; }
 
         private readonly DataBase db;
@@ -23,6 +25,7 @@ namespace ZewailCiryScienceWeek.Pages.Admin
             //vis = new visitor_edit();
             //vis =(visitor_edit) db.ReadVisitorRow( id);
         }
+       
 
     }
 }

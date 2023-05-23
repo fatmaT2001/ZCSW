@@ -431,8 +431,10 @@ namespace ZewailCiryScienceWeek.DataClasses
         public void InsertnewTicket(Ticket t)
         {
             t.ticketid = (int)nextTicketID();
-            string Q = " INSERT INTO TICKETS VALUES ('" + t.ticketid + "', '" + t.tickettyep + "', " + t.promocode + ")";
-            excuteNonQuery(Q);  
+           string Q = " INSERT INTO Tickets (ticket_id , ticket_type , ticketday ) VALUES ( '"+t.ticketid+"' , '"+t.tickettype+"' , '"+t.day+"')";
+            string q = "UPDATE non_booked_ticket  SET number_of_tickets =  number_of_tickets - 1   WHERE ticket_day = '" + t.day + "' and  ticket_type = '" + t.tickettype + "'";
+            excuteNonQuery(Q);
+            excuteNonQuery(q);
         }
         public object func2(string Q)
         {

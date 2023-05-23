@@ -22,5 +22,7 @@ namespace ZewailCiryScienceWeek.Models
         [Required]
         [MaxLength(50)]
         public string password { get; set; }
+        public string age { get; set; }
+
     }
 }

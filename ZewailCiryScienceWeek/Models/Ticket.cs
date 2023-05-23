@@ -17,7 +17,7 @@ namespace ZewailCiryScienceWeek.Models
         public int ticketid { get; set; }
 
         [Required]
-        public string tickettyep { get; set; }
+        public string tickettype { get; set; }
 
         [Required]
         public string day { get; set; }
