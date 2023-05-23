@@ -24,8 +24,7 @@ namespace ZewailCiryScienceWeek.Models
 
         [Required]
         public string paymentmethod { get; set; }
-        [Required]
-        public int promocode { get; set; }
+        public string promocode { get; set; }
 
 
     }
