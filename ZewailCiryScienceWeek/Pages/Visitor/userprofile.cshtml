@@ -14,15 +14,27 @@
                     <h4 class="text-right">Profile Settings</h4>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="#" value=""></div>
-                    <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value="" placeholder=" #"></div>
+                    <div class="col-md-6"><label class="labels">First Name</label>
+                    <h6>@Model.p1.fname</h6></div>
+                    <div class="col-md-12"><label class="labels">mid name</label>
+                        <h6>@Model.p1.midname</h6>
+                    </div>
+
+                    <div class="col-md-6"><label class="labels">Last Name</label>
+                        <h6>@Model.p1.lname</h6>
+                    </div>
 
                 </div>
-                <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="#" value=""></div>
-                    <div class="col-md-12"><label class="labels">Email </label><input type="text" class="form-control" placeholder="#" value=""></div>
-                    <div class="col-md-12"><label class="labels">SSN</label><input type="text" class="form-control" placeholder="#"></div>
-                    <div class="col-md-12"><label class="labels">Additional Information</label><input type="text" class="form-control" placeholder="#" value=""></div>
+                <p class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Mobile Number</label>
+                        <h6>@Model.p1.phonenum</h6>
+                    </div>
+
+                    <div class="col-md-12"><label class="labels">Email </label>
+                        <h6>@Model.p1.email</h6>
+                    </div>
+                    <div class="col-md-12"><label class="labels">SSN</label>
+                    <h6>@Model.p1.ssn</h6></div>
 
                 </div>
 

@@ -140,12 +140,13 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             chart4OnGet();
             chart5OnGet();
             chart6OnGet();
-            dataTable=(DataTable)DB.onpostFunctionChart1(room,day);
+            dataTable = (DataTable)DB.onpostFunctionChart1(room, day);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
                 Chart1Valuesx.Add((int)dataTable.Rows[i][0]);
                 Chart1Valuesy.Add((string)dataTable.Rows[i][1]);
             }
+            
         }
         public void Chart2Onpost(int room, int day)
         {

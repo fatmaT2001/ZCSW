@@ -11,17 +11,17 @@ namespace ZewailCiryScienceWeek.Models
         [Required]
         public string lname { get; set; }
         [Required]
-        public string type { get; set; }
+        public int type { get; set; }
         [Required]
         public string howdidyouknowus { get; set; }
         [Required]
-        public int ssn { get; set; }
+        public string ssn { get; set; }
         [Required]
-        public int usertyep { get; set; }
+        public int usertype { get; set; }
 
         [Required]
 
-        public int phonenum { get; set; }
+        public string phonenum { get; set; }
         [Required, EmailAddress]
         public string email { get; set; }
         [Required]

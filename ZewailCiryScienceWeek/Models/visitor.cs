@@ -12,7 +12,7 @@ namespace ZewailCiryScienceWeek.Models
         [Required]
         public string Gender { get; set; }
         [Required]
-        public int ssn { get; set; }
+        public string ssn { get; set; }
         public int id { get; set; }
 
 
