@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using ZewailCiryScienceWeek.Models;
@@ -273,25 +274,36 @@ namespace ZewailCiryScienceWeek.DataClasses
 
 
         //=============================Visitor Functions ===========================================
+        public void adduser11(string ssn, string phonenum, string lname, string midname, string fname, string email,string password , int usertype )
+        {
+            string Q = "Insert INTO Person Values('" + ssn + "', '" + phonenum + "', '" + fname + "', '" + midname + "', '" + lname + "', '" + email + "', '" + password + "', '" + usertype + "') ";
 
-        public void adduser(Person p, visitor v)
+            try
+            {
+                con.Open();
+                SqlCommand comm = new SqlCommand(Q, con);
+                
+                object result = comm.ExecuteNonQuery();
+                
+            }
+            catch (SqlException ex) { }
+            finally { con.Close(); }
+
+        }
+        public void adduser(Person p , visitor v)
         {
             
-            string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertyep + ") ";
+            string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertype + ") ";
             excuteNonQuery(Q);
-            switch (p.usertyep)
+            switch (p.usertype)
             {
                 case 0:
-
                     v.id = (int)maxIDVisitor();
                     string Q1 = " INSERT INTO VISITOR Visitor VALUES  ('" + p.ssn + "', " + v.age + ", '" + v.Gender + "')";
                     excuteNonQuery(Q1);
                     break;
 
                 case 4:
-
-                    string Q2 = " ";     //EDIT HERE
-                    excuteNonQuery(Q2);
                     break;
             }
 
@@ -385,7 +397,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
         public void UpdateNumberOfTickets(int quantity, string dayAttending)
         {
-            string Q = "UPDATE non_booked_ticket SET number_of_tickets = number_of_tickets + " + quantity + " WHERE ticket_day = " + dayAttending + "and  ticket_type = 'rgular'";
+            string Q = "UPDATE non_booked_ticket  SET number_of_tickets =  number_of_tickets+ "+ quantity+ "   WHERE ticket_day = '"+dayAttending+"' and  ticket_type = 'regular'";
             excuteNonQuery(Q);
         }
         public int getbookedticket(string day, string type)

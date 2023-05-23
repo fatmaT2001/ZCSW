@@ -51,21 +51,10 @@ namespace ZewailCiryScienceWeek.Pages
         public int bookedday5zew { get; set; }
         public int bookedday6zew { get; set; }
         public int bookedday7zew { get; set; }
-
-        //[BindProperty]
-        //public int ticketQuantity { get; set; }
-        //[BindProperty]
-        //public string dayAttending { get; set; }
-
-
-
-        //public registrarModel()
-        //{
-        //    database = new DataBase();
-        //}
-
-
-
+        public registrarModel()
+        {
+            database = new DataBase();
+        }
         public void OnGet()
         {
             DataBase db = new DataBase();
@@ -121,14 +110,17 @@ namespace ZewailCiryScienceWeek.Pages
 
         }
 
-        //public void OnPostUpdate(/int ticketQuantity, string dayAttending/)
-        //{
-        //    int ticketQuantity = Convert.ToInt32(Request.Form["ticketQuantity"]);
-        //    string dayAttending = Request.Form["dayAttending"];
-        //    // Call the database function to update the number of tickets
-        //    database.UpdateNumberOfTickets(ticketQuantity, dayAttending);
-        //    //return Page();
-        //}
+        [BindProperty]
+        public int ticketQuantity { get; set; }
+        [BindProperty]
+        public string dayAttending { get; set; }
+        public IActionResult OnPostUpdate()
+        {
+
+            database.UpdateNumberOfTickets(ticketQuantity, dayAttending);
+            database.getremainticket(dayAttending, "regular");
+            return Page();
+        }
 
     }
 }
