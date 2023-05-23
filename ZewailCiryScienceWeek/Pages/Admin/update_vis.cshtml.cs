@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ZewailCiryScienceWeek.DataClasses;
@@ -16,10 +17,11 @@ namespace ZewailCiryScienceWeek.Pages.Admin
 
         public void OnGet(string id)
         {
-            vis =db.ReadVisitorRow(id);
+
         }
-        public IActionResult OnPost()
+        public IActionResult OnPostEdit()
         {
+            
             db.UpdateVisitorInfo(vis);
             return RedirectToPage("/Admin/visitor");
         }
