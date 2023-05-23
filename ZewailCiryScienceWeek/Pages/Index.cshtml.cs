@@ -13,11 +13,15 @@ namespace ZewailCiryScienceWeek.Pages
         DataTable DataTable { get; set; }
         public List<SpeakerClass> speakerClasses =new List<SpeakerClass>();
         public List<TeamClass> TeamClasses = new List<TeamClass>();
+        public List<DataTable>speakerScdule {  get; set; }
+        public List<DataTable>roomsScdule {  get; set; }
 
         public IndexModel(ILogger<IndexModel> logger, DataBase dataBase)
         {
             _logger = logger;
             DataBaseHolder = dataBase;
+            speakerScdule = new List<DataTable>();
+            roomsScdule = new List<DataTable>();
         }
         // ======================MainPage Team Section ===============================
         private void TeamHeads()
@@ -75,6 +79,13 @@ namespace ZewailCiryScienceWeek.Pages
         {
             TeamHeads();
             Speakers();
+            for(int i = 1; i <= 7; ++i)
+            {
+                DataTable temp = (DataTable)DataBaseHolder.speakersechudle(i);
+                speakerScdule.Add(temp);
+                temp = (DataTable)DataBaseHolder.roomsechudle(i);
+                roomsScdule.Add(temp);
+            }
         }
     }
 }

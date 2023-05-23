@@ -12,7 +12,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=DESKTOP-7JS7BD2;Initial Catalog=project;Integrated Security=True";
+            string Cstring = "Data Source=DESKTOP-ECB5J03;Initial Catalog=ZewailCitySW;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -80,6 +80,18 @@ namespace ZewailCiryScienceWeek.DataClasses
             return ReadTable(Q);
         }
         // =============== End Team section =======
+        //================start scdule section ====
+        public object roomsechudle(int day)
+        {
+            string Q = "SELECT CONVERT(VARCHAR(5), CAST(duration_starty AS TIME), 108) AS StartTime ,RoomName ,rooms.Topic,Rooms.Topic_discription from rooms where festivalday=" + day;
+            return ReadTable(Q);
+        }
+        public object speakersechudle(int day)
+        {
+            string Q = "SELECT CONVERT(VARCHAR(5), CAST( Speaker.starttime AS TIME), 108) AS StartTime ,PERSON.lName+' '+PERSON.midName+' '+PERSON.fName as [full name] ,Speaker.topic,Speaker.topicDescription from speaker,person where festivalday="+day+" and PERSON.National_id=Speaker.Speaker_National_id;";
+            return ReadTable(Q);
+        }
+        //================end scdule secyion ======
         // =============== Start speaker section =======
         public object SpeakersInfo()
         {
@@ -103,18 +115,29 @@ namespace ZewailCiryScienceWeek.DataClasses
         {
             string Q = "select TeamMember_National_id,lName,midName ,fName ,TeamMember.Position  from FestivalCommitees,TeamMember,PERSON where TeamMember.commiteeId=FestivalCommitees.CommiteeId and PERSON.National_id=TeamMember.TeamMember_National_id and TeamMember.commiteeId=" + id;
             return ReadTable(Q);
+        }//========================================================================
+        //==========================About us page Functions  =======================
+        public object AboutUsRooms()
+        {
+            string Q = "select roomName ,topic ,Rooms.Topic_discription from Rooms";
+            return ReadTable(Q);
         }
         //========================================================================
         //============================Searching Part==============================
         public object searchingSpeakers(string part)
         {
-            string Q = "select * from PERSON, Speaker where Speaker.Speaker_National_id=PERSON.National_id AND (\r\n    Speaker.category LIKE '%" + part + "%' \r\n    OR fname LIKE '%" + part + "%' \r\n    OR midName LIKE '%" + part + "%' \r\n    OR lName LIKE '%" + part + "%' \r\n    OR Speaker.SpeakerExperianceInfo LIKE '%" + part + "%' \r\n    OR Speaker.topicDescription LIKE '%" + part + "%'\r\n)";
+            string Q = "select National_id,PERSON.lName,midName,fname,category,topic,SpeakerExperianceInfo,topicDescription from PERSON, Speaker where Speaker.Speaker_National_id=PERSON.National_id AND (\r\n    Speaker.category LIKE '%" + part + "%' \r\n    OR fname LIKE '%" + part + "%' \r\n    OR midName LIKE '%" + part + "%' \r\n    OR lName LIKE '%" + part + "%' \r\n    OR Speaker.SpeakerExperianceInfo LIKE '%" + part + "%' \r\n    OR Speaker.topicDescription LIKE '%" + part + "%'\r\n)";
             return ReadTable(Q);
 
         }
         public object searchingTeamPage(string part)
         {
             String Q = "select commiteeId,commiteeName,CommitteeDescription from FestivalCommitees where commiteeName like '%" + part + "%' or CommitteeDescription like '%" + part + "%'\r\n";
+            return ReadTable(Q);
+        }
+        public object searchingAbouTUsPage(string part)
+        {
+            String Q = "select roomName ,topic ,Rooms.Topic_discription from Rooms\r\nwhere RoomName like '%"+part+"%'\r\nor Topic like '%"+part+"%'\r\nor Topic_discription like '%"+part+"%'";
             return ReadTable(Q);
         }
         //========================================================================
@@ -132,8 +155,23 @@ namespace ZewailCiryScienceWeek.DataClasses
         //for specific day and room 
         public object onpostFunctionChart1(int roomId, int day)
         {
-            string Q = "select count(*)as[number of visitors], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id and payment.fastival_day=" + day + "\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by payment_method";
-            return ReadTable(Q);
+            if (roomId == 0)
+            {
+                string Q = "select count(*)as[number of visitors], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id and payment.fastival_day=" + day + "\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id \r\ngroup by payment_method";
+                return ReadTable(Q);
+            }
+            else if (day == 0)
+            {
+                string Q = "select count(*)as[number of visitors], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id \r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by payment_method";
+                return ReadTable(Q);
+
+            }
+            else
+            {
+                string Q = "select count(*)as[number of visitors], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id and payment.fastival_day=" + day + "\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by payment_method";
+                return ReadTable(Q);
+            }
+           
         }
         //========================Payment Money Per Method
         public object ongetFunctionChart2()
@@ -143,8 +181,22 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
         public object onpostFunctionChart2(int roomId, int day)
         {
-            string Q = "select sum(payment_fess)as[total money], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id and payment.fastival_day=" + day + "\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by payment_method";
-            return ReadTable(Q);
+            if (roomId == 0)
+            {
+                string Q = "select sum(payment_fess)as[total money], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id and payment.fastival_day=" + day + "\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id \r\ngroup by payment_method";
+                return ReadTable(Q);
+            }
+            else if (day == 0)
+            {
+                string Q = "select sum(payment_fess)as[total money], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id \r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by payment_method";
+                return ReadTable(Q);
+            }
+            else
+            {
+                string Q = "select sum(payment_fess)as[total money], payment_method from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id and payment.fastival_day=" + day + "\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by payment_method";
+                return ReadTable(Q);
+            }
+
         }
         //===========================Festival Payment For Each Day Of The Week
         public object ongetFunctionChart3()
@@ -159,9 +211,25 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
         public object onpostFunctionChart4(int roomId, int day)
         {
-            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+            if (roomId == 0)
+            {
+                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\n visitors_room.festivalDay=" + day + "\r\ngroup by sex";
 
-            return ReadTable(Q);
+                return ReadTable(Q);
+            }
+            else if (day == 0){
+                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " \r\ngroup by sex";
+
+                return ReadTable(Q);
+            }
+            else
+            {
+                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+
+                return ReadTable(Q);
+
+            }
+            
         }
         //===================
         // how did you know about us 
@@ -179,10 +247,25 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
         public object onpostFunctionChart6(int roomId, int day)
         {
-            string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
-            return ReadTable(Q);
+            if (roomId == 0)
+            {
+                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\n visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+                return ReadTable(Q);
+            }
+            else if (day == 0)
+            {
+                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " \r\ngroup by sex";
+                return ReadTable(Q);
+            }
+            else
+            {
+                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+                return ReadTable(Q);
+            }
+
         }
         public object onpostFunctionChart3(int roomId)
+
         {
             string Q = "select sum(payment_fess)as[total money], payment.fastival_day from used,payment,visitor,Rooms,visitors_room \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\nand visitor.national_id=visitors_room.visitor_id and Rooms.room_id=visitors_room.room_id and Rooms.room_id=" + roomId + "\r\ngroup by fastival_day";
             return ReadTable(Q);
