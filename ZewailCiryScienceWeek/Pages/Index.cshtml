@@ -11,7 +11,7 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-        <h1 class="mb-4 pb-0">The Annual<br><span>Zewail City</span> Science Week</h1>
+        <h1 class="mb-4 pb-0">The Annual<br>Zewail City Science Week</h1>
         <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
         <a href="/Visitor/buyticket" class="about-btn scrollto" style="color:#fff">Get Your Ticket Now</a>
     </div>
@@ -346,14 +346,26 @@
         </div>
 
         <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-            <li class="nav-item">
+            <li class="nav-item mb-2">
                 <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
+            <li class="nav-item mb-2">
+                <a class="nav-link " href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Day 3</a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link" href="#day-4" role="tab" data-bs-toggle="tab">Day 4</a>
+            </li>
+                        <li class="nav-item mb-2">
+                <a class="nav-link" href="#day-5" role="tab" data-bs-toggle="tab">Day 5</a>
+            </li>
+                        <li class="nav-item mb-2">
+                <a class="nav-link" href="#day-6" role="tab" data-bs-toggle="tab">Day 6</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Day 3</a>
+                <a class="nav-link" href="#day-7" role="tab" data-bs-toggle="tab">Day 7</a>
             </li>
         </ul>
 
@@ -362,233 +374,174 @@
             necessitatibus voluptatem quis labore perspiciatis quia.
         </h3>
 
-        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200" style="font-size:20px">
 
-            <!-- Schdule Day 1 -->
-            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>09:30 AM</time></div>
-                    <div class="col-md-10">
-                        <h4>Registration</h4>
-                        <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>10:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Brenden Legros">
+            @for (int k=0;k<Math.Min(Model.speakerScdule.Count,Model.roomsScdule.Count); k++)
+            {
+                <!-- Schdule Day 1 -->
+                if (k==0){
+                <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="@($"day-{k+1}")">
+                        @if (Model.roomsScdule[k].Rows.Count != 0)
+                        {
+                            <h3 class="text-center mb-2">
+                                Here Is Our Rooms For Day @(k + 1)
+                            </h3>
+                        }
+                    @for (int i = 0; i < Model.roomsScdule[k].Rows.Count; i++)
+                    {
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>@Model.roomsScdule[k].Rows[i][0]</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="~/img/MainPagePic/Team.png" alt="Alejandrin Littel">
+                                </div>
+                                <h4>@Model.roomsScdule[k].Rows[i][1] <span>@Model.roomsScdule[k].Rows[i][2]</span></h4>
+                                <p>@Model.roomsScdule[k].Rows[i][3].</p>
+                            </div>
                         </div>
-                        <h4>Keynote <span>Brenden Legros</span></h4>
-                        <p>Facere provident incidunt quos voluptas.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>11:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Hubert Hirthe">
+                    }
+                        @if (Model.speakerScdule[k].Rows.Count != 0)
+                        {
+                            <h3 class="text-center mb-2">
+                                Here Is Our Talks For Day @(k + 1)
+                            </h3>
+                        }
+                    @for (int i = 0; i < Model.speakerScdule[k].Rows.Count; i++)
+                    {
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>@Model.speakerScdule[k].Rows[i][0]</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="~/img/MainPagePic/Team.png" alt="Alejandrin Littel">
+                                </div>
+                                <h4>@Model.speakerScdule[k].Rows[i][2] <span>@Model.speakerScdule[k].Rows[i][1]</span></h4>
+                                <p>@Model.speakerScdule[k].Rows[i][3]</p>
+                            </div>
                         </div>
-                        <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                        <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+                    }
+
+
                     </div>
-                </div>
+                }
+                else
+                {
+                    <div role="tabpanel" class="col-lg-9  tab-pane fade" id="@($"day-{k+1}")">
+                        @if (Model.roomsScdule[k].Rows.Count != 0)
+                        {
+                            <h3 class="text-center mb-2">
+                                Here Is Our Rooms For Day @(k + 1)
+                            </h3>
+                        }
 
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>12:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Cole Emmerich">
-                        </div>
-                        <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                        <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+                        @for (int i = 0; i < Model.roomsScdule[k].Rows.Count; i++)
+                        {
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>@Model.roomsScdule[k].Rows[i][0]</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="~/img/MainPagePic/Team.png" alt="Alejandrin Littel">
+                                    </div>
+                                    <h4>@Model.roomsScdule[k].Rows[i][1] <span>@Model.roomsScdule[k].Rows[i][2]</span></h4>
+                                    <p>@Model.roomsScdule[k].Rows[i][3].</p>
+                                </div>
+                            </div>
+                        }
+                        @if (Model.speakerScdule[k].Rows.Count != 0)
+                        {
+                            <h3 class="text-center mb-2">
+                                Here Is Our Talks For Day @(k + 1)
+                            </h3>}
+                        @for (int i = 0; i < Model.speakerScdule[k].Rows.Count; i++)
+                        {
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>@Model.speakerScdule[k].Rows[i][0]</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="~/img/MainPagePic/Team.png" alt="Alejandrin Littel">
+                                    </div>
+                                    <h4>@Model.speakerScdule[k].Rows[i][2] <span>@Model.speakerScdule[k].Rows[i][1]</span></h4>
+                                    <p>@Model.speakerScdule[k].Rows[i][3].</p>
+                                </div>
+                            </div>
+                        }
+
+
                     </div>
-                </div>
 
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>02:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Jack Christiansen">
-                        </div>
-                        <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                        <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-                    </div>
-                </div>
+                }
 
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>03:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Alejandrin Littel">
-                        </div>
-                        <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                        <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>04:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Willow Trantow">
-                        </div>
-                        <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                        <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- End Schdule Day 1 -->
-            <!-- Schdule Day 2 -->
-            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>10:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Brenden Legros">
-                        </div>
-                        <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                        <p>Facere provident incidunt quos voluptas.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>11:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Hubert Hirthe">
-                        </div>
-                        <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                        <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>12:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Cole Emmerich">
-                        </div>
-                        <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                        <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>02:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Jack Christiansen">
-                        </div>
-                        <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                        <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>03:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Alejandrin Littel">
-                        </div>
-                        <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                        <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>04:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Willow Trantow">
-                        </div>
-                        <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                        <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- End Schdule Day 2 -->
-            <!-- Schdule Day 3 -->
-            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>10:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Hubert Hirthe">
-                        </div>
-                        <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                        <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>11:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Cole Emmerich">
-                        </div>
-                        <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                        <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>12:00 AM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Brenden Legros">
-                        </div>
-                        <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                        <p>Facere provident incidunt quos voluptas.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>02:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Jack Christiansen">
-                        </div>
-                        <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                        <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>03:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Alejandrin Littel">
-                        </div>
-                        <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                        <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-                    </div>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2"><time>04:00 PM</time></div>
-                    <div class="col-md-10">
-                        <div class="speaker">
-                            <img src="~/img/MainPagePic/Team.png" alt="Willow Trantow">
-                        </div>
-                        <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                        <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- End Schdule Day 2 -->
+            }
+               
 
         </div>
 
     </div>
 
 </section>
+
 <!-- End Schedule Section -->
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="section-bg">
+
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Nihil officia ut sint molestiae tenetur.</p>
+        </div>
+
+        <div class="row contact-info">
+
+            <div class="col-md-4">
+                <div class="contact-address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h3>Address</h3>
+                    <address>A108 Adam Street, NY 535022, USA</address>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-phone">
+                    <i class="bi bi-phone"></i>
+                    <h3>Phone Number</h3>
+                    <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contact-email">
+                    <i class="bi bi-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-md-6 mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+        </div>
+
+    </div>
+</section><!-- End Contact Section -->

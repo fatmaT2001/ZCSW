@@ -7,7 +7,7 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-        <h1 class="mb-4 pb-0">The Annual<br><span>Zewail City</span> Science Festival</h1>
+        <h1 class="mb-4 pb-0">The Annual<br>Zewail City Science Festival</h1>
         <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
     </div>
 </section><!-- End Hero Section -->
@@ -82,34 +82,32 @@
     <div class="section-header">
         <h2>Our Upcpming Amazing Rooms</h2>
     </div>
-    <div class="search mb-4">
+    <form class="search mb-4" method="post">
         <i class="fa fa-search"></i>
-        <input type="text" class="form-control" placeholder="Search For The Name Of The Speaker">
+        <input type="text" class="form-control" placeholder="Search For The Rooom" name="part" >
         <button class="btn btn-primary">Search</button>
-    </div>
-    @for (int i = 0; i < 4; i++)
+    </form>
+    @for (int i = 0; i < @Model.DataTable.Rows.Count; i++)
     {
         <div class="row d-flex justify-content-between">
-            @for (int j = 0; j < 2; j++)
-            {
-                <div class="card  shadow-lg mb-3 ">
+            <div class="card  shadow-lg mb-3 ">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img class="card-img  h-100" src="/img/MainPagePic/AboutFeatival.jpeg">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h3 class="card-title">Room Name</h3>
-                                <p class="card-text">
-                                    This is a wider card with supporting text below as a natural lead-in to additional content.
-                                    This content is a little bit longer. a wider card with supporting text below as a natural lead-in a wider card with
+                                <h3 class="card-title">@Model.DataTable.Rows[i][0]</h3>
+                                <div class="card-text">
+                                <p>discusing the topic of @Model.DataTable.Rows[i][1]</p>
+                                <p> @Model.DataTable.Rows[i][2]</p>
 
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            }
+            
         </div>
     }
 </section>
