@@ -44,7 +44,7 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
                     case 0:
                         Flags.Signed = 1;
                         Flags.Type = "Visitor";
-                        return RedirectToPage("Index");
+                        return RedirectToPage("/Index");
                     case 1:
                         Flags.Signed = 1;
                         Flags.Type = "Admin";
@@ -52,7 +52,7 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
                     case 2:
                         Flags.Signed = 1;
                         Flags.Type = "Registrar";
-                        return RedirectToPage("/userprofile");
+                        return RedirectToPage("/registrar");
                     case 3:
                         Flags.Signed = 1;
                         Flags.Type = "Analyst";

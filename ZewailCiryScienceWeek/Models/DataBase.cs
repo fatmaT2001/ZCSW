@@ -244,24 +244,19 @@ namespace ZewailCiryScienceWeek.DataClasses
         //festival attendence
         public object ongetFunctionChart6()
         {
-            string Q = "select count(*),sex from visitor\r\ngroup by sex";
+            string Q = "select count(*), visitors_room.festivalDay from visitors_room\r\ngroup by visitors_room.festivalDay";
             return ReadTable(Q);
         }
-        public object onpostFunctionChart6(int roomId, int day)
+        public object onpostFunctionChart6(int roomId)
         {
             if (roomId == 0)
             {
-                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\n visitors_room.festivalDay=" + day + "\r\ngroup by sex";
-                return ReadTable(Q);
-            }
-            else if (day == 0)
-            {
-                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " \r\ngroup by sex";
+                string Q = "select count(*), visitors_room.festivalDay from visitors_room group by visitors_room.festivalDay";
                 return ReadTable(Q);
             }
             else
             {
-                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+                string Q = " select count(*), visitors_room.festivalDay from visitors_room ,Rooms where Rooms.room_id=visitors_room.room_id and rooms.room_id="+roomId+" group by visitors_room.festivalDay ;\r\n";
                 return ReadTable(Q);
             }
 
@@ -448,7 +443,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         {
             int m = -1;
             string Q = " Select COUNT(*) from Tickets ";
-            m = (int)ReadScaler(Q);
+            m = (int)func2(Q);
             return m + 1;
 
         }
@@ -475,6 +470,12 @@ namespace ZewailCiryScienceWeek.DataClasses
                 con.Close();
                 return ex;
             }
+        }
+
+        public object viewvisitors(string day , string type)
+        {
+            string Q = "SELECT *  FROM visitor v where ticket_id IN (select  ticket_id from Tickets where ticketday = '"+day+"' and ticket_type = '"+type+"');";
+            return ReadTable(Q);
         }
     }
 };

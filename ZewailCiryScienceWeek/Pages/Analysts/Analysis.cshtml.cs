@@ -111,7 +111,7 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
         }
         public void chart6OnGet()
         {
-            dataTable = (DataTable)DB.ongetFunctionChart3();
+            dataTable = (DataTable)DB.ongetFunctionChart6();
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
                 Chart6Valuesx.Add((int)dataTable.Rows[i][0]);
@@ -190,18 +190,18 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
                 Chart4Valuesy.Add((string)dataTable.Rows[i][1]);
             }
         }
-        public void Chart6Onpost(int room, int day)
+        public void Chart6Onpost(int room)
         {
             chart1OnGet();
             chart2OnGet();
             chart3OnGet();
             chart5OnGet();
             chart4OnGet();
-            dataTable = (DataTable)DB.onpostFunctionChart6(room, day);
+            dataTable = (DataTable)DB.onpostFunctionChart6(room);
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
-                Chart4Valuesx.Add((int)dataTable.Rows[i][0]);
-                Chart4Valuesy.Add((string)dataTable.Rows[i][1]);
+                Chart6Valuesx.Add((int)dataTable.Rows[i][0]);
+                Chart6Valuesy.Add((int)dataTable.Rows[i][1]);
             }
         }
 
@@ -247,13 +247,9 @@ namespace ZewailCiryScienceWeek.Pages.Anaylitic
             }
             Chart4Onpost(room, day);
         }
-        public void OnPostCHART6(int room = 0, int day = 0)
+        public void OnPostCHART6(int room = 0)
         {
-            if (room == 0 && day == 0)
-            {
-                chart6OnGet();
-            }
-            Chart6Onpost(room, day);
+            Chart6Onpost(room);
         }
     }
 }
