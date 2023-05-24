@@ -29,22 +29,22 @@ namespace ZewailCiryScienceWeek.Pages.Visitor
         public void OnGet()
         {
         }
-        public IActionResult OnPostAdd()
+        public IActionResult OnPost()
         {
             HttpContext.Session.SetString("fname", ticket.fname);
             HttpContext.Session.SetString("Email", ticket.Email);
-            HttpContext.Session.SetString("ticketid", ticket.ticketid.ToString());
+            //HttpContext.Session.SetString("ticketid", ticket.ticketid.ToString());
             HttpContext.Session.SetString("tickettyep", ticket.tickettype);
             HttpContext.Session.SetString("day", ticket.day);
             HttpContext.Session.SetString("paymentmethod", ticket.paymentmethod);
-            HttpContext.Session.SetString("promocode", ticket.promocode.ToString());
+            
 
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+           // {
                 db.InsertnewTicket(ticket);
                 return RedirectToPage("ticketdesign");
-            }
-            else { msg = "Please Enter Valied Data "; return RedirectToPage("Index"); }
+            //}
+           // else { msg = "Please Enter Valied Data "; return Page(); }
         }
     }
 

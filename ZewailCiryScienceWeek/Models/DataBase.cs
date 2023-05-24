@@ -439,7 +439,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         {
             int m = -1;
             string Q = " Select COUNT(*) from Tickets ";
-            m = (int)ReadScaler(Q);
+            m = (int)func2(Q);
             return m + 1;
 
         }

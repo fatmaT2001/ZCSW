@@ -13,10 +13,10 @@ namespace ZewailCiryScienceWeek.Models
 		[EmailAddress]
         public string Email { get; set; }
 
-        //[Required]
+       // [Required]
         public int ticketid { get; set; }
 
-        [Required]
+       [Required]
         public string tickettype { get; set; }
 
         [Required]
