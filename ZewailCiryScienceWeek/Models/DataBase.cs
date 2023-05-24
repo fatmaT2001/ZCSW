@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -285,25 +286,39 @@ namespace ZewailCiryScienceWeek.DataClasses
             finally { con.Close(); }
 
         }
-        public void adduser(Person p , visitor v)
+        public void addvisitor(string ssn , int age , string sex, string knowus ,string ticketid)
+
         {
-            
-            string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertype + ") ";
-            excuteNonQuery(Q);
-            switch (p.usertype)
-            {
-                case 0:
-                    v.id = (int)maxIDVisitor();
-                    string Q1 = " INSERT INTO VISITOR Visitor VALUES  ('" + p.ssn + "', " + v.age + ", '" + v.Gender + "')";
-                    excuteNonQuery(Q1);
-                    break;
-
-                case 4:
-                    break;
-            }
-
+            string Q = "INSERT INTO VISITOR  VALUES('"+ssn+"', "+ age+", '" +sex+"', '"+knowus+"' , '0')";
+             excuteNonQuery(Q); 
 
         }
+        public void addresearcher(string ssn)
+
+        {
+            string Q = "INSERT INTO Researcher(researcherID) VALUES ('" + ssn + "')";
+            excuteNonQuery(Q);
+
+        }
+        //public void adduser(Person p , visitor v)
+        //{
+
+        //    string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertype + ") ";
+        //    excuteNonQuery(Q);
+        //    switch (p.usertype)
+        //    {
+        //        case 0:
+        //            v.id = (int)maxIDVisitor();
+        //            string Q1 = " INSERT INTO VISITOR Visitor VALUES  ('" + p.ssn + "', " + v.age + ", '" + v.Gender + "')";
+        //            excuteNonQuery(Q1);
+        //            break;
+
+        //        case 4:
+        //            break;
+        //    }
+
+
+        //}
         public object maxIDPerson()
         {
             int m = -1;
@@ -427,7 +442,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         {
             t.ticketid = (int)nextTicketID();
            string Q = " INSERT INTO Tickets (ticket_id , ticket_type , ticketday ) VALUES ( '"+t.ticketid+"' , '"+t.tickettype+"' , '"+t.day+"')";
-            string q = "UPDATE non_booked_ticket  SET number_of_tickets =  number_of_tickets - 1   WHERE ticket_day = '" + t.day + "' and  ticket_type = '" + t.tickettype + "'";
+           string q = "UPDATE non_booked_ticket  SET number_of_tickets =  number_of_tickets - 1   WHERE ticket_day = '" + t.day + "' and  ticket_type = '" + t.tickettype + "'";
             excuteNonQuery(Q);
             excuteNonQuery(q);
         }

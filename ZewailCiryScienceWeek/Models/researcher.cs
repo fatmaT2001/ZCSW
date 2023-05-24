@@ -2,9 +2,9 @@
 
 namespace ZewailCiryScienceWeek.Models
 {
-    public class visitor
+    public class researcher
     {
-       
+
         [Required]
         [Range(10, 100, ErrorMessage = "Age must be between 18 and 100.")]
         public int age { get; set; }
@@ -15,20 +15,5 @@ namespace ZewailCiryScienceWeek.Models
         public string ssn { get; set; }
         public string id { get; set; }
         public string knowus { get; set; }
-
-
-
-        public visitor()
-        {
-
-        }
-
-
-
-
-
-
-
-
     }
 }
