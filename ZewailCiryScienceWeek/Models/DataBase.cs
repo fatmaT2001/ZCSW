@@ -13,7 +13,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=DESKTOP-ECB5J03;Initial Catalog=ZewailCitySW;Integrated Security=True";
+            string Cstring = "Data Source=DESKTOP-7JS7BD2;Initial Catalog=project2;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -451,6 +451,12 @@ namespace ZewailCiryScienceWeek.DataClasses
                 con.Close();
                 return ex;
             }
+        }
+
+        public object viewvisitors(string day , string type)
+        {
+            string Q = "SELECT *  FROM visitor v where ticket_id IN (select  ticket_id from Tickets where ticketday = '"+day+"' and ticket_type = '"+type+"');";
+            return ReadTable(Q);
         }
     }
 };

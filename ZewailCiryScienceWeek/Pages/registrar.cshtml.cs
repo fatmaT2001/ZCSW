@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Data;
 using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 using ZewailCiryScienceWeek.DataClasses;
 
 namespace ZewailCiryScienceWeek.Pages
@@ -118,9 +120,25 @@ namespace ZewailCiryScienceWeek.Pages
         {
 
             database.UpdateNumberOfTickets(ticketQuantity, dayAttending);
-            database.getremainticket(dayAttending, "regular");
+            //database.getremainticket(dayAttending, "regular");
             return Page();
         }
+        [BindProperty]
+        public string day { get; set; }
+        [BindProperty]
+        public string type { get; set; }
+        public DataTable dt { get; set; }
 
+
+        public IActionResult OnPostView()
+        {
+            HttpContext.Session.SetString("day", day);
+            HttpContext.Session.SetString("type", type);
+
+
+            return RedirectToPage("registrarvisitor");
+           //dt =  (DataTable)database.viewvisitors(day, type);
+
+        }
     }
 }
