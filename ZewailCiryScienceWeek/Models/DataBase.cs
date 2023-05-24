@@ -14,7 +14,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=LAPTOP-TK7SBN2G;Initial Catalog=ZCW;Integrated Security=True";
+            string Cstring = "Data Source=SHROUK;Initial Catalog=ZCSF_DB;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -376,8 +376,17 @@ namespace ZewailCiryScienceWeek.DataClasses
             string Q = "select fName,lName,age,visitor.national_id,Email,Phone_num,sex,user_password from visitor, PERSON where visitor.national_id = PERSON.National_id";
             return ReadTable(Q);
         }
-        //Read visitor
 
+        //Insert Paper
+        public void InsertPaper(paper p)
+        {
+            string Q = "insert into Paper values ('" + p.national_id + "', '" + p.paper_name + "', " + p.numberOfPages + "," + p.field + "," + p.conferenceDay + ",'" + p.SupervisorName + "''" + p.SupervisorID + "')";
+            excuteNonQuery(Q);
+        }
+
+
+
+        //Read visitor
         public visitor_edit ReadVisitorRow(string id)
         {
             visitor_edit v = new visitor_edit();

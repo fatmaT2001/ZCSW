@@ -1,96 +1,68 @@
 ﻿@page
 @model ZewailCiryScienceWeek.Pages.Admin.ticketsModel
 @{
-    Layout = "_LayoutAdmin";
+    Layout = "_LayoutOFMainPageForDifferetUser";
 }
 
 
-<header id="header" class="d-flex align-items-center p-4 ">
-        <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
 
-            <div id="logo">
-                <!-- Uncomment below if you prefer to use a text logo -->
-                <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-                <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/Artboard 3 (1).png" alt="" title=""></a>
-            </div>
-            <ul>
-                <li><a class="nav-link scrollto" href="/Index">Home</a></li>
-                <li><a class="nav-link scrollto" href="/Analysts/Analysis">Analysis</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/visitor">Visitors Info</a></li>
-                <li><a class="select-control buy-tickets scrollto nav-link" href="#supporters">Tickets</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/Promotable">Promo Codes</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/AdminMain">Admin</a></li>
-            </ul>
-            <!--=====================================================-->
+<section class="form-body">
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_content" style="background-color:#E5EBEB">
 
+            <div class="container-fluid px-4">
+                <div class="mt-4" style="padding-top: 40px;">
+                    <h1 class="mt-4" style="display: inline; padding: 5px; color:#023b3d ;text-transform: uppercase;">Tickets</h1>
+                </div>
 
-            <i class="bi bi-list mobile-nav-toggle"></i>
+                <div class="card-body">
+                    <table id="datatablesSimple" style="color:white; background-color:#4D7577   ">
+                        <thead>
+                            <tr style="text-transform: uppercase">
+                                <th>Ticket ID</th>
+                                <th>Visitor ID</th>
+                                <th>Type</th>
+                                <th>Fees</th>
+                                <th>Payment Code</th>
+                                <th>Capacity</th>
+                                <th>Day</th>
+                                <th>Promocode</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
 
-        </div>
-
-
-    </header>
-
-
-
-
-    <section class="form-body">
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_content" style="background-color:#E5EBEB">
-
-                <div class="container-fluid px-4">
-                    <div class="mt-4" style="padding-top: 40px;">
-                        <h1 class="mt-4" style="display: inline; padding: 5px; color:#023b3d ;text-transform: uppercase;">Tickets</h1>
-                    </div>
-
-                    <div class="card-body">
-                        <table id="datatablesSimple" style="color:white; background-color:#4D7577   ">
-                            <thead>
-                                <tr style="text-transform: uppercase">
-                                    <th>Ticket ID</th>
-                                    <th>Visitor ID</th>
-                                    <th>Type</th>
-                                    <th>Fees</th>
-                                    <th>Payment Code</th>
-                                    <th>Capacity</th>
-                                    <th>Day</th>
-                                    <th>Promocode</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tfoot>
+                                <th>Ticket ID</th>
+                                <th>Visitor ID</th>
+                                <th>Type</th>
+                                <th>Fees</th>
+                                <th>Payment Code</th>
+                                <th>Capacity</th>
+                                <th>Day</th>
+                                <th>Promocode</th>
+                                <th class="col-remove">Status</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            @for (int i = 0; i < Model.dt.Rows.Count; i++)
+                            {
                                 <tr>
-
-                                    <th>Ticket ID</th>
-                                    <th>Visitor ID</th>
-                                    <th>Type</th>
-                                    <th>Fees</th>
-                                    <th>Payment Code</th>
-                                    <th>Capacity</th>
-                                    <th>Day</th>
-                                    <th>Promocode</th>
-                                    <th class="col-remove">Status</th>
+                                    <th scope="row">@Model.dt.Rows[i][0]</th>
+                                    @for (int j = 1; j < @Model.dt.Columns.Count; j++)
+                                    {
+                                        <td>@Model.dt.Rows[i][j]</td>
+                                    }
+                                    <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
                                 </tr>
-                            </tfoot>
-                            <tbody>
-                                @for (int i = 0; i < Model.dt.Rows.Count; i++)
-                                {
-                                    <tr>
-                                        <th scope="row">@Model.dt.Rows[i][0]</th>
-                                        @for (int j = 1; j < @Model.dt.Columns.Count; j++)
-                                        {
-                                            <td>@Model.dt.Rows[i][j]</td>
-                                        }
-                                        <td><button class="btn-remove" onclick="removeRow(this)">-</button></td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 <style>
     table {
         background-color: #E5EBEB;

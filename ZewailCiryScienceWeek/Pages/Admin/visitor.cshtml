@@ -1,43 +1,44 @@
 ﻿@page
-@model ZewailCiryScienceWeek.Pages.Admin.visitorModel  
+@model ZewailCiryScienceWeek.Pages.Admin.visitorModel
 @{
 }
 @{
     Layout = "_LayoutResearcher";
 }
 
-    <header id="header" class="d-flex align-items-center p-4 ">
-        <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
+<header id="header" class="d-flex align-items-center p-4 ">
+    <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
 
-            <div id="logo">
-                <!-- Uncomment below if you prefer to use a text logo -->
-                <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-                <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/Artboard 3 (1).png" alt="" title=""></a>
-            </div>
-            <ul>
-                <li><a class="nav-link scrollto" href="/Index">Home</a></li>
-            <li><a class="nav-link scrollto" href="/Analysts/Analysis">Analysis</a></li>
-                <li><a class="select-control buy-tickets scrollto nav-link" href="#supporters">Visitore Info</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/tickets">Tickets</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/Promotable">Promo Codes</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/AdminMain">Admin</a></li>
-            </ul>
-            <!--=====================================================-->
-
-
-            <i class="bi bi-list mobile-nav-toggle"></i>
-
+        <div id="logo">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+            <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/Artboard 3 (1).png" alt="" title=""></a>
         </div>
+        <ul>
+            <li><a class="nav-link scrollto" href="/Index">Home</a></li>
+            <li><a class="nav-link scrollto" href="/Analysts/Analysis">Analysis</a></li>
+            <li><a class="select-control buy-tickets scrollto nav-link" href="#supporters">Visitore Info</a></li>
+            <li><a class="nav-link scrollto" href="/Admin/tickets">Tickets</a></li>
+            <li><a class="nav-link scrollto" href="/Admin/Promotable">Promo Codes</a></li>
+            <li><a class="nav-link scrollto" href="/Admin/AdminMain">Admin</a></li>
+        </ul>
+        <!--=====================================================-->
 
 
-    </header>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </div>
+
+
+</header>
+
 
 <section class="h-100 gradient-custom-2" style=" background-color:#E5EBEB">
     <div class="visitor-body" style="background-color: #E5EBEB;">
         <section class="m-4 p-5">
             <h1 class="h_visitor">Visitors Info</h1>
 
-                        <table class=" visitor_table" style="width: 100%; margin: 0 auto; backround-color:#4D7577">
+            <table class=" visitor_table" style="width: 100%; margin: 0 auto; backround-color:#4D7577">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
@@ -53,45 +54,71 @@
                     </tr>
                 </thead>
                 <tbody>
-                        @for (int i = 0; i < Model.dt.Rows.Count; i++)
-                        {
+                    @for (int i = 0; i < Model.dt.Rows.Count; i++)
+                    {
                         <tr>
-                            <th scope="row">@(i+1)</th>
-                                @for (int j = 0; j < @Model.dt.Columns.Count; j++)
-                                {
+                            <th scope="row">@(i + 1)</th>
+                            @for (int j = 0; j < @Model.dt.Columns.Count; j++)
+                            {
                                 <td>@Model.dt.Rows[i][j]</td>
-                                }
+                            }
                             <td>
                                 <a asp-page="/Admin/update_vis" asp-route-id="@Model.dt.Rows[i][3]">Edit</a> |
                                 <a asp-page="/Admin/delete_vis" asp-route-id="@Model.dt.Rows[i][3]">Delete</a>
                             </td>
                         </tr>
-                        }
+                    }
 
                 </tbody>
             </table>
+
             <!-- Edit Popup -->
-            
+            @*<div class="edit-popup" id="editPopup">
+            <h1 class="h_visitor">Edit User</h1>
+            <form>
+            <tr>
+            <input type="text" id="editFirst" placeholder="First">
+            <input type="text" id="editLast" placeholder="Last">
+            </tr>
+            <tr>
+            <input type="text" id="editAge" placeholder="Age">
+            <input type="text" id="editNationalID" placeholder="National ID">
+            </tr>
+            <tr>
+            <input type="text" id="editEmail" placeholder="Email">
+            <input type="text" id="editNumber" placeholder="Phone Number">
+            </tr>
+            <tr>
+
+            <button type="button" class="btn btn-secondary" onclick="saveEdit()">Save</button>
+            <button type="button" class="btn btn-dark" onclick="cancelEdit()">Cancel</button>
+            </tr>
+            </form>
+
+
+            </div>
 
 
             <!-- Delete Popup -->
             <div class="delete-popup" id="deletePopup">
-                <h3>Are you sure you want to delete these data?</h3>
-                <button type="button" class="btn btn-secondary" onclick="confirmDelete()()">Yes</button>
-                <button type="button" class="btn btn-dark" onclick="cancelDelete()">Cancel</button>
-            </div>
+            <h3>Are you sure you want to delete these data?</h3>
+            <button type="button" class="btn btn-secondary" onclick="confirmDelete()()">Yes</button>
+            <button type="button" class="btn btn-dark" onclick="cancelDelete()">Cancel</button>
+            </div>*@
+        
         </section>
     </div>
-    </section>
+</section>
 
 <style>
     body {
         text-align: center;
-        background-color:#E5EBEB;
+        background-color: #E5EBEB;
     }
+
     .visitor-body {
-            background-color: #E5EBEB;
-        }
+        background-color: #E5EBEB;
+    }
 
     h1.h_visitor {
         margin: 30px auto; /* Add margin to create space between the title and the table */
@@ -207,268 +234,3 @@
 
 
 
-
-
-
-
-
-
-@*
-<section class="h-100 gradient-custom-2" style="background-color:#E5EBEB">
-    <div class="visitor-body" style="background-color: #E5EBEB;">
-        <section class="m-4 p-5">
-            <h1 class="h_visitor">Visitors Info</h1>
-
-            <table class="visitor_table" style="width: 100%; margin: 0 auto; background-color:#4D7577">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">National ID</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Gender</th>
-                        <th scope="col">Password</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @for (int i = 0; i < Model.dt.Rows.Count; i++)
-                    {
-                        <tr>
-                            <th scope="row">@(i + 1)</th>
-                            @for (int j = 0; j < @Model.dt.Columns.Count; j++)
-                            {
-                                <td>@Model.dt.Rows[i][j]</td>
-                            }
-                            <td>
-                                <button class="edit-btn" onclick="showEditPopup(this)">Edit</button>
-                                <button class="delete-btn" onclick="showDeletePopup()">Delete</button>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </section>
-    </div>
-
-    <!-- Edit Popup -->
-        <div class="edit-popup" id="editPopup">
-            <h1 class="h_visitor">Edit User</h1>
-            <form method="post" asp-page-handler="Update">
-                <tr>
-                    <input type="text" class="form-control" placeholder="First" asp-for="@Model.vis.fName">
-                    <input type="text" class="form-control" placeholder="First" asp-for="@Model.vis.fName">
-                    
-                    <input type="text" class="form-control" placeholder="Last" asp-for="@Model.vis.lName">
-                </tr>
-                <tr>
-                    <input type="email" class="form-control" placeholder="Email" asp-for="@Model.vis.email">
-                    <input type="text" class="form-control" placeholder="Phone Number" asp-for="@Model.vis.phone_num">
-                </tr>
-                <tr>
-                    <input type="text" id="editPassword" placeholder="Password" asp-for="@Model.vis.password">
-                </tr>
-                <tr>
-
-                    <button type="button" class="btn btn-secondary" onclick="saveEdit()">Save</button>
-                    <button type="button" class="btn btn-dark" onclick="cancelEdit()">Cancel</button>
-                </tr>
-            </form>
-    </div>
-
-    <!-- Delete Popup -->
-    <div class="delete-popup" id="deletePopup">
-        <h3>Are you sure you want to delete this data?</h3>
-        <button type="button" class="btn btn-secondary" onclick="confirmDelete()">Yes</button>
-        <button type="button" class="btn btn-dark" onclick="cancelDelete()">Cancel</button>
-    </div>
-
-    <script>
-        function showEditPopup(index) {
-            // Get the visitor information for the selected row
-            var visitor = {
-                firstName: '@(Model.dt.Rows[0]["fName"])',
-                lastName: '@(Model.dt.Rows[0]["lName"])',
-                email: '@(Model.dt.Rows[0]["email"])',
-                phoneNumber: '@(Model.dt.Rows[0]["phone_num"])',
-                password: '@(Model.dt.Rows[0]["user_password"])'
-            };
-
-            document.getElementById('editIndex').value = index;
-            document.getElementById('editFirstName').value = visitor.sq;
-            document.getElementById('editLastName').value = visitor.lastName;
-            document.getElementById('editEmail').value = visitor.email;
-            document.getElementById('editPhoneNumber').value = visitor.phoneNumber;
-            document.getElementById('editPassword').value = visitor.password;
-
-            // Show the edit popup
-            document.getElementById('editPopup').style.display = 'block';
-        }
-
-        function saveEdit() {
-            var index = document.getElementById('editIndex').value;
-            var firstName = document.getElementById('editFirstName').value;
-            var lastName = document.getElementById('editLastName').value;
-            var email = document.getElementById('editEmail').value;
-            var phoneNumber = document.getElementById('editPhoneNumber').value;
-            var password = document.getElementById('editPassword').value;
-
-            // Update the values in the table
-            document.querySelector('.visitor_table').rows[index + 1].cells[1].innerHTML = firstName;
-            document.querySelector('.visitor_table').rows[index + 1].cells[2].innerHTML = lastName;
-            document.querySelector('.visitor_table').rows[index + 1].cells[5].innerHTML = email;
-            document.querySelector('.visitor_table').rows[index + 1].cells[6].innerHTML = phoneNumber;
-            document.querySelector('.visitor_table').rows[index + 1].cells[8].innerHTML = password;
-
-            // Hide the edit popup
-            document.getElementById('editPopup').style.display = 'none';
-        }
-
-        function cancelEdit() 
-        {
-            document.getElementById('editPopup').style.display = 'none';
-        }
-
-        function showDeletePopup(index) {
-            // Show the delete popup
-            var deletePopup = document.getElementById('deletePopup');
-            deletePopup.style.display = 'block';
-
-            // Set the index of the visitor row to be deleted
-            deletePopup.setAttribute('data-index', index);
-        }
-
-        function confirmDelete() {
-            // Get the index of the visitor row to be deleted
-            var deletePopup = document.getElementById('deletePopup');
-            var index = deletePopup.getAttribute('data-index');
-
-            // Delete the row from the table
-            document.querySelector('.visitor_table').deleteRow(parseInt(index) + 1);
-
-            // Hide the delete popup
-            deletePopup.style.display = 'none';
-        }
-
-        function cancelDelete() {
-            // Hide the delete popup
-            document.getElementById('deletePopup').style.display = 'none';
-        }
-    </script>
-</section>
-
-
-
-<style>
-    body {
-        text-align: center;
-        background-color:#E5EBEB;
-    }
-    .visitor-body {
-            background-color: #E5EBEB;
-        }
-
-    h1.h_visitor {
-        margin: 30px auto; /* Add margin to create space between the title and the table */
-        text-align: center;
-        color: #023b3d;
-        background-color: #E5EBEB;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 5px;
-        font-size: 40px;
-        width: 50%;
-    }
-
-    h_visitor {
-        color: #023b3d;
-        background-color: #E5EBEB;
-        margin: 50px auto;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 40px; /* Increase the padding to add more space */
-        font-size: 20px; /* Increase the font size */
-    }
-
-    visitor_table {
-        margin-top: 20px;
-        border-collapse: collapse;
-        width: 80%;
-        margin: 100px auto;
-        background-color: #C9D5D6; /* Change the background color of the table */
-        color: white; /* Change the text color */
-    }
-
-
-    .thead-dark th {
-        background-color: #023b3d; /* Change the background color of the table header */
-        color: white; /* Change the text color in the table header */
-        text-transform: uppercase;
-    }
-
-
-    .custom-table input[type="text"] {
-        background-color: #023b3d; /* Set the background color of text boxes */
-        border: #cccccc;
-    }
-
-
-    th1 {
-        color: white;
-    }
-
-    th,
-    td {
-        border: 1px solid black;
-        padding: 8px;
-        font-weight: bold;
-    }
-
-    td {
-        color: #023b3d;
-    }
-
-    th {
-        background-color: #f2f2f2;
-    }
-
-    tr:nth-child(even) {
-        background-color: #C9D5D6;
-    }
-
-    .edit-popup,
-    .delete-popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #C9D5D6;
-        border: 1px solid #ccc;
-        z-index: 1;
-        color: #023b3d;
-        margin: 50px auto;
-        font-weight: bold;
-        padding: 40px; /* Increase the padding to add more space */
-        font-size: 20px; /* Increase the font size */
-    }
-
-        .edit-popup input {
-            margin-bottom: 10px;
-        }
-
-        .edit-popup button {
-            margin-right: 5px;
-        }
-
-    .delete-popup {
-        text-align: center;
-    }
-
-        .delete-popup button {
-            margin: 20px;
-        }
-</style>*@
