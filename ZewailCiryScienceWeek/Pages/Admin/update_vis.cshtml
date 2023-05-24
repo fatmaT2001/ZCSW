@@ -1,10 +1,10 @@
 ﻿@page
 @model ZewailCiryScienceWeek.Pages.Admin.update_visModel
 @{
-    Layout = "_LayoutAdmin";
+    Layout = "_LayoutOFMainPageForDifferetUser";
 }
 
-<header id="header" class="d-flex align-items-center p-4 ">
+@*<header id="header" class="d-flex align-items-center p-4 ">
     <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
 
         <div id="logo">
@@ -28,41 +28,39 @@
     </div>
 
 
-</header>
+</header>*@
 <section class="h-100 gradient-custom-2" style="background-color: #E5EBEB">
     <div class="text-center" style="padding: 100px">
         <h1 class="h_visitor">Edit User</h1>
-        <form method="post">
+        <form form class="form-detail" method="post">
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editFirst">
+                <input type="text" asp-for="@Model.vi.fName">
+                <span asp-validation-for="@Model.vi.fName"></span>
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editLast" >
+                <input type="text" asp-for="@Model.vi.lName">
+                <span asp-validation-for="@Model.vi.lName"></span>
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editAge" >
+                <input type="text" asp-for="@Model.vi.national_id">
+                <span asp-validation-for="@Model.vi.national_id"></span>
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editNationalID">
+                <input type="text" asp-for="@Model.vi.email">
+                <span asp-validation-for="@Model.vi.email"></span>
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editEmail" >
+                <input type="text" asp-for="@Model.vi.phone_num">
+                <span asp-validation-for="@Model.vi.phone_num"></span>
             </div>
             <div style="margin-bottom: 10px;">
-                <input type="text" id="editNumber" >
-            </div>
-            <div style="margin-bottom: 10px;">
-                <button type="button" class="btn btn-secondary" asp-page-handler="edit">Save</button>
+                <button type="submit" class="btn btn-secondary">Save</button>
                 <button type="button" class="btn btn-dark">Cancel</button>
             </div>
         </form>
     </div>
 </section>
 
-
-
-</div>
-</section>
 
 
 

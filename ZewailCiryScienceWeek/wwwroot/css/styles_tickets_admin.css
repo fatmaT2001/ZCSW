@@ -606,13 +606,13 @@ progress {
     .blockquote > :last-child {
         margin-bottom: 0;
     }
-
+/*
 .blockquote-footer {
     margin-top: -1rem;
     margin-bottom: 1rem;
     font-size: 0.875em;
     color: #6c757d;
-}
+}*/
 
     .blockquote-footer::before {
         content: "— ";
@@ -4718,9 +4718,9 @@ textarea.form-control-lg {
             border-bottom-left-radius: var(--bs-card-inner-border-radius);
         }
 
-        .card > .card-header + .list-group,
+/*        .card > .card-header + .list-group,
         .card > .list-group + .card-footer {
-            border-top: 0;
+            border-top: 0;*/
         }
 
 .card-body {
@@ -4758,16 +4758,16 @@ textarea.form-control-lg {
         border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
     }
 
-.card-footer {
+/*.card-footer {
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     color: var(--bs-card-cap-color);
     background-color: var(--bs-card-cap-bg);
     border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
-}
+}*/
 
-    .card-footer:last-child {
+/*    .card-footer:last-child {
         border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
-    }
+    }*/
 
 .card-header-tabs {
     margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));
@@ -6016,7 +6016,7 @@ textarea.form-control-lg {
     padding: var(--bs-modal-padding);
 }
 
-.modal-footer {
+/*.modal-footer {
     display: flex;
     flex-shrink: 0;
     flex-wrap: wrap;
@@ -6031,7 +6031,7 @@ textarea.form-control-lg {
 
     .modal-footer > * {
         margin: calc(var(--bs-modal-footer-gap) * 0.5);
-    }
+    }*/
 
 @media (min-width: 576px) {
     .modal {

@@ -7,24 +7,25 @@ namespace ZewailCiryScienceWeek.Pages.Admin
 {
     public class promocodeModel : PageModel
     {
-        [BindProperty]
-        public promocode pc { get; set; }
+
         private readonly DataBase db;
 
+        [BindProperty]
+        public promocode pc { get; set; }
         public promocodeModel(DataBase DB)
         {
             this.db = DB;
         }
         public void OnGet()
         {
-            
+
         }
         public IActionResult OnPost()
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 db.InsertRowPromo(pc);
-                return RedirectToPage("/Admin/Promotable");
+                return RedirectToPage("Admin/Promotable");
             }
             else
             {
