@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -243,24 +244,19 @@ namespace ZewailCiryScienceWeek.DataClasses
         //festival attendence
         public object ongetFunctionChart6()
         {
-            string Q = "select count(*),sex from visitor\r\ngroup by sex";
+            string Q = "select count(*), visitors_room.festivalDay from visitors_room\r\ngroup by visitors_room.festivalDay";
             return ReadTable(Q);
         }
-        public object onpostFunctionChart6(int roomId, int day)
+        public object onpostFunctionChart6(int roomId)
         {
             if (roomId == 0)
             {
-                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\n visitors_room.festivalDay=" + day + "\r\ngroup by sex";
-                return ReadTable(Q);
-            }
-            else if (day == 0)
-            {
-                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " \r\ngroup by sex";
+                string Q = "select count(*), visitors_room.festivalDay from visitors_room group by visitors_room.festivalDay";
                 return ReadTable(Q);
             }
             else
             {
-                string Q = "select count(*),sex from visitors_room,visitor,Rooms \r\nwhere visitors_room.room_id=Rooms.room_id and visitors_room.visitor_id=visitor.national_id and \r\nRooms.room_id=" + roomId + " and visitors_room.festivalDay=" + day + "\r\ngroup by sex";
+                string Q = " select count(*), visitors_room.festivalDay from visitors_room ,Rooms where Rooms.room_id=visitors_room.room_id and rooms.room_id="+roomId+" group by visitors_room.festivalDay ;\r\n";
                 return ReadTable(Q);
             }
 
@@ -290,25 +286,39 @@ namespace ZewailCiryScienceWeek.DataClasses
             finally { con.Close(); }
 
         }
-        public void adduser(Person p , visitor v)
+        public void addvisitor(string ssn , int age , string sex, string knowus ,string ticketid)
+
         {
-            
-            string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertype + ") ";
-            excuteNonQuery(Q);
-            switch (p.usertype)
-            {
-                case 0:
-                    v.id = (int)maxIDVisitor();
-                    string Q1 = " INSERT INTO VISITOR Visitor VALUES  ('" + p.ssn + "', " + v.age + ", '" + v.Gender + "')";
-                    excuteNonQuery(Q1);
-                    break;
-
-                case 4:
-                    break;
-            }
-
+            string Q = "INSERT INTO VISITOR  VALUES('"+ssn+"', "+ age+", '" +sex+"', '"+knowus+"' , '0')";
+             excuteNonQuery(Q); 
 
         }
+        public void addresearcher(string ssn)
+
+        {
+            string Q = "INSERT INTO Researcher(researcherID) VALUES ('" + ssn + "')";
+            excuteNonQuery(Q);
+
+        }
+        //public void adduser(Person p , visitor v)
+        //{
+
+        //    string Q = " Insert INTO Person Values ('" + p.ssn + "', '" + p.phonenum + "', '" + p.fname + "', '" + p.midname + "', '" + p.lname + "', '" + p.email + "', '" + p.password + "', " + p.usertype + ") ";
+        //    excuteNonQuery(Q);
+        //    switch (p.usertype)
+        //    {
+        //        case 0:
+        //            v.id = (int)maxIDVisitor();
+        //            string Q1 = " INSERT INTO VISITOR Visitor VALUES  ('" + p.ssn + "', " + v.age + ", '" + v.Gender + "')";
+        //            excuteNonQuery(Q1);
+        //            break;
+
+        //        case 4:
+        //            break;
+        //    }
+
+
+        //}
         public object maxIDPerson()
         {
             int m = -1;
@@ -432,7 +442,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         {
             t.ticketid = (int)nextTicketID();
            string Q = " INSERT INTO Tickets (ticket_id , ticket_type , ticketday ) VALUES ( '"+t.ticketid+"' , '"+t.tickettype+"' , '"+t.day+"')";
-            string q = "UPDATE non_booked_ticket  SET number_of_tickets =  number_of_tickets - 1   WHERE ticket_day = '" + t.day + "' and  ticket_type = '" + t.tickettype + "'";
+           string q = "UPDATE non_booked_ticket  SET number_of_tickets =  number_of_tickets - 1   WHERE ticket_day = '" + t.day + "' and  ticket_type = '" + t.tickettype + "'";
             excuteNonQuery(Q);
             excuteNonQuery(q);
         }
