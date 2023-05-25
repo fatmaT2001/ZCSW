@@ -15,7 +15,7 @@ namespace ZewailCiryScienceWeek.Pages.Admin
         }
         public void OnGet()
         {
-            dt = (DataTable)db.ReadAllTable("PromoCodes");
+            dt = (DataTable)db.ReadAllPromoCodes();
         }
     }
 }

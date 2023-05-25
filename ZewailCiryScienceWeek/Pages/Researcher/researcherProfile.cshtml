@@ -1,5 +1,5 @@
 ﻿@page
-@model ZewailCiryScienceWeek.Pages.Researcher.researcherMainModel
+@model ZewailCiryScienceWeek.Pages.Researcher.researcherProfileModel
 @{
 }
 @{
@@ -87,7 +87,7 @@
                                                     <p class="mb-0">Full Name</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Johnatan Smith</p>
+                                                    <p class="text-muted mb-0">Noah</p>
                                                 </div>
                                             </div>
                                             <hr style ="margin: 5px 0;">
@@ -96,7 +96,7 @@
                                                     <p class="mb-0">Email</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">example@example.com</p>
+                                                    <p class="text-muted mb-0">liam.wilson@example.com</p>
                                                 </div>
                                             </div>
                                                 <hr style ="margin: 5px 0;">
@@ -105,7 +105,7 @@
                                                     <p class="mb-0">Phone</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">(097) 234-5678</p>
+                                                    <p class="text-muted mb-0">+9876543219</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -114,7 +114,7 @@
                                                     <p class="mb-0">Tob title</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Scientist</p>
+                                                    <p class="text-muted mb-0">Data Scientist</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -132,7 +132,7 @@
                                                     <p class="mb-0">Address</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                                                    <p class="text-muted mb-0">987 Pine Street, City</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,7 +155,7 @@
                                                     <p class="mb-0">Paper title</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">form-title</p>
+                                                    <p class="text-muted mb-0">@Model.p.paper_name</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -164,7 +164,7 @@
                                                     <p class="mb-0">Field</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">form-field</p>
+                                                    <p class="text-muted mb-0">@Model.p.field</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -173,7 +173,7 @@
                                                     <p class="mb-0">Number Of Pages</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">form-pages</p>
+                                                    <p class="text-muted mb-0">@Model.p.numberOfPages</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -182,7 +182,7 @@
                                                     <p class="mb-0">Conference day</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">form-day</p>
+                                                    <p class="text-muted mb-0">@Model.p.conferenceDay</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -191,7 +191,7 @@
                                                     <p class="mb-0">Paper Attachment</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class=" text-muted mb-0"><a href="#" style="text-decoration: underline;">Paper Attachment</a></p>
+                                                    <p class=" text-muted mb-0"><a href="#" style="text-decoration: underline;">@Model.p.paper_name</a></p>
                                                 </div>
                                             </div>
                                         </div>

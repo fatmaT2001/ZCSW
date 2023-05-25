@@ -14,7 +14,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=SHROUK;Initial Catalog=ZCSF_DB;Integrated Security=True";
+            string Cstring = "Data Source=SHROUK;Initial Catalog=ZCSF_DataBase;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 
@@ -353,10 +353,50 @@ namespace ZewailCiryScienceWeek.DataClasses
             string Q = "select * from " + table;
             return ReadTable(Q);
         }
+        public object ReadAllPromoCodes()
+        {
+            string Q = "select PromoName,DiscountPercent,NumTicketsOffered,NumOfPassing,AssignedTo,RemainigTickets from PromoCodes";
+
+            return ReadTable(Q);
+        }
+        //researcher
+        public researcher ReadResearcher(string id)
+        {
+            researcher re = new researcher();
+            DataTable dt = new DataTable();
+            string Q = "select * from Researcher, PERSON where Researcher.researcherID = PERSON.National_id  and researcherID ='" + id + "'";
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Q, con);
+                dt.Load(cmd.ExecuteReader());
+                re.name = (string)dt.Rows[0]["fName"];
+                re.id = (string)dt.Rows[0]["national_id"];
+                re.email = (string)dt.Rows[0]["Email"];
+                re.phone = (string)dt.Rows[0]["Phone_num"];
+                re.job = (string)dt.Rows[0]["JobTitle"];
+                re.adress = (string)dt.Rows[0]["researcherSddress"];
+            }
+            catch (SqlException ex)
+            {
+
+            }
+            finally { con.Close(); }
+            return re;
+        }
         
+        public object nextPromoID()
+        {
+            int m = 0;
+            string Q = " Select COUNT(*) from PromoCodes ";
+            m = (int)func2(Q);
+            return m + 1;
+
+        }
         public void InsertRowPromo(promocode pc)
         {
-            string Q = "insert into PromoCodes values ('"+pc.PromoName+"', " + pc.DiscountPercent + ", " + pc.NumTicketsOffered + ","+pc.NumOfPassing+",'"+pc.AssignedTo+"',"+pc.NumTicketsOffered+")";
+            pc.promo_id = (int)nextPromoID();
+            string Q = "insert into PromoCodes values ('"+pc.PromoName+"', " + pc.DiscountPercent + ", " + pc.NumTicketsOffered + ","+pc.NumOfPassing+",'"+pc.AssignedTo+"',"+pc.NumTicketsOffered+","+pc.promo_id+")";
             excuteNonQuery(Q);
         }
         //tickets
@@ -380,6 +420,31 @@ namespace ZewailCiryScienceWeek.DataClasses
         }
 
 
+        public paper ReadPaperInfo(string id )
+        {
+            paper pa = new paper();
+            DataTable dt = new DataTable();
+            string Q = "Select * from Paper where researcherID ='" + id + "'";
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Q, con);
+                dt.Load(cmd.ExecuteReader());
+                pa.national_id = (string)dt.Rows[0]["national_id"];
+                pa.paper_name = (string)dt.Rows[0]["paper_name"];
+                pa.numberOfPages = (int)dt.Rows[0]["numberOfPages"];
+                pa.field = (string)dt.Rows[0]["field"];
+                pa.conferenceDay = (int)dt.Rows[0]["conferenceDay"];
+                pa.SupervisorName = (string)dt.Rows[0]["SupervisorName"];
+                pa.SupervisorID = (string)dt.Rows[0]["SupervisorID"];
+            }
+            catch(SqlException ex)
+            {
+
+            }
+            finally { con.Close(); }
+            return pa;
+        }
 
         //Read visitor
         public visitor_edit ReadVisitorRow(string id)

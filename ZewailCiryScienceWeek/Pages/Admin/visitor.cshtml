@@ -63,8 +63,8 @@
                                 <td>@Model.dt.Rows[i][j]</td>
                             }
                             <td>
-                                <a asp-page="/Admin/update_vis" asp-route-id="@Model.dt.Rows[i][3]">Edit</a> |
-                                <a asp-page="/Admin/delete_vis" asp-route-id="@Model.dt.Rows[i][3]">Delete</a>
+                                <button class="edit-btn" onclick="showEditPopup(this)">Edit</button>
+                                <button class="delete-btn" onclick="showDeletePopup()">Delete</button>
                             </td>
                         </tr>
                     }
@@ -73,7 +73,7 @@
             </table>
 
             <!-- Edit Popup -->
-            @*<div class="edit-popup" id="editPopup">
+            <div class="edit-popup" id="editPopup">
             <h1 class="h_visitor">Edit User</h1>
             <form>
             <tr>
@@ -104,11 +104,72 @@
             <h3>Are you sure you want to delete these data?</h3>
             <button type="button" class="btn btn-secondary" onclick="confirmDelete()()">Yes</button>
             <button type="button" class="btn btn-dark" onclick="cancelDelete()">Cancel</button>
-            </div>*@
+            </div>
         
         </section>
     </div>
 </section>
+<script>
+    var currentEditRow = null;
+
+    function showEditPopup(button) {
+        var row = button.parentNode.parentNode;
+        currentEditRow = row;
+        var cells = row.cells;
+        var first = cells[1].textContent;
+        var last = cells[2].textContent;
+        var age = cells[3].textContent;
+        var national = cells[4].textContent;
+        var email = cells[5].textContent;
+        var number = cells[6].textContent;
+
+        document.getElementById('editFirst').value = first;
+        document.getElementById('editLast').value = last;
+        document.getElementById('editAge').value = age;
+        document.getElementById('editNationalID').value = national;
+        document.getElementById('editEmail').value = email;
+        document.getElementById('editNumber').value = number;
+
+        document.getElementById('editPopup').style.display = 'block';
+    }
+
+    function saveEdit() {
+        var first = document.getElementById('editFirst').value;
+        var last = document.getElementById('editLast').value;
+        var age = document.getElementById('editAge').value;
+        var national = document.getElementById('editNationalID').value;
+        var email = document.getElementById('editEmail').value;
+        var number = document.getElementById('editNumber').value;
+
+        currentEditRow.cells[1].textContent = first;
+        currentEditRow.cells[2].textContent = last;
+        currentEditRow.cells[3].textContent = age;
+        currentEditRow.cells[4].textContent = national;
+        currentEditRow.cells[5].textContent = email;
+        currentEditRow.cells[6].textContent = number;
+
+        document.getElementById('editPopup').style.display = 'none';
+    }
+
+    function cancelEdit() {
+        document.getElementById('editPopup').style.display = 'none';
+    }
+
+    function showDeletePopup() {
+        document.getElementById('deletePopup').style.display = 'block';
+    }
+
+    function confirmDelete() {
+        var row = currentEditRow;
+        row.parentNode.removeChild(row);
+        document.getElementById('deletePopup').style.display = 'none';
+    }
+
+    function cancelDelete() {
+        document.getElementById('deletePopup').style.display = 'none';
+    }
+</script>
+
 
 <style>
     body {
