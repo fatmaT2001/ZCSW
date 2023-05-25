@@ -16,11 +16,11 @@ namespace ZewailCiryScienceWeek.Pages.Researcher
             this.db = db;
         }
 
-        public void OnGet(string id)
+        public void OnGet()
         {
             //string id = "23456701234567";
-            re = db.ReadResearcher(id);
-            p = db.ReadPaperInfo(id);
+            //re = db.ReadResearcher(id);
+            //p = db.ReadPaperInfo(id);
         }
     }
 }
