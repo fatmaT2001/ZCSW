@@ -14,7 +14,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         SqlConnection con;
         public DataBase()
         {
-            string Cstring = "Data Source=DESKTOP-ECB5J03;Initial Catalog=ZewailCitySW;Integrated Security=True";
+            string Cstring = "Data Source=SHROUK;Initial Catalog=ZCSF_DataBase;Integrated Security=True";
             con = new SqlConnection(Cstring);
         }
 

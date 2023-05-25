@@ -80,11 +80,12 @@
 							</div>
 							<div class="form-holder">
 								<input type="text" placeholder="Paper Name" class="form-control">
+									<span asp-validation-for="@Model.p.paper_name"></span>
 							</div>
 						</div>
 						<div class="checkbox-circle">
 							<label>
-								<input type="checkbox" checked> Nor again is there anyone who loves or pursues or desires to obtaini.
+								<input type="checkbox" checked> Confirm that all the information is true.
 								<span class="checkmark"></span>
 							</label>
 						</div>
@@ -109,6 +110,7 @@
 								<div class="form-holder">
 									<div class="select-control">Paper Field</div>
 									<i class="zmdi zmdi-caret-down"></i>
+										<span asp-validation-for="@Model.p.field"></span>
 								</div>
 								<ul class="dropdown">
 									<li rel="Biology">Biology</li>
@@ -119,6 +121,7 @@
 							</div>
 							<div class="form-holder">
 								<input type="text" placeholder="Number Of Pages" class="form-control">
+									<span asp-validation-for="@Model.p.numberOfPages"></span>
 							</div>
 
 						</div>
@@ -135,9 +138,11 @@
 						<div class="form-row">
 							<div class="form-holder ">
 								<input type="text" placeholder="Supervisor Name" class="form-control">
+									<span asp-validation-for="@Model.p.SupervisorName"></span>
 							</div>
 							<div class="form-holder">
 								<input type="text" placeholder="Supervisor ID" class="form-control">
+									<span asp-validation-for="@Model.p.SupervisorID"></span>
 							</div>
 						</div>
 
