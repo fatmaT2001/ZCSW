@@ -63,8 +63,8 @@
                                 <td>@Model.dt.Rows[i][j]</td>
                             }
                             <td>
-                                <button class="edit-btn" onclick="showEditPopup(this)">Edit</button>
-                                <button class="delete-btn" onclick="showDeletePopup()">Delete</button>
+                                <a asp-page="/Admin/update_vis" asp-route-id="@Model.dt.Rows[i][3]">Edit</a> |
+                                <a asp-page="/Admin/delete_vis" asp-route-id="@Model.dt.Rows[i][3]">Delete</a>
                             </td>
                         </tr>
                     }

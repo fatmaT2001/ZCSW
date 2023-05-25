@@ -35,8 +35,8 @@
 
 </header>
 <section class="h-100 gradient-custom-2" style=" background-color:#E5EBEB">
-    <div class="container py-5 h-100 " >
-        <div class="row d-flex justify-content-center align-items-center h-100 " >
+    <div class="container py-5 h-100 ">
+        <div class="row d-flex justify-content-center align-items-center h-100 ">
             <div class="col col-lg-9 col-xl-7">
                 <div class="card" style="padding-top:50px; background-color:#E5EBEB;border:none">
                     <div class="rounded-top text-white d-flex flex-row" style="background-color: #023b3d; height:200px;">
@@ -82,30 +82,27 @@
                                         <p class="mt-4" style="display: inline; padding: 5px;text-left; margin-bottom:10px">ABOUT</p>
 
                                         <div class="p-2" style="background-color: #C9D5D6; ">
-                                            <div class="row" >
+                                            <div class="row">
                                                 <div class="col-sm-3">
-                                                    <p class="mb-0">Full Name</p>
-                                                </div>
-                                                <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Noah</p>
+                                                    <p class="mb-0">Full Name</p>@Model.re.name</p>
                                                 </div>
                                             </div>
-                                            <hr style ="margin: 5px 0;">
+                                            <hr style="margin: 5px 0;">
                                             <div class="row">
                                                 <div class="col-sm-3">
                                                     <p class="mb-0">Email</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">liam.wilson@example.com</p>
+                                                    <p class="text-muted mb-0">@Model.re.email</p>
                                                 </div>
                                             </div>
-                                                <hr style ="margin: 5px 0;">
+                                            <hr style="margin: 5px 0;">
                                             <div class="row">
                                                 <div class="col-sm-3">
                                                     <p class="mb-0">Phone</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">+9876543219</p>
+                                                    <p class="text-muted mb-0">@Model.re.phone</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -114,7 +111,7 @@
                                                     <p class="mb-0">Tob title</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Data Scientist</p>
+                                                    <p class="text-muted mb-0">@Model.re.job </p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -123,7 +120,7 @@
                                                     <p class="mb-0">Age</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">32</p>
+                                                    <p class="text-muted mb-0">@Model.re.age</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -132,7 +129,7 @@
                                                     <p class="mb-0">Address</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">987 Pine Street, City</p>
+                                                    <p class="text-muted mb-0">@Model.re.adress</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,7 +152,7 @@
                                                     <p class="mb-0">Paper title</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Advances in Molecular Biology Techniques</p>
+                                                    <p class="text-muted mb-0">@Model.p.paper_name</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -164,7 +161,7 @@
                                                     <p class="mb-0">Field</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Biology</p>
+                                                    <p class="text-muted mb-0">@Model.p.field</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -173,7 +170,7 @@
                                                     <p class="mb-0">Number Of Pages</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">12</p>
+                                                    <p class="text-muted mb-0">@Model.p.numberOfPages</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
@@ -182,7 +179,7 @@
                                                     <p class="mb-0">Conference day</p>
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p class="text-muted mb-0">Day 3</p>
+                                                    <p class="text-muted mb-0">@Model.p.conferenceDay</p>
                                                 </div>
                                             </div>
                                             <hr style="margin: 5px 0;">
