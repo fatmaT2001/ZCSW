@@ -24,8 +24,20 @@ namespace ZewailCiryScienceWeek.Pages.Admin
             dt = (DataTable)db.DisplayVisitors();
             //vis = new visitor_edit();
             //vis =(visitor_edit) db.ReadVisitorRow( id);
+
         }
-       
+        public void OnPost()
+        {
+            HttpContext.Session.SetString("national_id", vis.national_id);
+            HttpContext.Session.SetString("fName", vis.fName);
+            HttpContext.Session.SetString("lName", vis.lName);
+            HttpContext.Session.SetString("email", vis.email);
+            HttpContext.Session.SetString("phone_num", vis.phone_num);
+            HttpContext.Session.SetString("password", vis.password);
+            HttpContext.Session.SetString("age", vis.age);
+
+        }
+
 
     }
 }

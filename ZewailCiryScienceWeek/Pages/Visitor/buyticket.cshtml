@@ -2,42 +2,39 @@
 @model ZewailCiryScienceWeek.Pages.Visitor.buyticketModel
 @{
 }
-<div style=" margin-top :80px; background-color:#E5EBEB">
+<div style="margin-top: 80px; background-color: #E5EBEB">
     <div class="section-center" style="height: 100vh">
-        <div class="container" style="padding-top:90px">
+        <div class="container" style="padding-top: 90px">
             <div class="row">
                 <div class="booking-form">
-
-                    <form method="post" asp-page="buyticket">
+                    <form method="post">
                         <div>
-                            <p style="background: linear-gradient(to right, #023b3d,  #E5EBEB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 50px; font-family: 'Comic Sans MS', cursive;">Buy Your Ticket Now !!</p>
+                            <p style="background: linear-gradient(to right, #023b3d, #E5EBEB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 50px; font-family: 'Comic Sans MS', cursive;">Buy Your Ticket Now !!</p>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <span class="form-label">Name</span>
-                                    <input class="form-control" type="text" asp-for="@Model.ticket.fname" >
+                                    <input class="form-control" type="text" asp-for="@Model.ticket.fname" style="font-size: 16px;">
                                     <span asp-validation-for="@Model.ticket.fname"></span>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <span class="form-label">Email</span>
-                                    <input class="form-control" type="email" asp-for="@Model.ticket.Email" >
+                                    <input class="form-control" type="email" asp-for="@Model.ticket.Email" style="font-size: 16px;">
                                     <span asp-validation-for="@Model.ticket.Email"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <span class="form-label">Phone</span>
-                            <input class="form-control" type="tel">
-
+                            <input class="form-control" type="tel" style="font-size: 16px;">
                         </div>
-
                         <div class="form-group">
-                            <label class="form-label" style="height: 3.5vh ">Ticket Type</label>
+                            <label class="form-label" style="height: 3.5vh">Ticket Type</label>
                             <div class="select">
-                                <select class="form-control" asp-for="@Model.ticket.tickettype" style="height: 3.5vh">
+                                <select class="form-control" asp-for="@Model.ticket.tickettype" style="height: 3.5vh; font-size: 16px;">
                                     <span asp-validation-for="@Model.ticket.tickettype"></span>
                                     <option value="" selected disabled></option>
                                     <option value="VIP">VIP</option>
@@ -49,14 +46,13 @@
                                 </span>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label class="form-label" style="height: 3vh"> Attended Day </label>
+                            <label class="form-label" style="height: 3vh">Attended Day</label>
                             <div class="select">
-                                <select class="form-control" asp-for="@Model.ticket.day" style="height: 3.5vh">
+                                <select class="form-control" asp-for="@Model.ticket.day" style="height: 3.5vh; font-size: 16px;">
                                     <span asp-validation-for="@Model.ticket.day"></span>
-                                    <option value="" selected disabled>  </option>
-                                    <option value="Day1" style="font-size: 10px">Day1</option>
+                                    <option value="" selected disabled></option>
+                                    <option value="Day1" style="font-size: 16px;">Day1</option>
                                     <option value="Day2">Day2</option>
                                     <option value="Day3">Day3</option>
                                     <option value="Day4">Day4</option>
@@ -70,30 +66,30 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="form-label" style="height: 3vh"> Payment Method </label>
+                            <label class="form-label" style="height: 3vh">Payment Method</label>
                             <div class="select">
-                                <select class="form-control" asp-for="@Model.ticket.paymentmethod" style="height: 3.5vh">
-                                    <option value="" selected disabled> </option>
+                                <select class="form-control" asp-for="@Model.ticket.paymentmethod" style="height: 3.5vh; font-size: 16px;">
+                                    <option value="" selected disabled></option>
                                     <option value="Fawry">Fawry</option>
                                     <option value="Bank">Bank</option>
-
                                 </select>
                                 <span class="select-btn">
                                     <i class="zmdi zmdi-chevron-down"></i>
                                 </span>
                             </div>
-                             <div class="form-group">
-                                    <span class="form-label">Add PromoCode</span>
-                                    <input class="form-control" type="email" asp-for="@Model.ticket.promocode" placeholder="#">
+                            <div class="form-group">
+                                <span class="form-label">Add PromoCode</span>
+                                <input class="form-control" type="text" asp-for="@Model.ticket.promocode" placeholder="#" style="font-size: 16px;">
                                 <span asp-validation-for="@Model.ticket.promocode"></span>
-                                </div>
+                            </div>
                         </div>
                         <div class="mt-5 text-center">
                             <a href="#">
-                                <button class="login100-form-btn" style="background: #4D7577" type="button" value="submit" asp-page-handler="add">Submit</button>
+                                <button class="login100-form-btn" style="background: #4D7577" type="submit" value="submit">Submit</button>
                             </a>
+                        </div>
                     </form>
-                    <p style="color:red">@Model.msg</p>
+                    <p style="color: red; font-size: 18px;">@Model.msg</p>
                 </div>
             </div>
         </div>

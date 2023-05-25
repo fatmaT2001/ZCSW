@@ -3,36 +3,10 @@
 @{
 }
 @{
-    Layout = "_LayoutAdmin";
+    Layout = "_LayoutOFMainPageForDifferetUser";
 }
 
 <body>
-    <header id="header" class="d-flex align-items-center p-4 ">
-        <div class="container-fluid container-xxl d-flex align-items-center justify-content-between navbar order-last order-lg-0" id="navbar">
-
-            <div id="logo">
-                <!-- Uncomment below if you prefer to use a text logo -->
-                <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-                <a href="index.html" class="scrollto"><img src="~/img/MainPagePic/Artboard 3 (1).png" alt="" title=""></a>
-            </div>
-            <ul>
-                <li><a class="nav-link scrollto" href="/Index">Home</a></li>
-                <li><a class="nav-link scrollto" href="/Analysts/Analysis">Analysis</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/visitor">Visitors Info</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/tickets">Tickets</a></li>
-                <li><a class="select-control buy-tickets scrollto nav-link" href="/Admin/Promotable">Add Promo Code</a></li>
-                <li><a class="nav-link scrollto" href="/Admin/AdminMain">Admin</a></li>
-            </ul>
-            <!--=====================================================-->
-
-
-            <i class="bi bi-list mobile-nav-toggle"></i>
-
-        </div>
-
-
-    </header>
-
     <div class="form-body" style="background-color: #E5EBEB" ;>
         <div class="row">
             <div class="form-holder">
@@ -45,26 +19,26 @@
                         <form class="requires-validation" novalidate>
 
                             <div class="col-md-12">
-                                <input class="form-control" type="text" name="name" placeholder="Promo Code" required>
-                                @*<span asp-validation-for="@Model.pc.PromoName"></span>*@
+                                <input class="form-control" type="text" name="name" placeholder="Promo Code" asp-for="@Model.pc.PromoName" required>
+                                <span asp-validation-for="@Model.pc.PromoName"></span>
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control" type="text" name="Discount Percentage" placeholder="Discount Percentage" required>
-
+                                <input class="form-control" type="text" name="Discount Percentage" placeholder="Discount Percentage" asp-for="@Model.pc.DiscountPercent" required>
+                                <span asp-validation-for="@Model.pc.DiscountPercent"></span>
                             </div>
                             <div class="col-md-12">
-                                <input class="form-control" type="text" name="Number Of Tickets Offered" placeholder="Number Of Tickets Offered" required>
-
+                                <input class="form-control" type="text" name="Number Of Tickets Offered" placeholder="Number Of Tickets Offered" asp-for="@Model.pc.NumTicketsOffered" required>
+                                <span asp-validation-for="@Model.pc.NumTicketsOffered"></span>
                             </div>
 
                             <div class="col-md-12">
-                                <input class="form-control" type="text" name="Number Of Passing" placeholder="Number Of Passing" required>
-
+                                <input class="form-control" type="text" name="Number Of Passing" placeholder="Number Of Passing" asp-for="@Model.pc.NumOfPassing" required>
+                                <span asp-validation-for="@Model.pc.NumOfPassing"></span>
                             </div>
                             <div class="col-md-12">
-                                <input class="form-control" type="text" name="Assigned To" placeholder="Assigned To" required>
-
+                                <input class="form-control" type="text" name="Assigned To" placeholder="Assigned To" asp-for="@Model.pc.AssignedTo" required>
+                                <span asp-validation-for="@Model.pc.AssignedTo"></span>
                             </div>
 
 
@@ -78,7 +52,7 @@
 
 
                             <div class="form-button mt-3">
-                                <button id="submit" type="submit" class="btn btn-primary-promo">Add The Promo Code</button>
+                                <button type="submit" class="btn btn-primary-promo">Add The Promo Code</button>
                             </div>
                         </form>
                     </div>

@@ -5,6 +5,8 @@ namespace ZewailCiryScienceWeek.Models
     public class promocode
     {
         [Required]
+        public int promo_id { get; set; }
+        [Required]
         public string PromoName { get; set; }
         [Required]
         [Range(0, 100)]

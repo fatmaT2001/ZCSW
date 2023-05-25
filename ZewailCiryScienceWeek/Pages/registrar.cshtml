@@ -12,9 +12,12 @@
                     <div class="text">
                         <h4>Add New Ticket</h4>
                         <br>
+                        <br>
+                        <br>
+                        <br>
                         <button href="#" onclick="openStform()"><span class="text">Add standard ticket</span></button>
                         <br><br>
-                        <button onclick="openFrform()"><span class="text">Add free ticket</span></button>
+                       @* <button onclick="openFrform()"><span class="text">Add free ticket</span></button>*@
 
 
                         </a>
@@ -57,7 +60,7 @@
                 </div>
             </div>
             
-            <div id="Frform" class="modal">
+            @*<div id="Frform" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeFrform()">&times;</span>
                     <h2 style="color:#2a2a2a">Add a Free ticket</h2>
@@ -90,7 +93,7 @@
                     </form>
                 </div>
             </div>
-
+*@
 
             <script>
                 function openStform() {
@@ -289,10 +292,32 @@
                 </div>
                 <br>
                 <br><br>
+                <form method="post" asp-page="/registrar" >
+
                 <div class="sub-titles">
                     <div class="sub-title-container">
-                        <h4 class="first_day">First Day</h4>
-                        <div class="buttons-container">
+                        <h4 class="first_day">choose day</h4>
+                        <label for="day-attending">Day:</label>
+                        <select id="day-attending" asp-for="@Model.day">
+                            <option value="day1">Day 1</option>
+                            <option value="day2">Day 2</option>
+                            <option value="day3">Day 3</option>
+                            <option value="day4">Day 4</option>
+                            <option value="day5">Day 5</option>
+                            <option value="day6">Day 6</option>
+                            <option value="day7">Day 7</option>
+                        </select>
+                        <label for="day-attending">ticket type:</label>
+                        <select id="day-attending" asp-for="@Model.type">
+                            <option value="VIP">VIP</option>
+                            <option value="regular">regular</option>
+                            <option value="zewilains">zewilains</option>
+                            
+                        </select>
+                        <button type="submit" asp-page-handler="view"><span class="text">view</span></button>
+                        </form>
+
+                  @*      <div class="buttons-container">
                             <button class="pop-up-btn" onclick="openpopuptable()">regular</button>
                             <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
                         </div>
@@ -318,7 +343,7 @@
                             <button class="pop-up-btn" onclick="openpopuptable()">VIP</button>
 
                         </div>
-                        <br><br><br>
+                        <br><br><br>*@
 
                     </div>
 
@@ -337,10 +362,12 @@
                         <table id="popup-content">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>Ticket Type</th>
+                                    <th>national id</th>
+                                    <th>age</th>
+                                    <th>sex</th>
+                                    <th>how you know us</th>
+                                    <th>ticket id</th>
+
                                 </tr>
                             </thead>
                             <tbody>
