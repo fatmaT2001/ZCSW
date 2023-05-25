@@ -151,7 +151,7 @@ namespace ZewailCiryScienceWeek.DataClasses
         // for all days and all rooms
         public object ongetFunctionChart1()
         {
-            string Q = "select count(*)as[number of visitors], payment_method from used,payment,visitor \r\nwhere payment.payment_code=used.payment_code and visitor.national_id=used.visitor_id\r\ngroup by payment_method";
+            string Q = "select count(*),payment.payment_method from payment \r\ngroup by payment_method";
             return ReadTable(Q);
         }
         //for specific day and room 
